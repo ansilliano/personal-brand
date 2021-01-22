@@ -1,0 +1,58 @@
+// ---------------- space ----------------
+$spaced: 1em;
+
+// ---------------- spacing ----------------
+@mixin constructor($num) {
+  padding: $num;
+  &_margin {
+    margin: $num;
+  }
+  &_top {
+    padding-top: $num;
+    &_margin {
+      margin-top: $num;
+    }
+  }
+  &_bottom {
+    padding-top: $num;
+    &_margin {
+      margin-bottom: $num;
+    }
+  }
+  &_left {
+    padding-top: $num;
+    &_margin {
+      margin-left: $num;
+    }
+  }
+  &_right {
+    padding-top: $num;
+    &_margin {
+      margin-right: $num;
+    }
+  }
+}
+
+.spaced {
+  padding: $spaced;
+}
+
+.space {
+  @include constructor($spaced);
+}
+
+.space_2 {
+  @include constructor($spaced * 2);
+}
+
+.space_3 {
+  @include constructor($spaced * 3);
+}
+
+.space_4 {
+  @include constructor($spaced * 4);
+}
+
+.space_5 {
+  @include constructor($spaced * 5);
+}
