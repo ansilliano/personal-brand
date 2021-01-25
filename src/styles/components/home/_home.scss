@@ -1,26 +1,27 @@
+@import './rrss';
+
 .home {
-  height: calc(100vh - 136px);
+  background-color: $color-light-red;
+  display: flex;
+  height: calc(100vh - 178px);
 
   &__name {
+    @include center-items;
+
+    align-items: flex-end;
     background-color: $color-light-red;
+    flex-direction: column;
     height: $h-100;
-    letter-spacing: $s-10 * 1.2;
-    padding: $em * 1.6;
-    // width: $w-100;
+    letter-spacing: $em * 1.2;
+    padding: $em * 5;
+    width: $w-100;
 
-    h1 {
-      color: $color-white;
-      font-family: $font-barrio;
-      font-size: $font-24 * 2.5;
-      line-height: $lh-10 * 1;
+    div:first-of-type {
+      width: $w-100;
     }
 
-    h1:first-of-type {
-      float: left;
-    }
-
-    h1:last-of-type {
-      float: right;
+    div:last-of-type {
+      margin: $em * 2;
     }
   }
 }

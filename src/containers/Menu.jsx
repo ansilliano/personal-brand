@@ -4,13 +4,16 @@ import Icon from '../components/Icon';
 
 const Menu = () => (
   <div className="menu">
-    <div className="menu__container">
-      <div className="menu__items">
+    <div className="container-grid">
+      <div className="line-top" />
+      <div className="icon">
         <div className="menu__icon">
           <Link to="/">
             <Icon />
           </Link>
         </div>
+      </div>
+      <div className="list-menu">
         <div className="container__list">
           <NavLink to="/about" activeClassName="active-link">
             About me
@@ -23,6 +26,7 @@ const Menu = () => (
           </NavLink>
         </div>
       </div>
+      <div className="line-bottom" />
     </div>
   </div>
 );

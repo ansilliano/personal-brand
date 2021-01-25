@@ -1,9 +1,8 @@
 import React from 'react';
 
-const Illiano = () => (
+const Illiano = ({ width }) => (
   <svg
-    width="1160"
-    height="224"
+    width={width}
     viewBox="0 0 1160 224"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

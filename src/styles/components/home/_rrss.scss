@@ -1,0 +1,6 @@
+.rrss {
+  @include center-items;
+
+  background-color: $color-light-red;
+  margin-left: $em * 25;
+}

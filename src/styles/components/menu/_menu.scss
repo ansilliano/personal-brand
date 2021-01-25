@@ -1,18 +1,18 @@
 @import './borders';
+@import './header';
 
 .menu {
-  background-color: $color-light-red;
-  height: $s-10 * 11;
-  width: $w-100;
+  margin-bottom: $em;
+  margin-top: $em * 4;
 }
 
 .menu__container {
   @include center-items;
 
-  height: $s-10 * 7;
+  height: $em * 7;
   justify-content: space-around;
-  margin-top: $s-10 * 2;
-  padding: 0 $s-10 * 3;
+  margin-top: $em * 2;
+  padding: 0 $em * 3;
   width: $w-100;
 }
 
@@ -25,8 +25,9 @@
 }
 
 .menu__icon {
-  align-self: center;
-  flex-grow: 0.25;
+  @include center-items;
+
+  height: $h-100;
 
   svg {
     width: $w-100;
@@ -37,13 +38,14 @@
   @include center-items;
 
   flex-grow: 2;
+  height: $h-100;
   justify-content: flex-end;
 
   a {
     color: $color-dark-wine;
     font-family: $font-mansalva;
     font-size: $font-20;
-    padding: $s-10 * 1;
+    padding: $em;
     text-decoration: none;
 
     &:hover {
