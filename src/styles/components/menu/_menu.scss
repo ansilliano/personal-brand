@@ -1,0 +1,65 @@
+@import './borders';
+
+.menu {
+  background-color: $color-light-red;
+  height: $s-10 * 11;
+  width: $w-100;
+}
+
+.menu__container {
+  @include center-items;
+
+  height: $s-10 * 7;
+  justify-content: space-around;
+  margin-top: $s-10 * 2;
+  padding: 0 $s-10 * 3;
+  width: $w-100;
+}
+
+.menu__items {
+  @include center-items;
+
+  justify-content: space-between;
+  margin: 0 auto;
+  width: $w-100 - 10;
+}
+
+.menu__icon {
+  align-self: center;
+  flex-grow: 0.25;
+
+  svg {
+    width: $w-100;
+  }
+}
+
+.container__list {
+  @include center-items;
+
+  flex-grow: 2;
+  justify-content: flex-end;
+
+  a {
+    color: $color-dark-wine;
+    font-family: $font-mansalva;
+    font-size: $font-20;
+    padding: $s-10 * 1;
+    text-decoration: none;
+
+    &:hover {
+      background-image: url('../../../assets/icons/image1.svg');
+      background-origin: content-box;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+a.active-link {
+  background-image: url('../../../assets/icons/image1.svg');
+  background-origin: content-box;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
