@@ -1,0 +1,83 @@
+.borders-container {
+  @include center-items;
+
+  background-color: $color-light-red;
+  height: 80px;
+  position: relative;
+  width: 100%;
+}
+
+.line-top {
+  background-color: $color-white;
+  bottom: 10px;
+  height: 1px;
+  position: absolute;
+  width: 95%;
+  z-index: 10;
+}
+
+.line-bottom {
+  background-color: $color-white;
+  height: 1px;
+  position: absolute;
+  top: 10px;
+  width: 95%;
+  // z-index: 10;
+}
+
+.line-right {
+  background-color: $color-white;
+  height: 1px;
+  left: 92%;
+  position: absolute;
+  transform: rotate(90deg);
+  width: 5%;
+  // z-index: 10;
+}
+
+.line-left {
+  background-color: $color-white;
+  height: 1px;
+  position: absolute;
+  right: 92%;
+  transform: rotate(90deg);
+  width: 5%;
+  z-index: 10;
+}
+
+.line-inter {
+  background-color: $color-white;
+  height: 1px;
+  position: absolute;
+  right: 80%;
+  transform: rotate(90deg);
+  width: 5%;
+  z-index: 10;
+}
+
+.container-grid {
+  align-items: center;
+  background-color: $color-light-red;
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  grid-template-rows: 1fr;
+  height: 100px;
+  justify-items: center;
+  padding: $s-10 $s-10 * 4;
+  position: relative;
+  width: $w-100;
+}
+
+.icon {
+  border-left: 1px solid $color-white;
+  border-right: 1px solid $color-white;
+  height: 110%;
+  width: 100%;
+}
+
+.list-menu {
+  border-right: 1px solid $color-white;
+  height: 110%;
+  justify-self: baseline;
+  width: 100%;
+}

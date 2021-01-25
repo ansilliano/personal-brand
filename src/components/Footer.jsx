@@ -2,9 +2,7 @@ import React from 'react';
 
 const Footer = () => (
   <div className="footer">
-    <a href="/">
-      <img src="ansilliano.com" alt="" />
-    </a>
+    <p>created with ♥ by Ans and developed by @krlosaren</p>
   </div>
 );
 

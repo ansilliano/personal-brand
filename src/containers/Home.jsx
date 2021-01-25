@@ -1,8 +1,15 @@
 import React from 'react';
 
+// letters
+import Angela from '../components/Home/Angela';
+import Illiano from '../components/Home/Illiano';
+
 const Home = () => (
   <div className="home">
-    <h1>Home</h1>
+    <div className="home__name">
+      <Angela />
+      <Illiano />
+    </div>
   </div>
 );
 

@@ -7,6 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -34,8 +35,29 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
           },
-          'css-loader',
-          'sass-loader',
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'resolve-url-loader',
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
+        ],
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'svg-url-loader',
+            options: {
+              limit: 10000,
+            },
+          },
         ],
       },
     ],
@@ -44,10 +66,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
       filename: './index.html',
+      favicon: './src/assets/icons/favicon.jpg',
     }),
-
     new MiniCssExtractPlugin({
-      filename: 'assests/[name].css',
+      filename: 'styles/[name].css',
     }),
   ],
   devServer: {
@@ -55,5 +77,6 @@ module.exports = {
     compress: true,
     port: 4500,
     historyApiFallback: true,
+    disableHostCheck: true,
   },
 };
