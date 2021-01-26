@@ -1,0 +1,93 @@
+@import './experiencie';
+@import './education';
+@import './tools';
+
+.about {
+  margin: 0 auto;
+  padding: $em * 2 $em * 4;
+  width: $w-100;
+}
+
+.about__container {
+  margin-top: $em * 4;
+  width: $w-100;
+}
+
+.about__intro {
+  display: flex;
+  margin-left: $em * 10;
+
+  img {
+    height: 450;
+    width: 632px;
+  }
+}
+
+.intro__text {
+  margin-top: $em * 10;
+
+  div {
+    color: $color-dark-gray;
+    font-family: $font-poppins;
+    font-size: $font-16;
+    margin-top: $em;
+
+    p {
+      line-height: $lh-10 * 2;
+    }
+
+    p:nth-of-type(2) {
+      position: relative;
+
+      &::before {
+        content: 'and windsurfer';
+        font-family: $font-mansalva;
+        height: auto;
+        left: 60%;
+        position: absolute;
+        top: -65%;
+      }
+
+      &::after {
+        background-image: url('../../../assets/icons/arrow.svg');
+        background-repeat: no-repeat;
+        bottom: $em * 1.5;
+        content: '';
+        height: $em * 5;
+        left: $em * 15;
+        position: absolute;
+        transform: scale(0.75);
+        width: $em * 5;
+      }
+    }
+
+    p:nth-of-type(3) {
+      float: right;
+      font-family: $font-mansalva;
+      font-size: $font-14;
+    }
+  }
+}
+
+.about__experiencie {
+  margin: $em * 5 0;
+
+  h2 {
+    margin-left: $em * 2;
+  }
+
+  span {
+    color: $color-dark-gray;
+    font-family: $font-barrio;
+    font-family: $font-16;
+    margin-left: $em * 10;
+  }
+}
+
+.about__education {
+  margin: $em * 5 0;
+
+  h2 {
+    margin-left: $em * 2;
+  }
+}

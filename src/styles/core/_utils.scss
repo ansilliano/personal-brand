@@ -1,0 +1,20 @@
+.h2-title {
+  color: $color-dark-gray;
+  font-family: $font-barrio;
+  font-size: $font-24 * 2;
+  text-transform: uppercase;
+}
+
+.h3-title {
+  color: $color-dark-gray;
+  font-family: $font-barrio;
+  font-size: $font-24;
+  text-transform: uppercase;
+}
+
+.experiencie-button {
+  &:hover {
+    cursor: pointer;
+    fill: rgba(255, 0, 0);
+  }
+}

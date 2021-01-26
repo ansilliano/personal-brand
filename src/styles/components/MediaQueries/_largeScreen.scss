@@ -1,0 +1,30 @@
+@media screen and (min-width: 1440px) {
+  .rrss {
+    margin-left: $em * 35;
+  }
+
+  .home__name {
+    width: 80%;
+  }
+
+  .line-top,
+  .line-bottom {
+    width: 97%;
+  }
+
+  .intro__text {
+    div {
+      p:nth-of-type(2) {
+        &::before {
+          left: 33%;
+          top: -150%;
+        }
+
+        &::after {
+          bottom: -$em * 0.01;
+          left: $em * 17;
+        }
+      }
+    }
+  }
+}

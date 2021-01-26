@@ -1,6 +1,7 @@
 .rrss {
   @include center-items;
 
+  align-items: flex-end;
   background-color: $color-light-red;
-  margin-left: $em * 25;
+  margin-left: $em * 20;
 }

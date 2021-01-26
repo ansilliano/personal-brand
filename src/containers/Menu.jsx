@@ -2,14 +2,14 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Icon from '../components/Icon';
 
-const Menu = () => (
+const Menu = ({ color, dotColor }) => (
   <div className="menu">
     <div className="container-grid">
       <div className="line-top" />
       <div className="icon">
         <div className="menu__icon">
           <Link to="/">
-            <Icon />
+            <Icon fillColor={color} dotColor={dotColor} />
           </Link>
         </div>
       </div>

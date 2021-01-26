@@ -3,7 +3,7 @@
 .home {
   background-color: $color-light-red;
   display: flex;
-  height: calc(100vh - 178px);
+  height: calc(100vh - 186px);
 
   &__name {
     @include center-items;
@@ -17,6 +17,7 @@
     width: $w-100;
 
     div:first-of-type {
+      margin-left: $em * 5;
       width: $w-100;
     }
 

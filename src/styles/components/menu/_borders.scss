@@ -1,8 +1,8 @@
 .container-grid {
   align-items: center;
-  background-color: $color-light-red;
+  // background-color: $color-light-red;
   display: grid;
-  grid-template-columns: 15% 1fr;
+  grid-template-columns: 8% 1fr;
   grid-template-rows: 1fr;
   height: $em * 7;
   justify-items: center;
@@ -43,7 +43,6 @@
 .line-right {
   background-color: $color-dark-wine;
   height: 1px;
-  left: 92%;
   position: absolute;
   transform: rotate(90deg);
   width: 5%;
