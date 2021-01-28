@@ -1,20 +1,8 @@
 @import './rrss';
 
 .home {
-  background-color: $color-light-red;
-  display: flex;
-  height: calc(100vh - 186px);
-
   &__name {
-    @include center-items;
-
-    align-items: flex-end;
-    background-color: $color-light-red;
-    flex-direction: column;
-    height: $h-100;
-    letter-spacing: $em * 1.2;
-    padding: $em * 5;
-    width: $w-100;
+    grid-column: 3/-1;
 
     div:first-of-type {
       margin-left: $em * 5;

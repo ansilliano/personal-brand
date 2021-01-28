@@ -6,7 +6,11 @@ const Header = () => {
   const { pathname } = useLocation();
 
   return (
-    <div className='header'>
+    <div
+      className={`header main_container ${
+        pathname === '/' ? 'bg-menu_red' : 'bg-menu_white'
+      }`}
+    >
       {pathname !== '/' ? (
         <Menu color='#e84141' dotColor='#fff' />
       ) : (

@@ -12,3 +12,8 @@
   margin-right: $em;
   width: $s-10;
 }
+
+@mixin border-lines {
+  background-color: $color-dark-wine;
+  position: absolute;
+}

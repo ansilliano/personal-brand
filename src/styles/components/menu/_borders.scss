@@ -1,49 +1,42 @@
-.container-grid {
-  align-items: center;
-  // background-color: $color-light-red;
-  display: grid;
-  grid-template-columns: 8% 1fr;
-  grid-template-rows: 1fr;
-  height: $em * 7;
-  justify-items: center;
-  padding: 0 $em * 4;
-  position: relative;
-  width: $w-100;
-}
-
 .icon {
-  border-left: 2.5px solid $color-dark-wine;
   border-right: 2.5px solid $color-dark-wine;
-  height: 110%;
-  width: 100%;
-}
-
-.list-menu {
-  border-right: 2.5px solid $color-dark-wine;
-  height: 110%;
-  width: 100%;
+  grid-column: 2/2;
+  height: $h-100 + 20;
+  position: absolute;
+  top: -10%;
+  width: $w-100;
 }
 
 .line-top {
   background-color: $color-dark-wine;
   bottom: 0;
   height: 2px;
+  left: -2%;
   position: absolute;
-  width: 95%;
+  width: 104%;
 }
 
 .line-bottom {
   background-color: $color-dark-wine;
   height: 2px;
   position: absolute;
+  right: -2%;
   top: 0;
-  width: 95%;
+  width: 104%;
+}
+
+.line-left {
+  border-left: 2px solid $color-dark-wine;
+  grid-column: 1/1;
+  height: 120%;
+  position: absolute;
+  top: -10%;
 }
 
 .line-right {
-  background-color: $color-dark-wine;
-  height: 1px;
+  border-left: 2px solid $color-dark-wine;
+  grid-column: -1/-1;
+  height: 120%;
   position: absolute;
-  transform: rotate(90deg);
-  width: 5%;
+  top: -10%;
 }
