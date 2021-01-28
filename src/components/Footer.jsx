@@ -8,12 +8,12 @@ const Footer = () => {
   return (
     <>
       {pathname !== '/' ? (
-        <div className="footer-all">
+        <div className='footer-all'>
           <p>created with ♥ by Ans and developed by @krlosaren</p>
-          <SocialFooter width="50%" height="50%" />
+          <SocialFooter width='50%' height='50%' />
         </div>
       ) : (
-        <div className="footer-home">
+        <div className='footer-home'>
           <p>created with ♥ by Ans and developed by @krlosaren</p>
         </div>
       )}

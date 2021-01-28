@@ -6,11 +6,11 @@ const Header = () => {
   const { pathname } = useLocation();
 
   return (
-    <div className="header">
+    <div className='header'>
       {pathname !== '/' ? (
-        <Menu color="#e84141" dotColor="#fff" />
+        <Menu color='#e84141' dotColor='#fff' />
       ) : (
-        <Menu color="#fff" dotColor="#e84141" />
+        <Menu color='#fff' dotColor='#e84141' />
       )}
     </div>
   );

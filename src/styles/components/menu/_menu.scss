@@ -2,8 +2,14 @@
 @import './header';
 
 .menu {
-  margin-bottom: $em;
-  margin-top: $em * 4;
+  @include center-items;
+
+  background-color: $color-white;
+  height: $em * 10.48;
+  position: fixed;
+  top: 0;
+  width: $w-100;
+  z-index: 10;
 }
 
 .menu__container {

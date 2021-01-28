@@ -77,7 +77,5 @@ module.exports = {
     compress: true,
     port: 4500,
     historyApiFallback: true,
-    disableHostCheck: true,
-    host: '0.0.0.0',
   },
 };

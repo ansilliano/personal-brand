@@ -3,3 +3,12 @@
   display: flex;
   justify-content: center;
 }
+
+@mixin list-style {
+  background-repeat: no-repeat;
+  content: '';
+  display: inline-block;
+  height: $s-10;
+  margin-right: $em;
+  width: $s-10;
+}
