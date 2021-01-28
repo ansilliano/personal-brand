@@ -1,16 +1,14 @@
 @import './rrss';
 
 .home {
+  background-color: $color-light-red;
+  grid-column: 1/-1;
+  height: calc(100vh - 212px);
+  margin-top: 148px;
+  padding: 0 $em * 4;
+
+  // TODO : fix size of the letters and position
   &__name {
     grid-column: 3/-1;
-
-    div:first-of-type {
-      margin-left: $em * 5;
-      width: $w-100;
-    }
-
-    div:last-of-type {
-      margin: $em * 2;
-    }
   }
 }

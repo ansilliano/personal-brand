@@ -6,16 +6,14 @@ import Illiano from '../components/Home/Illiano';
 import RRSS from '../components/Home/RRSS';
 
 const Home = () => (
-  <section className='home container'>
-    <RRSS />
-    {/* <div className='home__name'>
-      <div>
-        <Angela width='650' />
+  <section className='container_aux'>
+    <div className='home container_aux'>
+      <RRSS />
+      <div className='home__name'>
+        <Angela width='100%' />
+        <Illiano width='100%' />
       </div>
-      <div>
-        <Illiano width='650' />
-      </div>
-    </div> */}
+    </div>
   </section>
 );
 
