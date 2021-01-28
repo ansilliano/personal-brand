@@ -70,6 +70,8 @@
 
   div:nth-of-type(7)::before {
     @include list-style;
+
+    background-image: url('../../../assets/icons/list-points/point-8.svg');
   }
 }
 

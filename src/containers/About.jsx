@@ -37,7 +37,7 @@ const About = () => (
         <Experiencie width='100%' height='100%' />
       </article>
     </div>
-    <div className='educaction-container '>
+    <div className='education-container '>
       <article className='about__education container_aux'>
         <h2 className='h2-title'>Education...</h2>
         <Education width='100%' height='100%' />
