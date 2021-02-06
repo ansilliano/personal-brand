@@ -8,15 +8,17 @@ import RRSS from '../components/Home/RRSS';
 const Home = () => {
   const style = {};
   return (
-    <section className='home container_aux'>
-      <RRSS />
-      <div className='home__name'>
-        <p>Angela</p>
-        <p>Illiano</p>
-        {/* <Angela width='900' /> */}
-        {/* <Illiano width='1158' /> */}
-      </div>
-    </section>
+    <div className='container'>
+      <section className='home base-container'>
+        <RRSS />
+        <div className='home__name'>
+          <p>Angela</p>
+          <p>Illiano</p>
+          {/* <Angela width='900' /> */}
+          {/* <Illiano width='1158' /> */}
+        </div>
+      </section>
+    </div>
   );
 };
 

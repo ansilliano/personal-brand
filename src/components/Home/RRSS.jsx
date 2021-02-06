@@ -7,11 +7,11 @@ import LinkedIn from './Rs-Icons/LinkedIn';
 
 const RRSS = () => (
   <div className='rrss'>
-    <Dribble size={50} />
-    <Instagram size={50} />
-    <LinkedIn size={50} />
-    <Twitter size={50} />
-    <Mail size={50} />
+    <Dribble size={40} />
+    <Instagram size={40} />
+    <LinkedIn size={40} />
+    <Twitter size={40} />
+    <Mail size={40} />
   </div>
 );
 

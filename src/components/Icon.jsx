@@ -3,7 +3,7 @@ import React from 'react';
 const Icon = ({ fillColor, dotColor }) => (
   <>
     <svg
-      width='51'
+      width='50'
       height='50'
       viewBox='0 0 51 50'
       fill='none'

@@ -3,16 +3,69 @@ import React, { useState } from 'react';
 import doodle from '../assets/img/about-me-doodle.svg';
 import Education from '../components/About/Education';
 import Experiencie from '../components/About/Experiencie';
+import Aiesec from '../components/About/Experiencie/Aiesec';
 import Future from '../components/About/Experiencie/Future';
+import Petararte from '../components/About/Experiencie/Petararte';
+import Platzi from '../components/About/Experiencie/Platzi';
+import Spain from '../components/About/Experiencie/Spain';
+import Tecma from '../components/About/Experiencie/Tecma';
+
+const components = {
+  future: Future,
+  petararte: Petararte,
+  platzi: Platzi,
+  tecma: Tecma,
+  spain: Spain,
+  aiesec: Aiesec,
+};
 
 const About = () => {
   const [hover, setHover] = useState(false);
   const [children, setChildren] = useState(null);
+
   const handleView = (e) => {
-    if (e.target.id === 'future') {
-      const component = e.target.id[0].toUpperCase() + e.target.id.slice(1);
-      setChildren(Future);
-      setHover(!hover);
+    setHover(!hover);
+
+    switch (e.target.id) {
+      case 'future':
+        return setChildren(
+          React.createElement(components[e.target.id], {
+            isVisible: hover,
+          })
+        );
+      case 'aiesec':
+        return setChildren(
+          React.createElement(components[e.target.id], {
+            isVisible: hover,
+          })
+        );
+      case 'spain':
+        return setChildren(
+          React.createElement(components[e.target.id], {
+            isVisible: hover,
+          })
+        );
+      case 'tecma':
+        return setChildren(
+          React.createElement(components[e.target.id], {
+            isVisible: hover,
+          })
+        );
+      case 'petararte':
+        return setChildren(
+          React.createElement(components[e.target.id], {
+            isVisible: hover,
+          })
+        );
+      case 'platzi':
+        return setChildren(
+          React.createElement(components[e.target.id], {
+            isVisible: hover,
+          })
+        );
+
+      default:
+        return setHover(!hover);
     }
   };
 

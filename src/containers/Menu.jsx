@@ -3,15 +3,13 @@ import { Link, NavLink } from 'react-router-dom';
 import Icon from '../components/Icon';
 
 const Menu = ({ color, dotColor }) => (
-  <nav className='menu container_aux '>
+  <nav className='menu'>
     <div className='line-left' />
     <div className='line-top' />
     <div className='icon' />
-    <div className='menu__icon'>
-      <Link to='/'>
-        <Icon fillColor={color} dotColor={dotColor} />
-      </Link>
-    </div>
+    <Link to='/' className='menu__icon'>
+      <Icon fillColor={color} dotColor={dotColor} />
+    </Link>
     <div className='menu__items'>
       <NavLink to='/about' activeClassName='active-link'>
         About me

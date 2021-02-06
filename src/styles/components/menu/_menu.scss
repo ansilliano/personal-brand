@@ -2,14 +2,18 @@
 @import './header';
 
 .menu {
+  display: grid;
+  gap: $em * 2.4;
+  grid-template-columns: repeat(12, 1fr);
+  height: $em * 6.1;
   position: relative;
+  width: $w-100;
 }
 
 .menu__icon {
   @include center-items;
 
   grid-column: 1/2;
-  height: $h-100;
   width: $w-100;
 
   svg {
@@ -26,24 +30,16 @@
   a {
     color: $color-dark-wine;
     font-family: $font-mansalva;
-    font-size: $font-20;
-    padding: $em;
+    font-size: $font-18;
+    padding: 0 $em;
     text-decoration: none;
 
     &:hover {
-      background-image: url('../../../assets/icons/image1.svg');
-      background-origin: content-box;
-      background-position: center bottom;
-      background-repeat: no-repeat;
-      background-size: contain;
+      @include hoover-menu-item('../../assets/icons/image1.svg');
     }
   }
 
   a.active-link {
-    background-image: url('../../../assets/icons/image1.svg');
-    background-origin: content-box;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
+    @include hoover-menu-item('../../assets/icons/image1.svg');
   }
 }

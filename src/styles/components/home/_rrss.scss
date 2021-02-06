@@ -1,10 +1,21 @@
 .rrss {
-  align-items: center;
-  display: flex;
+  @include center-items;
+
   flex-direction: column;
-  grid-column: 2/3;
+  grid-column: 1/2;
   justify-content: flex-end;
-  padding-bottom: $em * 14;
+  padding-bottom: $em * 16.8;
+
+  > svg {
+    border-radius: 50%;
+    margin: $em * 1.6 0;
+    transition-duration: 0.7s;
+
+    &:hover {
+      box-shadow: 5px 5px 13px #b53333, -5px -5px 13px #ff4f4f;
+      cursor: pointer;
+    }
+  }
 }
 
 .angela {

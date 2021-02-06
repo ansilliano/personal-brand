@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Future = ({ width, isVisible }) => {
+const Future = ({ isVisible }) => {
   const style = {
-    display: isVisible ? 'block' : 'none',
+    display: isVisible ? 'none' : 'block',
   };
 
   return (
     <div className='experiencie__future' style={style}>
       <svg
-        width={width}
+        width='600'
         height='412'
         viewBox='0 0 789 412'
         fill='none'
