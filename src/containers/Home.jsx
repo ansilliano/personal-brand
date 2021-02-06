@@ -5,16 +5,21 @@ import Angela from '../components/Home/Angela';
 import Illiano from '../components/Home/Illiano';
 import RRSS from '../components/Home/RRSS';
 
-const Home = () => (
-  <section className='container_aux'>
-    <div className='home container_aux'>
-      <RRSS />
-      <div className='home__name'>
-        <Angela width='100%' />
-        <Illiano width='100%' />
-      </div>
+const Home = () => {
+  const style = {};
+  return (
+    <div className='container'>
+      <section className='home base-container'>
+        <RRSS />
+        <div className='home__name'>
+          <p>Angela</p>
+          <p>Illiano</p>
+          {/* <Angela width='900' /> */}
+          {/* <Illiano width='1158' /> */}
+        </div>
+      </section>
     </div>
-  </section>
-);
+  );
+};
 
 export default Home;

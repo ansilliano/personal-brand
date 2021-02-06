@@ -1,0 +1,20 @@
+.experiencie__future {
+  @include position-experiencie(8);
+}
+
+.experiencie__petararte {
+  @include position-experiencie(56);
+}
+
+.experiencie__platzi,
+.experiencie__tecma {
+  @include position-experiencie(32);
+}
+
+.experiencie__spain {
+  @include position-experiencie(51);
+}
+
+.experiencie__aiesec {
+  @include position-experiencie(69);
+}

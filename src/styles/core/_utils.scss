@@ -13,8 +13,13 @@
 }
 
 .experiencie-button {
+  cursor: pointer;
+
   &:hover {
-    cursor: pointer;
     fill: rgba(255, 0, 0);
   }
+}
+
+.hover-element {
+  display: block;
 }

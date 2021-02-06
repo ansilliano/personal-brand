@@ -1,5 +1,29 @@
-@media screen and (min-width: 1440px) {
-  body {
-    background-color: #ffff;
+@media screen and (min-width: 1340px) {
+  .rrss,
+  .home__name {
+    justify-content: flex-end;
+  }
+
+  .home__name {
+    p {
+      font-size: $font-24 * 8;
+      line-height: $em * 1;
+    }
+  }
+
+  .experiencie__future {
+    right: $em * 12;
+    top: $em * 26;
+  }
+
+  .experiencie__petararte {
+    right: $em * 66;
+    top: $em * 16;
+  }
+
+  .line-top,
+  .line-bottom {
+    left: -1%;
+    width: 102%;
   }
 }

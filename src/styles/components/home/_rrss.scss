@@ -1,11 +1,37 @@
 .rrss {
-  grid-column: 2/3;
+  @include center-items;
+
+  flex-direction: column;
+  grid-column: 1/2;
+  justify-content: flex-end;
+  padding-bottom: $em * 16.8;
+
+  > svg {
+    border-radius: 50%;
+    margin: $em * 1.6 0;
+    transition-duration: 0.7s;
+
+    &:hover {
+      box-shadow: 5px 5px 13px #b53333, -5px -5px 13px #ff4f4f;
+      cursor: pointer;
+    }
+  }
 }
 
 .angela {
-  grid-column: 3/-1;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/-1;
+  justify-content: center;
+  width: $w-100;
 }
 
 .illiano {
-  grid-column: 3/-1;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/-1;
+  justify-content: center;
+  width: $w-100;
 }
