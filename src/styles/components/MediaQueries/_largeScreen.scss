@@ -1,5 +1,7 @@
 @media screen and (min-width: 1440px) {
-  body {
-    background-color: #ffff;
+  .experiencie__future {
+    position: absolute;
+    right: $em * 12;
+    top: $em * 26;
   }
 }

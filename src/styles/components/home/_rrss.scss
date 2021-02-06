@@ -1,11 +1,26 @@
 .rrss {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   grid-column: 2/3;
+  justify-content: flex-end;
+  padding-bottom: $em * 14;
 }
 
 .angela {
-  grid-column: 3/-1;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/-1;
+  justify-content: center;
+  width: $w-100;
 }
 
 .illiano {
-  grid-column: 3/-1;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/-1;
+  justify-content: center;
+  width: $w-100;
 }

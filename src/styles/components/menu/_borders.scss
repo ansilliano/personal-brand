@@ -1,10 +1,10 @@
 .icon {
   border-right: 2.5px solid $color-dark-wine;
-  grid-column: 2/2;
+  grid-column: 1/2;
   height: $h-100 + 20;
   position: absolute;
+  right: 0;
   top: -10%;
-  width: $w-100;
 }
 
 .line-top {

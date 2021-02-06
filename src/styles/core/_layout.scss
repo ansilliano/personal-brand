@@ -2,8 +2,6 @@
   display: grid;
   gap: 0 $em * 2.4;
   grid-template-columns: repeat(12, 1fr);
-  // grid-template-rows: repeat(4, auto);
-  // margin: 0 auto;
   margin-top: $em * 10.48;
   padding: 0 $em * 4;
   width: $w-100;
@@ -11,7 +9,7 @@
 
 .container_aux {
   display: grid;
-  gap: 0 $em * 2.4;
+  gap: $em * 2.4;
   grid-template-columns: repeat(12, 1fr);
   width: $w-100;
 }

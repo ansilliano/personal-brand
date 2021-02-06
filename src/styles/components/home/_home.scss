@@ -9,6 +9,26 @@
 
   // TODO : fix size of the letters and position
   &__name {
+    display: flex;
+    flex-direction: column;
+    // display: grid;
     grid-column: 3/-1;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: 1fr 1fr;
+    height: $h-100;
+    justify-content: flex-end;
+    line-height: $em * 14;
+    // padding-bottom: $em * 14;
+    width: $w-100 - 40;
+
+    p {
+      color: $color-white;
+      font-family: $font-barrio;
+      font-size: $font-24 * 6;
+    }
+
+    p:last-of-type {
+      align-self: flex-end;
+    }
   }
 }
