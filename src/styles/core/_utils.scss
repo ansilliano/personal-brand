@@ -1,25 +1,47 @@
 .h2-title {
-  color: $color-dark-gray;
-  font-family: $font-barrio;
-  font-size: $font-24 * 2;
-  text-transform: uppercase;
+  @include heading($font-24 * 2, $color: $color-dark-gray);
 }
 
-.h3-title {
-  color: $color-dark-gray;
-  font-family: $font-barrio;
-  font-size: $font-24;
-  text-transform: uppercase;
-}
+.contact-button {
+  background-color: $color-light-red;
+  border-radius: 50%;
+  bottom: 10%;
+  height: $em * 4;
+  position: fixed;
+  width: $em * 4;
+  z-index: 10;
 
-.experiencie-button {
-  cursor: pointer;
+  button {
+    background-color: transparent;
+    border: transparent;
 
-  &:hover {
-    fill: rgba(255, 0, 0);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  svg {
+    height: 40px;
+    width: 40px;
   }
 }
 
-.hover-element {
-  display: block;
+.modal {
+  background-color: rgba(40, 2, 6, 0.5);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.experiencie-modal {
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

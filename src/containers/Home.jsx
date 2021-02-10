@@ -8,7 +8,7 @@ import RRSS from '../components/Home/RRSS';
 const Home = () => {
   const style = {};
   return (
-    <div className='container'>
+    <div className='container-red'>
       <section className='home base-container'>
         <RRSS />
         <div className='home__name'>

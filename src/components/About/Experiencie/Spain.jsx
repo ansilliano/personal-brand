@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AppContext } from '../../../context/AppContext';
 
-const Spain = ({ isVisible }) => {
-  const style = {
-    display: isVisible ? 'none' : 'block',
-  };
+const Spain = () => {
+  const { removeModal } = useContext(AppContext);
   return (
-    <div className='experiencie__spain' style={style}>
+    <div
+      className='experiencie__spain experiencie-modal'
+      aria-hidden='true'
+      onClick={() => {
+        removeModal();
+      }}
+    >
       <svg
-        width='500'
-        height='444'
+        width='50%'
+        height='100%'
         viewBox='0 0 789 444'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'

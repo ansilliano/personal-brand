@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AppContext } from '../../../context/AppContext';
 
-const Tecma = ({ isVisible }) => {
-  const style = {
-    display: isVisible ? 'none' : 'block',
-  };
+const Tecma = () => {
+  const { removeModal } = useContext(AppContext);
   return (
-    <div className='experiencie__tecma' style={style}>
+    <div
+      className='experiencie__tecma experiencie-modal'
+      aria-hidden='true'
+      onClick={() => {
+        removeModal();
+      }}
+    >
       <svg
-        width='500'
-        height='433'
+        width='50%'
+        height='100%'
         viewBox='0 0 789 433'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
