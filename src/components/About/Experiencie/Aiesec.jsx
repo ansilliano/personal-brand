@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AppContext } from '../../../context/AppContext';
 
-const Aiesec = ({ ïsVisible }) => {
-  const style = {
-    display: ïsVisible ? 'none' : 'block',
-  };
-
+const Aiesec = () => {
+  const { removeModal } = useContext(AppContext);
   return (
-    <div className='experiencie__aiesec' style={style}>
+    <div
+      className='experiencie__aiesec experiencie-modal'
+      onClick={() => {
+        removeModal();
+      }}
+      aria-hidden='true'
+    >
       <svg
-        width='500'
-        height='441'
+        width='50%'
+        height='100%'
         viewBox='0 0 789 441'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'

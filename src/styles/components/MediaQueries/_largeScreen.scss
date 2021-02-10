@@ -1,4 +1,4 @@
-@media screen and (min-width: 1340px) {
+@media screen and (min-width: 1440px) {
   .rrss,
   .home__name {
     justify-content: flex-end;
@@ -12,14 +12,11 @@
     }
   }
 
-  .experiencie__future {
-    right: $em * 12;
-    top: $em * 26;
-  }
-
-  .experiencie__petararte {
-    right: $em * 66;
-    top: $em * 16;
+  .rrss {
+    svg {
+      height: 60px;
+      width: 60px;
+    }
   }
 
   .line-top,

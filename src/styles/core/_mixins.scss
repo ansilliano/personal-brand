@@ -18,10 +18,11 @@
   position: absolute;
 }
 
-@mixin position-experiencie($right) {
+@mixin position-experiencie($right, $top) {
   position: absolute;
-  right: $em * $right;
-  top: $em * 16;
+  right: $right;
+  top: $top;
+  z-index: 20;
 }
 
 @mixin heading($size, $color: $color-white) {
@@ -36,4 +37,11 @@
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+@mixin text-general($size: $font-16, $color: $color-dark-gray) {
+  color: $color;
+  font-family: $font-poppins;
+  font-size: $size;
+  line-height: $em;
 }
