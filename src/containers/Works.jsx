@@ -30,17 +30,17 @@ const Works = () => (
         <article className='about__intro'>
           <div className='work__text'>
             <p>
-              Most of my experience is linked to the area of architecture,
-              however, I’ve done freelance work related more to graphic design,
-              branding, and UX/UI design.
+              Most of my experience is linked to the area of{' '}
+              <span>architecture</span>, however, I’ve done freelance work
+              related more to graphic design, branding, and UX/UI design.
             </p>
             <p>
               Since I began to educate myself and become more involved with the
               tech world, I could immediately realize that this is where I want
-              to be due to its exponential growth. I don&lsquo;t know what the
-              future will hold but I do know that with the best disposition on
-              my part and thirst for knowledge, it is an industry in which you
-              never stop growing..
+              to be due to its <span>exponential growth</span>. I don&lsquo;t
+              know what the future will hold but I do know that with the best
+              disposition on my part and thirst for knowledge, it is an industry
+              in which you never stop growing..
             </p>
           </div>
         </article>
@@ -57,7 +57,7 @@ const Works = () => (
             id={id}
             color={color}
             title={title}
-            Children={React.createElement(icons[Children])}
+            Children={React.createElement(icons[Children], {})}
             hoverColor={hoverColor}
           />
         ))}

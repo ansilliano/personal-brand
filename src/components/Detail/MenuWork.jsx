@@ -19,13 +19,16 @@ const icons = {
 
 const MenuWork = () => (
   <div className='menu-work'>
+    <div className='arrow-up'>up</div>
     {db.map(({ color, Children, id }) => (
       <MenuItem
         key={id}
+        id={id}
         color={color}
         icon={React.createElement(icons[Children])}
       />
     ))}
+    <div className='arrow-up'>down</div>
   </div>
 );
 

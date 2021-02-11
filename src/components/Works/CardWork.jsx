@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router';
-import { Link } from 'react-router-dom';
 
 const CardWork = ({
   Children,
@@ -17,6 +16,7 @@ const CardWork = ({
   };
 
   const history = useHistory();
+  console.log(Children);
 
   return (
     <article

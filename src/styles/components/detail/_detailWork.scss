@@ -1,3 +1,8 @@
 .work-detail {
   grid-column: 1/-1;
+  margin: $em * 4 0;
+
+  img {
+    width: $w-100;
+  }
 }

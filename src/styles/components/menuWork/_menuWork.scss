@@ -1,6 +1,10 @@
 .menu-work {
-  grid-column: 1/2;
-  position: absolute;
+  display: grid;
+  gap: $em;
+  grid-template-rows: repeat(5, $em * 6);
+  margin-left: $em;
+  margin-top: $em * 8;
+  position: fixed;
 }
 
 .menu-item {
