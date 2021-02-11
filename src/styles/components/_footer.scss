@@ -24,3 +24,7 @@
     font-size: $font-16;
   }
 }
+
+.rrss-footer {
+  @include center-items;
+}

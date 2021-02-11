@@ -10,7 +10,7 @@ const Footer = () => {
       {pathname !== '/' ? (
         <div className='footer-all'>
           <p>created with ♥ by Ans and developed by @krlosaren</p>
-          <SocialFooter width='50%' height='50%' />
+          <SocialFooter />
         </div>
       ) : (
         <div className='footer-home'>

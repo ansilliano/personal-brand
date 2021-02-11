@@ -1,0 +1,52 @@
+.work__text {
+  margin-top: $em * 3;
+
+  p {
+    color: $color-dark-gray;
+    font-family: $font-poppins;
+    font-size: $font-16;
+    line-height: $lh-10 * 2;
+    margin-top: $em;
+  }
+}
+
+.cards-works {
+  grid-column: 1/-1;
+  margin: $em * 8 0;
+}
+
+.grid-works {
+  display: grid;
+  gap: $em * 2.4;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card-work {
+  @include center-items;
+
+  flex-direction: column;
+  height: $h-100;
+  height: $em * 29.4;
+  width: $w-100;
+  width: $em * 58;
+
+  p {
+    @include card-work-title($size: $font-24 * 2);
+
+    padding: $em * 0.5;
+  }
+
+  &:hover > p {
+    color: #fff;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:last-child:hover {
+    p {
+      color: #3e3e3e;
+    }
+  }
+}

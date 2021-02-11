@@ -45,3 +45,9 @@
   font-size: $size;
   line-height: $em;
 }
+
+@mixin card-work-title($size: $font-16) {
+  color: $color-dark-gray;
+  font-family: $font-barrio;
+  font-size: $size;
+}
