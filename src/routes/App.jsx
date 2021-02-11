@@ -7,6 +7,7 @@ import { Home, About, Works, NotFound, Experiments } from '../containers/index';
 import AppProvider from '../context/AppContext';
 
 // styles
+import '../../node_modules/pure-react-carousel/dist/react-carousel.es.css';
 import '../styles/app.scss';
 
 function App() {

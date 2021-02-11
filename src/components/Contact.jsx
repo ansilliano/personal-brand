@@ -4,11 +4,11 @@ import Email from './Home/Rs-Icons/Mail';
 
 const Contact = () => (
   <div className='contact-button'>
-    <form action='mailto:illianoangela@gmail.com' method='get'>
-      <button type='submit'>
+    <div className='button'>
+      <a href='mailto:illianoangela@gmail.com' method='get'>
         <Email />
-      </button>
-    </form>
+      </a>
+    </div>
   </div>
 );
 

@@ -1,6 +1,6 @@
 import React from 'react';
+import Carousel from 'react-responsive-carousel';
 
-// component
 import MenuItem from './MenuItem';
 
 // icons
@@ -10,6 +10,7 @@ import RocketFroz from '../Works/icons/RocketFroz';
 
 // db
 import db from '../../db.json';
+import Arrow from './Arrow';
 
 const icons = {
   dailyui: DailyUI,
@@ -17,19 +18,26 @@ const icons = {
   rocketFroz: RocketFroz,
 };
 
-const MenuWork = () => (
-  <div className='menu-work'>
-    <div className='arrow-up'>up</div>
-    {db.map(({ color, Children, id }) => (
-      <MenuItem
-        key={id}
-        id={id}
-        color={color}
-        icon={React.createElement(icons[Children])}
-      />
-    ))}
-    <div className='arrow-up'>down</div>
-  </div>
-);
+const MenuWork = () => {
+  const style = {};
+
+  return (
+    <div className='menu-work'>
+      <div className='arrow-up'>
+        <Arrow deg='0' />
+      </div>
+      <div className='carousel-container'>
+        <div className='carousel'>
+          {db.projects.map(({ color, Children, id }) => (
+            <MenuItem key={id} id={id} color={color} icon={icons[Children]} />
+          ))}
+        </div>
+      </div>
+      <div className='arrow-down'>
+        <Arrow deg='180deg' />
+      </div>
+    </div>
+  );
+};
 
 export default MenuWork;

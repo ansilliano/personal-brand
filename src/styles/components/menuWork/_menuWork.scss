@@ -1,10 +1,20 @@
 .menu-work {
-  display: grid;
-  gap: $em;
-  grid-template-rows: repeat(5, $em * 6);
-  margin-left: $em;
-  margin-top: $em * 8;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
   position: fixed;
+  width: $em * 7.8;
+
+  svg {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.carousel-container {
+  @include center-items;
 }
 
 .menu-item {
@@ -12,7 +22,7 @@
 
   border-radius: $em * 0.75;
   height: $em * 6;
-  margin: $em * 1.6 0;
+  margin: $em * 1.5 0;
   width: $em * 6;
 
   svg {

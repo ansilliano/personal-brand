@@ -51,7 +51,7 @@ const Works = () => (
     </section>
     <div className='cards-works'>
       <section className='grid-works'>
-        {db.map(({ color, title, Children, hoverColor, id }) => (
+        {db.projects.map(({ color, title, Children, hoverColor, id }) => (
           <CardWork
             key={id}
             id={id}

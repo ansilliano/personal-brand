@@ -3,14 +3,12 @@ import { useParams } from 'react-router';
 import Contact from '../Contact';
 import MenuWork from './MenuWork';
 
-// db
-
 const DetailWork = () => {
   // eslint-disable-next-line global-require
   const db = require('../../db.json');
   const { id } = useParams();
 
-  const { project, title } = db.find((item) => item.id === Number(id));
+  const { project, title } = db.projects.find((item) => item.id === Number(id));
 
   return (
     <div className='base-container'>
