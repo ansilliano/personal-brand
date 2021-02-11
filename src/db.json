@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "color": "#C9CCE5",
+    "title": "Daily UI",
+    "hoverColor": "#6B73BC",
+    "Children": "dailyui"
+  },
+  {
+    "id": 2,
+    "color": "#D8ECED",
+    "title": "Pika",
+    "Children": "pika",
+    "hoverColor": "#5CC1C8"
+  },
+  {
+    "id": 3,
+    "title": "Rocket Froz",
+    "color": "#E3F4E5",
+    "Children": "rocketFroz",
+    "hoverColor": "#2BCB6B"
+  }
+]

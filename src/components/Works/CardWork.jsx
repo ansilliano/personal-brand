@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const CardWork = ({
   Children,
   title = '...Next Project',
   color = '#fff',
   hoverColor,
+  id,
 }) => {
   const [hover, setHover] = useState(false);
 
@@ -13,8 +16,11 @@ const CardWork = ({
     border: !Children && '4px dashed #555',
   };
 
+  const history = useHistory();
+
   return (
     <article
+      aria-hidden='true'
       className='card-work'
       style={style}
       onMouseEnter={() => {
@@ -23,8 +29,12 @@ const CardWork = ({
       onMouseLeave={() => {
         setHover(!hover);
       }}
+      onClick={() => {
+        history.push(`/works/${id}`);
+      }}
     >
-      {Children && <Children color={hover ? '#fff' : '#343434'} />}
+      {Children}
+      {/* {Children && <Children color={hover ? '#fff' : '#343434'} />} */}
       <p>{title}</p>
     </article>
   );

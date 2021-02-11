@@ -1,0 +1,18 @@
+.menu-work {
+  grid-column: 1/2;
+  position: absolute;
+}
+
+.menu-item {
+  @include center-items;
+
+  border-radius: $em * 0.75;
+  height: $em * 6;
+  margin: $em * 1.6 0;
+  width: $em * 6;
+
+  svg {
+    height: $em * 2.7;
+    width: $em * 2.7;
+  }
+}

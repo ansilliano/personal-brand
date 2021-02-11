@@ -10,9 +10,20 @@ import doodle from '../assets/img/work-doodle.svg';
 import DailyUI from '../components/Works/icons/DailyUI';
 import Pika from '../components/Works/icons/Pika';
 import RocketFroz from '../components/Works/icons/RocketFroz';
+import Contact from '../components/Contact';
+
+// db
+import db from '../db.json';
+
+const icons = {
+  dailyui: DailyUI,
+  pika: Pika,
+  rocketFroz: RocketFroz,
+};
 
 const Works = () => (
   <div className='base-container'>
+    <Contact />
     <section className='about base-container'>
       <h2 className='h2-title'>This is my work!</h2>
       <div className='text-intro'>
@@ -40,24 +51,16 @@ const Works = () => (
     </section>
     <div className='cards-works'>
       <section className='grid-works'>
-        <CardWork
-          color='#C9CCE5'
-          title='Daily UI'
-          Children={DailyUI}
-          hoverColor='#6B73BC'
-        />
-        <CardWork
-          color='#D8ECED'
-          title='Pika'
-          Children={Pika}
-          hoverColor='#5CC1C8'
-        />
-        <CardWork
-          color='#E3F4E5'
-          title='Rocket Froz'
-          Children={RocketFroz}
-          hoverColor='#2BCB6B'
-        />
+        {db.map(({ color, title, Children, hoverColor, id }) => (
+          <CardWork
+            key={id}
+            id={id}
+            color={color}
+            title={title}
+            Children={React.createElement(icons[Children])}
+            hoverColor={hoverColor}
+          />
+        ))}
         <CardWork />
       </section>
     </div>
