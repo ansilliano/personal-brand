@@ -2,7 +2,6 @@ import React from 'react';
 
 import Header from './Header';
 import Footer from './Footer';
-<<<<<<< HEAD
 import SocialFooter from './SocialFooter';
 
 const Layout = ({ children }) => {
@@ -22,15 +21,5 @@ const Layout = ({ children }) => {
     </>
   );
 };
-=======
-
-const Layout = ({ children }) => (
-  <>
-    <Header />
-    {children}
-    <Footer />
-  </>
-);
->>>>>>> 50762cffc0a73816d14d365e8161383b53aac47e
 
 export default Layout;

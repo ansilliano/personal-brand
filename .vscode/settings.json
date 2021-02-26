@@ -7,10 +7,6 @@
   "eslint.validate": [
     "javascript",
     "jsx"
-<<<<<<< HEAD
   ],
   "prettier.jsxBracketSameLine": false
-=======
-  ]
->>>>>>> 50762cffc0a73816d14d365e8161383b53aac47e
 }
