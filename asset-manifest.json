@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/ansilliano/personal-brandstatic/css/main.47e6e8f0.chunk.css",
+    "main.js": "/ansilliano/personal-brandstatic/js/main.4bc4de74.chunk.js",
+    "main.js.map": "/ansilliano/personal-brandstatic/js/main.4bc4de74.chunk.js.map",
+    "runtime-main.js": "/ansilliano/personal-brandstatic/js/runtime-main.3cf1aa23.js",
+    "runtime-main.js.map": "/ansilliano/personal-brandstatic/js/runtime-main.3cf1aa23.js.map",
+    "static/css/2.ed04a8f2.chunk.css": "/ansilliano/personal-brandstatic/css/2.ed04a8f2.chunk.css",
+    "static/js/2.74e66b48.chunk.js": "/ansilliano/personal-brandstatic/js/2.74e66b48.chunk.js",
+    "static/js/2.74e66b48.chunk.js.map": "/ansilliano/personal-brandstatic/js/2.74e66b48.chunk.js.map",
+    "index.html": "/ansilliano/personal-brandindex.html",
+    "static/css/2.ed04a8f2.chunk.css.map": "/ansilliano/personal-brandstatic/css/2.ed04a8f2.chunk.css.map",
+    "static/css/main.47e6e8f0.chunk.css.map": "/ansilliano/personal-brandstatic/css/main.47e6e8f0.chunk.css.map",
+    "static/js/2.74e66b48.chunk.js.LICENSE.txt": "/ansilliano/personal-brandstatic/js/2.74e66b48.chunk.js.LICENSE.txt",
+    "static/media/about-me-doodle.a41c6cfa.svg": "/ansilliano/personal-brandstatic/media/about-me-doodle.a41c6cfa.svg",
+    "static/media/app.scss": "/ansilliano/personal-brandstatic/media/urderline.69801320.svg",
+    "static/media/experiments-doodle.a1c3122a.svg": "/ansilliano/personal-brandstatic/media/experiments-doodle.a1c3122a.svg",
+    "static/media/work-doodle.5d9f9d17.svg": "/ansilliano/personal-brandstatic/media/work-doodle.5d9f9d17.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3cf1aa23.js",
+    "static/css/2.ed04a8f2.chunk.css",
+    "static/js/2.74e66b48.chunk.js",
+    "static/css/main.47e6e8f0.chunk.css",
+    "static/js/main.4bc4de74.chunk.js"
+  ]
+}
