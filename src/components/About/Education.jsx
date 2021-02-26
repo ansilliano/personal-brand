@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 /* eslint-disable max-len */
+=======
+>>>>>>> 50762cffc0a73816d14d365e8161383b53aac47e
 import React from 'react';
 
 const Education = ({ width, height }) => (

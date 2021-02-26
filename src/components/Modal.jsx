@@ -17,7 +17,10 @@ const Modal = ({ isOpen, removeModal }) => {
         removeModal();
       }}
     />,
+<<<<<<< HEAD
     // eslint-disable-next-line comma-dangle
+=======
+>>>>>>> 50762cffc0a73816d14d365e8161383b53aac47e
     target
   );
 };

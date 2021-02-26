@@ -9,22 +9,30 @@ const Footer = () => {
     <>
       {pathname !== '/' ? (
         <div className='footer-all'>
+<<<<<<< HEAD
           <p>
             created with ♥ by Ans and developed by{' '}
             <a href='https://krlosaren.com' target='_blank' rel='noreferrer'>
               @krlosaren
             </a>
           </p>
+=======
+          <p>created with ♥ by Ans and developed by @krlosaren</p>
+>>>>>>> 50762cffc0a73816d14d365e8161383b53aac47e
           <SocialFooter />
         </div>
       ) : (
         <div className='footer-home'>
+<<<<<<< HEAD
           <p>
             created with ♥ by Ans and developed by{' '}
             <a href='https://krlosaren.com' target='_blank' rel='noreferrer'>
               @krlosaren
             </a>
           </p>
+=======
+          <p>created with ♥ by Ans and developed by @krlosaren</p>
+>>>>>>> 50762cffc0a73816d14d365e8161383b53aac47e
         </div>
       )}
     </>

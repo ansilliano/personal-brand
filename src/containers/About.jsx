@@ -46,9 +46,15 @@ const About = () => {
                 urban design, social projects, and interventions in public
                 space, however, in the world of work, the architecture industry
                 (especially in construction) was not what I expected for me. For
+<<<<<<< HEAD
                 this reason, I am <strong>pivoting</strong> towards the
                 technology area with the aim of merging my knowledge about
                 architecture and my passion for design.
+=======
+                this reason, I am pivoting towards the technology area with the
+                aim of merging my knowledge about architecture and my passion
+                for design.
+>>>>>>> 50762cffc0a73816d14d365e8161383b53aac47e
               </p>
               <p>...and leave the world better than I found it</p>
             </div>
