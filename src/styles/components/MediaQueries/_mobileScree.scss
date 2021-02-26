@@ -1,0 +1,17 @@
+@media screen and (max-width: 576px) {
+  .header {
+    width: $w-100;
+  }
+
+  .home {
+    width: $w-100;
+
+    &__name {
+      display: none;
+    }
+  }
+
+  .rrss {
+    display: none;
+  }
+}

@@ -1,0 +1,71 @@
+.work__text {
+  margin-top: $em * 3;
+
+  p {
+    color: $color-dark-gray;
+    font-family: $font-poppins;
+    font-size: $font-18;
+    font-weight: $poppins-light;
+    line-height: $lh-10 * 2;
+    margin-top: $em;
+
+    span {
+      font-family: $font-mansalva;
+    }
+
+    strong {
+      background-image: url('../../../assets/icons/underline-big.svg');
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      font-family: $font-mansalva;
+      font-weight: normal;
+    }
+  }
+}
+
+.cards-works {
+  grid-column: 1/-1;
+  margin: $em * 8 0;
+}
+
+.grid-works {
+  display: grid;
+  gap: $em * 2.4;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card-work {
+  @include center-items;
+
+  flex-direction: column;
+  height: $h-100;
+  height: $em * 29.4;
+  width: $w-100;
+  width: $em * 58;
+
+  &:hover > svg {
+    path {
+      fill: #fff;
+    }
+  }
+
+  p {
+    @include card-work-title($size: $font-24 * 2);
+
+    padding: $em * 0.5;
+  }
+
+  &:hover > p {
+    color: #fff;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:last-child:hover {
+    p {
+      color: #3e3e3e;
+    }
+  }
+}

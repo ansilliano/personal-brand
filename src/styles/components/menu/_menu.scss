@@ -1,0 +1,45 @@
+@import './borders';
+@import './header';
+
+.menu {
+  display: grid;
+  gap: $em * 2.4;
+  grid-template-columns: repeat(12, 1fr);
+  height: $em * 6.1;
+  position: relative;
+  width: $w-100;
+}
+
+.menu__icon {
+  @include center-items;
+
+  grid-column: 1/2;
+  width: $w-100;
+
+  svg {
+    width: $w-100;
+  }
+}
+
+.menu__items {
+  @include center-items;
+
+  grid-column: 3/-1;
+  justify-content: flex-end;
+
+  a {
+    color: $color-dark-wine;
+    font-family: $font-mansalva;
+    font-size: $font-18;
+    padding: 0 $em;
+    text-decoration: none;
+
+    &:hover {
+      @include hoover-menu-item('../../assets/icons/image1.svg');
+    }
+  }
+
+  a.active-link {
+    @include hoover-menu-item('../../assets/icons/image1.svg');
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "color": "#C9CCE5",
+      "title": "Daily UI",
+      "hoverColor": "#6B73BC",
+      "Children": "dailyui",
+      "project": "https://storage.googleapis.com/porfolio-angela/pika.jpg"
+    },
+    {
+      "id": 2,
+      "color": "#D8ECED",
+      "title": "Pika",
+      "Children": "pika",
+      "hoverColor": "#5CC1C8",
+      "project": "https://storage.googleapis.com/porfolio-angela/pika.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Rocket Froz",
+      "color": "#E3F4E5",
+      "Children": "rocketFroz",
+      "hoverColor": "#2BCB6B",
+      "project": "https://storage.googleapis.com/porfolio-angela/pika.jpg"
+    }
+  ],
+  "experiments": [
+    {
+      "id": 1,
+      "title": "Illustration",
+      "color": "#FFFBD8",
+      "Children": "illustration",
+      "hoverColor": "#DED052"
+    },
+    {
+      "id": 2,
+      "title": "Branding",
+      "color": "#FFF4F6",
+      "Children": "branding",
+      "hoverColor": "#DE5269"
+    },
+    {
+      "id": 3,
+      "title": "Windsurf",
+      "color": "#D8ECED",
+      "Children": "windsurf",
+      "hoverColor": "#5CC1C8"
+    },
+    {
+      "id": 4,
+      "title": "Sketching",
+      "color": "#FBE0C8",
+      "Children": "sketching",
+      "hoverColor": "#DE9552"
+    },
+    {
+      "id": 5,
+      "title": "Handcraft",
+      "color": "#E3F4E5",
+      "Children": "handcraft",
+      "hoverColor": "#2BCB6B"
+    },
+    {
+      "id": 6,
+      "title": "Desarrollarte",
+      "color": "#C9CCE5",
+      "Children": "desarrollarte",
+      "hoverColor": "#6B73BC"
+    }
+  ]
+}

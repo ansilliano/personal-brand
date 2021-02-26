@@ -1,0 +1,39 @@
+.experiencie__future {
+  @include position-experiencie(75px, 180px);
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.experiencie__petararte {
+  @include position-experiencie(0, 160px);
+
+  display: flex;
+  justify-content: flex-start;
+  left: 70px;
+}
+
+.experiencie__platzi {
+  @include position-experiencie(0, 160px);
+
+  display: flex;
+  justify-content: center;
+}
+
+.experiencie__tecma {
+  @include position-experiencie(195px, 140px);
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.experiencie__spain {
+  @include position-experiencie(60px, 160px);
+
+  display: flex;
+  justify-content: center;
+}
+
+.experiencie__aiesec {
+  @include position-experiencie(-70px, 160px);
+}

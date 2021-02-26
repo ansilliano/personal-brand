@@ -1,0 +1,48 @@
+.h2-title {
+  @include heading($font-24 * 2, $color: $color-dark-gray);
+}
+
+.contact-button {
+  @include center-items;
+
+  width: $em * 7.8;
+  z-index: 10;
+}
+
+.button {
+  background-color: $color-light-red;
+  border-radius: 50%;
+  bottom: 10%;
+  height: 40px;
+  position: fixed;
+  width: 40px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  svg {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.modal {
+  background-color: rgba(40, 2, 6, 0.5);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.experiencie-modal {
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
