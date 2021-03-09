@@ -27,9 +27,18 @@
 
   p {
     font-size: $font-16;
+
+    a {
+      color: $color-white;
+      text-decoration: none;
+    }
   }
 }
 
 .rrss-footer {
   @include center-items;
+
+  a {
+    display: flex;
+  }
 }

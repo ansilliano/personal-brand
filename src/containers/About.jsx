@@ -57,7 +57,7 @@ const About = () => {
         <div className='doodle-img'>
           <img src={doodle} alt='about-doodle ' className='' />
         </div>
-        <div className='experiencie-container '>
+        <div className='experiencie-container'>
           <h2 className='h2-title'>experiencie...</h2>
           <span>(this is not a time line)</span>
           <article className='about__experiencie'>

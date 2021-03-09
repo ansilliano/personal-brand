@@ -16,7 +16,11 @@ const CardWork = ({
   };
 
   const history = useHistory();
-  console.log(Children);
+  const handleClick = (id) => {
+    if (id !== undefined) {
+      history.push(`/works/${id}`);
+    }
+  };
 
   return (
     <article
@@ -29,9 +33,7 @@ const CardWork = ({
       onMouseLeave={() => {
         setHover(!hover);
       }}
-      onClick={() => {
-        history.push(`/works/${id}`);
-      }}
+      onClick={() => handleClick(id)}
     >
       {Children}
       <p>{title}</p>

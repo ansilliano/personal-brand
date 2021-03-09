@@ -32,6 +32,10 @@
   display: grid;
   gap: $em * 2.4;
   grid-template-columns: repeat(2, 1fr);
+
+  article:last-of-type {
+    cursor: default;
+  }
 }
 
 .card-work {

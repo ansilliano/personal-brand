@@ -1,5 +1,5 @@
 .experiencie__future {
-  @include position-experiencie(75px, 180px);
+  @include position-experiencie(140px, 160px);
 
   display: flex;
   justify-content: flex-end;
@@ -14,7 +14,7 @@
 }
 
 .experiencie__platzi {
-  @include position-experiencie(0, 160px);
+  @include position-experiencie(25px, 70px);
 
   display: flex;
   justify-content: center;
