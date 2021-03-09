@@ -45,7 +45,6 @@
 .intro__text {
   margin-top: $em * 3;
 
-<<<<<<< HEAD
   strong {
     background-image: url('../../../assets/icons/urderline.svg');
     background-position: center bottom;
@@ -53,8 +52,6 @@
     font-weight: normal;
   }
 
-=======
->>>>>>> 50762cffc0a73816d14d365e8161383b53aac47e
   p {
     color: $color-dark-gray;
     font-family: $font-poppins;
@@ -70,7 +67,6 @@
       content: 'and windsurfer';
       font-family: $font-mansalva;
       height: auto;
-<<<<<<< HEAD
       left: $em * 21;
       position: absolute;
       top: -$em * 3.1;
@@ -80,17 +76,6 @@
       background-image: url('../../../assets/icons/arrow-notes.svg');
       background-repeat: no-repeat;
       bottom: -$em * 0.05;
-=======
-      left: $em * 22;
-      position: absolute;
-      top: -$em * 3;
-    }
-
-    &::after {
-      background-image: url('../../../assets/icons/arrow.svg');
-      background-repeat: no-repeat;
-      bottom: -$em * 0.09;
->>>>>>> 50762cffc0a73816d14d365e8161383b53aac47e
       content: '';
       height: $em * 5;
       left: $em * 17;

@@ -9,6 +9,7 @@ import AppProvider from '../context/AppContext';
 // styles
 import 'swiper/swiper.scss';
 import '../styles/app.scss';
+import DetailExperiments from '../components/Experiments/DetailExperiments';
 
 function App() {
   return (
@@ -21,6 +22,11 @@ function App() {
             <Route exact path='/works' component={Works} />
             <Route exact path='/works/:id' component={DetailWork} />
             <Route exact path='/experiments' component={Experiments} />
+            <Route
+              exact
+              path='/experiments/:id'
+              component={DetailExperiments}
+            />
             <Route component={NotFound} />
           </Switch>
         </Layout>

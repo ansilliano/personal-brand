@@ -37,17 +37,10 @@ const Works = () => (
             <p>
               Since I began to educate myself and become more involved with the
               tech world, I could immediately realize that this is where I want
-<<<<<<< HEAD
               to be due to its <strong>exponential growth</strong>. I
               don&lsquo;t know what the future will hold but I do know that with
               the best disposition on my part and thirst for knowledge, it is an
               industry in which you never stop growing..
-=======
-              to be due to its <span>exponential growth</span>. I don&lsquo;t
-              know what the future will hold but I do know that with the best
-              disposition on my part and thirst for knowledge, it is an industry
-              in which you never stop growing..
->>>>>>> 50762cffc0a73816d14d365e8161383b53aac47e
             </p>
           </div>
         </article>

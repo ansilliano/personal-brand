@@ -1,5 +1,4 @@
 import React from 'react';
-import Carousel from 'react-responsive-carousel';
 
 import MenuItem from './MenuItem';
 
