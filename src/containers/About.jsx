@@ -38,8 +38,8 @@ const About = () => {
             <div className='intro__text'>
               <p>Hello!</p>
               <p>
-                I&#39;m Angela Illiano. UI Designer, Architect, and Product
-                Designer in progress.
+                I&#39;m <b>Angela Illiano</b>. UI Designer, Architect, and
+                Product Designer in progress.
               </p>
               <p>
                 During my academic career, most of the works were linked to
