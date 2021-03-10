@@ -1,17 +1,34 @@
-@media screen and (max-width: 576px) {
-  .header {
-    width: $w-100;
+@media screen and (max-width: 480px) {
+  .h2-title {
+    font-size: $em * 3.2;
+    text-align: center;
   }
 
-  .home {
-    width: $w-100;
+  .base-container {
+    gap: 0;
+    grid-template-columns: 100%;
+    padding: 0 $em * 1.6;
+  }
 
-    &__name {
-      display: none;
+  .about.base-container {
+    padding: 0;
+  }
+
+  .doodle-img {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+
+    img {
+      transform: rotate(0);
     }
   }
 
-  .rrss {
-    display: none;
+  .intro__text {
+    grid-row: 3/4;
+  }
+
+  .intro__text p:nth-of-type(4) {
+    text-align: right;
+    width: $w-100 - 40;
   }
 }
