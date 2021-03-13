@@ -1,32 +1,34 @@
-import React, { useContext } from 'react';
+import React from 'react';
+// import React, { useContext } from 'react';
 
-import { AppContext } from '../context/AppContext';
+// import { AppContext } from '../context/AppContext';
 
-import Modal from '../components/Modal';
+// import Modal from '../components/Modal';
 
 import doodle from '../assets/img/about-me-doodle.svg';
 import Education from '../components/About/Education';
 import Experiencie from '../components/About/Experiencie';
-import Aiesec from '../components/About/Experiencie/Aiesec';
-import Future from '../components/About/Experiencie/Future';
-import Petararte from '../components/About/Experiencie/Petararte';
-import Platzi from '../components/About/Experiencie/Platzi';
-import Spain from '../components/About/Experiencie/Spain';
-import Tecma from '../components/About/Experiencie/Tecma';
+// import Experiencie from '../components/About/Experiencie_v2';
+// import Aiesec from '../components/About/Experiencie/Aiesec';
+// import Future from '../components/About/Experiencie/Future';
+// import Petararte from '../components/About/Experiencie/Petararte';
+// import Platzi from '../components/About/Experiencie/Platzi';
+// import Spain from '../components/About/Experiencie/Spain';
+// import Tecma from '../components/About/Experiencie/Tecma';
 import Contact from '../components/Contact';
 
-const components = {
-  future: Future,
-  petararte: Petararte,
-  platzi: Platzi,
-  tecma: Tecma,
-  spain: Spain,
-  aiesec: Aiesec,
-};
+// const components = {
+//   future: Future,
+//   petararte: Petararte,
+//   platzi: Platzi,
+//   tecma: Tecma,
+//   spain: Spain,
+//   aiesec: Aiesec,
+// };
 
 const About = () => {
-  const { state, handleModal, removeModal } = useContext(AppContext);
-  const { isOpen, element } = state;
+  // const { state, handleModal, removeModal } = useContext(AppContext);
+  // const { isOpen, element } = state;
 
   return (
     <div className='base-container'>
@@ -61,10 +63,16 @@ const About = () => {
           <h2 className='h2-title'>experiencie...</h2>
           <span>(this is not a time line)</span>
           <article className='about__experiencie'>
-            <Modal id='modal' isOpen={isOpen} removeModal={removeModal} />
-            <Experiencie width='100%' height='100%' handleModal={handleModal}>
+            {/* <Modal id='modal' isOpen={isOpen} removeModal={removeModal} /> */}
+            <Experiencie />
+            {/* <Experiencie
+              class='container-experiencie'
+              width='100%'
+              height='100%'
+              handleModal={handleModal}
+            >
               {element && React.createElement(components[element])}
-            </Experiencie>
+            </Experiencie> */}
           </article>
         </div>
         <div className='education-container '>
