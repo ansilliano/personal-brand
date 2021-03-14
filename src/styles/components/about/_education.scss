@@ -2,3 +2,26 @@
   grid-column: 2/12;
   margin-top: $em * 5;
 }
+
+.education__grid {
+  display: grid;
+  gap: $em * 2;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-top: $em * 4;
+}
+
+.education__detail {
+  @include center-items;
+
+  border: 2px dashed $color-dark-gray;
+  flex-direction: column;
+  height: $em * 20;
+  min-width: $em * 10;
+  text-align: center;
+  width: $w-100;
+
+  p:nth-of-type(3) {
+    font-weight: $poppins-semibold;
+  }
+}

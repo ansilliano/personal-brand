@@ -1,16 +1,27 @@
 import React from 'react';
 import { GrLocation } from 'react-icons/gr';
 
-const ExperiencieDown = ({ data }) => {
-  const { icon, title, subtitle, location } = data;
+import dot from '../../../assets/timeline/dot.svg';
+
+const ExperiencieDown = ({ data, handleModal }) => {
+  const { icon, title, subtitle, location, year, label } = data;
+
   return (
     <div className='detailExperiencie'>
-      <img src={icon} alt={title} />
-      <h4>{title}</h4>
-      <p>{subtitle}</p>
-      <p>
-        <GrLocation /> {location}
-      </p>
+      <div className='detailExperiencie__year'>
+        <img src={icon} alt={title} />
+        <p className='p-card'>{year}</p>
+      </div>
+      <div className='detailExperiencie__dot'>
+        <img src={dot} alt='dot' id={label} onMouseEnter={handleModal} />
+      </div>
+      <div className='detailExperiencie__info'>
+        <h4 className='h4-header'>{title}</h4>
+        <p className='p-card'>{subtitle}</p>
+        <p className='p-card'>
+          <GrLocation /> {location}
+        </p>
+      </div>
     </div>
   );
 };

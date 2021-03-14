@@ -8,7 +8,7 @@ const useInitialState = () => {
   // const [open, setOpen] = useState(false);
 
   const handleModal = (e) => {
-    // debugger;
+    console.log(e.target.id);
     const element = e.target.id;
     setState({
       ...state,
