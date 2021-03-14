@@ -5,7 +5,7 @@ import { AppContext } from '../context/AppContext';
 import Modal from '../components/Modal';
 
 import doodle from '../assets/img/about-me-doodle.svg';
-import Education from '../components/About/Education';
+import Education from '../components/About/Education/Education';
 import Experiencie from '../components/About/Experiencie';
 import Aiesec from '../components/About/Experiencie/Aiesec';
 import Future from '../components/About/Experiencie/Future';
@@ -62,7 +62,7 @@ const About = () => {
           <span>(this is not a time line)</span>
           <article className='about__experiencie'>
             <Modal id='modal' isOpen={isOpen} removeModal={removeModal} />
-            <Experiencie width='100%' height='100%' handleModal={handleModal}>
+            <Experiencie handleModal={handleModal}>
               {element && React.createElement(components[element])}
             </Experiencie>
           </article>
@@ -70,7 +70,7 @@ const About = () => {
         <div className='education-container '>
           <h2 className='h2-title'>Education...</h2>
           <article className='about__education'>
-            <Education width='100%' height='100%' />
+            <Education />
           </article>
         </div>
         <div className='tools-container'>
