@@ -8,6 +8,7 @@ const education = [
     academy: 'Platzi',
     location: 'Remote',
     year: 2020,
+    propsClass: 'item',
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ const education = [
     academy: 'Simon Bolivar University',
     location: 'Caracas, Venezuela',
     year: 2018,
+    propsClass: 'item_1',
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const education = [
     academy: 'CIAP -UCAB',
     location: 'Caracas, Venezuela ',
     year: 2018,
+    propsClass: 'item_2',
   },
   {
     id: 4,
@@ -29,6 +32,7 @@ const education = [
     academy: 'Centro Venezolano Americano',
     location: 'Caracas, Venezuela',
     year: 2017,
+    propsClass: 'item_3',
   },
   {
     id: 5,
@@ -36,6 +40,7 @@ const education = [
     academy: 'Retro Manta',
     location: 'Caracas, Venezuela',
     year: 2017,
+    propsClass: 'item_4',
   },
 ];
 
@@ -43,7 +48,11 @@ const Education = () => {
   return (
     <div className='education__grid'>
       {education.map((item) => (
-        <DetailEducation data={item} key={item.id} />
+        <DetailEducation
+          classNameProps={item.propsClass}
+          data={item}
+          key={item.id}
+        />
       ))}
     </div>
   );

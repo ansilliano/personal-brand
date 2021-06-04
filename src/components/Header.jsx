@@ -12,9 +12,9 @@ const Header = () => {
       }`}
     >
       {pathname !== '/' ? (
-        <Menu color='#e84141' dotColor='#fff' />
+        <Menu color='#660813' dotColor='#fff' />
       ) : (
-        <Menu color='#fff' dotColor='#e84141' />
+        <Menu color='#660813' dotColor='#fff' />
       )}
     </div>
   );
