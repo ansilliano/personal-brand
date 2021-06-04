@@ -1,6 +1,5 @@
 import React from 'react';
 import { GrLocation } from 'react-icons/gr';
-
 import dot from '../../../assets/timeline/dot.svg';
 
 const ExperiencieDown = ({ data, handleModal }) => {
@@ -13,7 +12,7 @@ const ExperiencieDown = ({ data, handleModal }) => {
         <p className='p-card'>{year}</p>
       </div>
       <div className='detailExperiencie__dot'>
-        <img src={dot} alt='dot' id={label} onMouseEnter={handleModal} />
+        <img src={dot} alt='dot' id={label} onClick={handleModal} />
       </div>
       <div className='detailExperiencie__info'>
         <h4 className='h4-header'>{title}</h4>

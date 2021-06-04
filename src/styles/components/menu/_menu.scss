@@ -35,11 +35,11 @@
     text-decoration: none;
 
     &:hover {
-      @include hoover-menu-item('../../assets/icons/image1.svg');
+      @include hoover-menu-item('../../assets/icons/line.svg');
     }
   }
 
   a.active-link {
-    @include hoover-menu-item('../../assets/icons/image1.svg');
+    @include hoover-menu-item('../../assets/icons/line.svg');
   }
 }

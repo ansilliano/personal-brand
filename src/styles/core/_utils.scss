@@ -2,6 +2,10 @@
   @include heading($font-24 * 2, $color: $color-dark-gray);
 }
 
+.h2-small {
+  @include heading($font-24, $color: $color-dark-gray);
+}
+
 .contact-button {
   @include center-items;
 
@@ -39,7 +43,7 @@
 
 .experiencie-modal {
   position: absolute;
-  width: 100%;
+  // width: 100%;
   z-index: 20;
 
   &:hover {

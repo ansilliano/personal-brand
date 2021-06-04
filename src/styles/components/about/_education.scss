@@ -28,7 +28,7 @@
   gap: $em * 4 $em * 2;
   grid-template-areas:
     'education_0 . education_1 education_1 . education_2 education_2 education_2'
-    '.  education_3 education_3 . education_4 education_4 . .';
+    '.  education_3 education_3 . education_4 education_4 education_4 .';
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(2, 1fr);
   margin-top: $em * 4;
@@ -37,12 +37,11 @@
 .education__detail {
   @include center-items;
 
-  // border: $em * 0.35 dashed $color-dark-gray;
-  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='32' ry='32' stroke='%233E3E3EFF' stroke-width='8' stroke-dasharray='20%2c 30' stroke-dashoffset='34' stroke-linecap='round'/%3e%3c/svg%3e");
-  border-radius: 32px;
-  // border-radius: $em;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='32' ry='32' stroke='%233E3E3EFF' stroke-width='7' stroke-dasharray='20%2c 30' stroke-dashoffset='34' stroke-linecap='round'/%3e%3c/svg%3e");
+  border-radius: $em  * 2;
   flex-direction: column;
   height: $em * 20;
+  justify-content: space-evenly;
   min-width: $em * 10;
   text-align: center;
   // width: $w-100 - 20;

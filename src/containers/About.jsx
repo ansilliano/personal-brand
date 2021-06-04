@@ -1,9 +1,4 @@
 import React, { useContext } from 'react';
-
-import { AppContext } from '../context/AppContext';
-
-import Modal from '../components/Modal';
-
 import doodle from '../assets/img/about-me-doodle.svg';
 import Education from '../components/About/Education/Education';
 import Experiencie from '../components/About/Experiencie';
@@ -14,6 +9,8 @@ import Platzi from '../components/About/Experiencie/Platzi';
 import Spain from '../components/About/Experiencie/Spain';
 import Tecma from '../components/About/Experiencie/Tecma';
 import Contact from '../components/Contact';
+import Modal from '../components/Modal';
+import { AppContext } from '../context/AppContext';
 
 const components = {
   future: Future,
@@ -77,7 +74,7 @@ const About = () => {
           <article className='about__tools container_aux'>
             <div className='tools__container'>
               <div className='tool'>
-                <h3 className='h3-title'>tools</h3>
+                <h3 className='h2-small'>tools</h3>
                 <div>Figma</div>
                 <div>Illustrator</div>
                 <div>Adobe XD</div>
@@ -89,7 +86,7 @@ const About = () => {
                 <div>AutoCad</div>
               </div>
               <div className='skill'>
-                <h3 className='h3-title'>skills</h3>
+                <h3 className='h2-small'>skills</h3>
                 <div>Visual Design</div>
                 <div>Wireframing</div>
                 <div>Prototyping</div>
@@ -97,7 +94,7 @@ const About = () => {
                 <div>User Research</div>
               </div>
               <div className='general'>
-                <h3 className='h3-title'>general</h3>
+                <h3 className='h2-small'>general</h3>
                 <div>Adaptability</div>
                 <div>
                   Creativity
