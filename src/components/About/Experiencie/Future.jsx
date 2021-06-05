@@ -1,15 +1,8 @@
 /* eslint-disable max-len */
 import React from 'react';
+import iconFuture from '../../../assets/img/experiencie/img-experience-5.png';
 
 const Future = () => {
-  const styles = {
-    position: 'absolute',
-    width: '80%',
-    right: '103px',
-    fontSize: '18px',
-    top: '125px',
-    fontFamily: 'Poppins',
-  };
   return (
     <div className='experiencie__future experiencie-modal future-modal'>
       <svg
@@ -24,13 +17,10 @@ const Future = () => {
           fill='#fff'
         />
       </svg>
-      <div>
-        <img
-          src='../../../assets/img/experiencie/img-experience-5.png'
-          alt=''
-        />
-        <p className='h3'>Future</p>
-        <p style={styles}>
+      <div className='container-modal'>
+        <img src={iconFuture} alt='future-img' />
+        <h5 className='title-card'>Future</h5>
+        <p>
           My medium goal is to become a product designer, to be immersed in the
           area of technology, working on projects that help human beings to
           optimize their day-to-day or that make this world a more pleasant

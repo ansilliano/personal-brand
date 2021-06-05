@@ -5,6 +5,34 @@
   justify-content: flex-end;
 }
 
+.container-modal {
+  img {
+    left: 50px;
+    position: absolute;
+    top: 45px;
+  }
+
+  p {
+    font-family: $font-poppins;
+    font-size: $font-16;
+    font-weight: $poppins-light;
+    position: absolute;
+    right: 103px;
+    top: 140px;
+    width: 80%;
+  }
+
+  h5 {
+    font-family: $font-poppins;
+    font-family: $font-barrio;
+    font-size: $font-24 * 1.5;
+    font-weight: $poppins-light;
+    left: 135px;
+    position: absolute;
+    top: 55px;
+  }
+}
+
 .experiencie__petararte {
   @include position-experiencie(190px, 100px);
 

@@ -31,15 +31,64 @@
     color: $color-dark-wine;
     font-family: $font-mansalva;
     font-size: $font-18;
-    padding: 0 $em;
+    margin: 0 $em *0.25;
+    position: relative;
     text-decoration: none;
 
-    &:hover {
-      @include hoover-menu-item('../../assets/icons/line.svg');
+    &::before {
+      background-image: url('../../../assets/icons/line.svg');
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      bottom: 0;
+      content: '';
+      height: 100%;
+      position: absolute;
+      transition: all 0.3s ease-in-out;
+      width: 100%;
+      width: 0;
+    }
+
+    &:hover::before {
+      width: 100%;
     }
   }
 
   a.active-link {
-    @include hoover-menu-item('../../assets/icons/line.svg');
+    background-image: url('../../../assets/icons/line.svg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
   }
 }
+
+// .menu__items--underline {
+//   background-color: #fff;
+//   bottom: 0;
+//   height: 4px;
+//   position: absolute;
+//   transform-origin: right;
+//   transition: all 0.3s ease-in-out;
+//   // transition-delay: 0.1s;
+//   width: 100%;
+
+//   &::before {
+//     background-image: url('../../../assets/icons/line.svg');
+//     content: '';
+//     height: 100%;
+//     position: absolute;
+//     transition: width 0.3s ease-in-out;
+//     width: 0;
+//   }
+// }
+
+// .menu_item {
+//   background-color: #fff;
+//   position: relative;
+
+//   &:hover .menu__items--underline {
+//     width: 100%;
+//   }
+
+//   &:hover .menu__items--underline::before {
+//     width: 100%;
+//   }
+// }
