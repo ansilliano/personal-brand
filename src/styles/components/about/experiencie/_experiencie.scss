@@ -94,14 +94,14 @@
 }
 
 .experiencie__spain {
-  @include position-experiencie(10px, 100px);
+  @include position-experiencie(260px, 110px);
 
   display: flex;
   justify-content: center;
 }
 
 .experiencie__aiesec {
-  @include position-experiencie(200px, 100px);
+  @include position-experiencie(460px, 110px);
 
   display: flex;
   justify-content: center;
