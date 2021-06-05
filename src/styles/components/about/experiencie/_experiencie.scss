@@ -12,17 +12,22 @@
     top: 45px;
   }
 
-  p {
-    font-family: $font-poppins;
-    font-size: $font-16;
-    font-weight: $poppins-light;
+  span {
     position: absolute;
     right: 103px;
     top: 140px;
     width: 80%;
+
+    p {
+      color: $color-wine-red;
+      font-family: $font-poppins;
+      font-size: 13px;
+      font-weight: $poppins-light;
+    }
   }
 
   h5 {
+    color: $color-dark-wine;
     font-family: $font-poppins;
     font-family: $font-barrio;
     font-size: $font-24 * 1.5;
@@ -41,10 +46,11 @@
 }
 
 .experiencie__platzi {
-  @include position-experiencie(-10px, 110px);
+  @include position-experiencie(None, 110px);
 
   display: flex;
   justify-content: space-around;
+  left: 132px;
 }
 
 .experiencie__tecma {
