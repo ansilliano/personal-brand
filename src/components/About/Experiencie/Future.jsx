@@ -6,7 +6,7 @@ const Future = () => {
   return (
     <div className='experiencie__future experiencie-modal future-modal'>
       <svg
-        width={774}
+        width={650}
         height={319}
         viewBox='0 0 774 319'
         fill='none'

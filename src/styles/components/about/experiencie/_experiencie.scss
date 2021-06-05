@@ -5,23 +5,56 @@
   justify-content: flex-end;
 }
 
+.container-modal-left {
+  img {
+    left: 100px;
+    position: absolute;
+    top: 50px;
+  }
+
+  span {
+    position: absolute;
+    right: 45px;
+    top: 140px;
+    width: 75%;
+
+    p {
+      color: $color-wine-red;
+      font-family: $font-poppins;
+      font-size: 12px;
+      font-weight: $poppins-light;
+    }
+  }
+
+  h5 {
+    color: $color-dark-wine;
+    font-family: $font-poppins;
+    font-family: $font-barrio;
+    font-size: $font-24 * 1.5;
+    font-weight: $poppins-light;
+    left: 185px;
+    position: absolute;
+    top: 65px;
+  }
+}
+
 .container-modal {
   img {
     left: 50px;
     position: absolute;
-    top: 45px;
+    top: 60px;
   }
 
   span {
     position: absolute;
     right: 103px;
     top: 140px;
-    width: 80%;
+    width: 75%;
 
     p {
       color: $color-wine-red;
       font-family: $font-poppins;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: $poppins-light;
     }
   }
@@ -34,12 +67,12 @@
     font-weight: $poppins-light;
     left: 135px;
     position: absolute;
-    top: 55px;
+    top: 75px;
   }
 }
 
 .experiencie__petararte {
-  @include position-experiencie(190px, 100px);
+  @include position-experiencie(500px, 100px);
 
   display: flex;
   justify-content: center;
@@ -50,11 +83,11 @@
 
   display: flex;
   justify-content: space-around;
-  left: 132px;
+  left: 260px;
 }
 
 .experiencie__tecma {
-  @include position-experiencie(105px, 100px);
+  @include position-experiencie(75px, 110px);
 
   display: flex;
   justify-content: flex-end;
@@ -72,12 +105,4 @@
 
   display: flex;
   justify-content: center;
-}
-
-.future-modal {
-  // background-image: url('../../assets/img/experiencie/Vector-3.svg');
-  // background-position: center center;
-  // background-repeat: no-repeat;
-  // height: 100%;
-  width: auto;
 }

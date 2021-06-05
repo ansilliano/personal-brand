@@ -6,7 +6,7 @@ const Platzi = () => {
   return (
     <div className='experiencie__platzi experiencie-modal future-modal'>
       <svg
-        width={774}
+        width={650}
         height={323}
         viewBox='0 0 774 323'
         fill='none'
@@ -19,18 +19,18 @@ const Platzi = () => {
       </svg>
       <div div className='container-modal'>
         <img src={iconModal} alt='future-img' />
-        <h5 className='title-card'>Future</h5>
+        <h5 className='title-card'>Platzi</h5>
         <span>
           <p>
-            My medium goal is to become a product designer, to be immersed in
-            the area of technology, working on projects that help human beings
-            to optimize their day-to-day or that make this world a more pleasant
-            place to live.
+            With a main focus on the visual field of digital products, this
+            career at Platzi allowed me to learn about everything related to
+            digital interfaces, to understand beyond aesthetics and to optimize
+            methodologies when creating products.
           </p>
           <br />
           <p>
-            What I enjoy the most about this process is being able to merge
-            different passions in order to achieve a goal
+            I also learned that good design solutions don’t depend on some
+            technological tool but on the skills we have to solve problems.
           </p>
         </span>
       </div>
