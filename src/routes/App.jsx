@@ -1,15 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import DetailWork from '../components/Detail/DetailWork';
-import Layout from '../components/Layout';
-// containers
-import { Home, About, Works, NotFound, Experiments } from '../containers/index';
-import AppProvider from '../context/AppContext';
-
 // styles
 import 'swiper/swiper.scss';
-import '../styles/app.scss';
+import DetailWork from '../components/Detail/DetailWork';
 import DetailExperiments from '../components/Experiments/DetailExperiments';
+import Layout from '../components/Layout';
+// containers
+import { About, Experiments, Home, NotFound, Works } from '../containers/index';
+import AppProvider from '../context/AppContext';
+import '../styles/app.scss';
 
 function App() {
   return (
@@ -20,7 +19,7 @@ function App() {
             <Route exact path='/' component={Home} />
             <Route exact path='/about' component={About} />
             <Route exact path='/works' component={Works} />
-            <Route exact path='/works/:id' component={DetailWork} />
+            <Route exact path='/works/:route/:id' component={DetailWork} />
             <Route exact path='/experiments' component={Experiments} />
             <Route
               exact

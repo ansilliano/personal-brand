@@ -18,9 +18,9 @@ const Frozen = ({ isVisible, handleModal }) => {
           fill='#fff'
         />
       </svg>
-      <div div className='container-modal-left'>
+      <div div className='container-modal-froz'>
         <span>
-          <h5 className='title-card'>Rocket Froz</h5>
+          <h5>Rocket Froz</h5>
           <p>Section in progress</p>
         </span>
       </div>

@@ -1,9 +1,9 @@
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
-import MenuItem from './MenuItem';
 import 'swiper/components/navigation/navigation.scss';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import Arrow from './Arrow';
+import MenuItem from './MenuItem';
 
 const MenuWork = ({ items, icons, path }) => {
   SwiperCore.use(Navigation);
@@ -22,9 +22,10 @@ const MenuWork = ({ items, icons, path }) => {
           nextEl: '.arrow-down',
         }}
       >
-        {items.map(({ color, Children, id }) => (
+        {items.map(({ color, Children, id, route }) => (
           <SwiperSlide>
             <MenuItem
+              route={route}
               key={id}
               id={id}
               color={color}

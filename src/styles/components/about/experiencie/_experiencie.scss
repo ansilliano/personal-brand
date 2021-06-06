@@ -38,6 +38,46 @@
   }
 }
 
+.title-card-froz {
+  h5 {
+    color: $color-dark-wine;
+    font-family: $font-poppins;
+    font-family: $font-barrio;
+    font-size: $font-24 * 1.5;
+    font-weight: $poppins-light;
+    position: absolute;
+    top: 75px;
+  }
+}
+
+.container-modal-froz {
+  span {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 45px;
+    top: 120px;
+    width: 75%;
+
+    p {
+      color: $color-wine-red;
+      font-family: $font-poppins;
+      font-size: $font-16;
+      font-weight: $poppins-light;
+    }
+  }
+
+  h5 {
+    color: $color-dark-wine;
+    font-family: $font-poppins;
+    font-family: $font-barrio;
+    font-size: $font-24 * 1.5;
+    font-weight: $poppins-light;
+  }
+}
+
 .container-modal {
   img {
     left: 50px;

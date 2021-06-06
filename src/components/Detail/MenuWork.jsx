@@ -1,15 +1,12 @@
 import React from 'react';
-
-import MenuItem from './MenuItem';
-
+// db
+import db from '../../db.json';
 // icons
 import DailyUI from '../Works/icons/DailyUI';
 import Pika from '../Works/icons/Pika';
 import RocketFroz from '../Works/icons/RocketFroz';
-
-// db
-import db from '../../db.json';
 import Arrow from './Arrow';
+import MenuItem from './MenuItem';
 
 const icons = {
   dailyui: DailyUI,
@@ -18,8 +15,6 @@ const icons = {
 };
 
 const MenuWork = () => {
-  const style = {};
-
   return (
     <div className='menu-work'>
       <div className='arrow-up'>

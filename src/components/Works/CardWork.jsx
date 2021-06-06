@@ -10,7 +10,7 @@ const CardWork = ({
   color = '#fff',
   hoverColor,
   id,
-  classProps,
+  route,
 }) => {
   const [hover, setHover] = useState(false);
   const [isOpen, setOpen] = useState(false);
@@ -25,7 +25,7 @@ const CardWork = ({
   const history = useHistory();
   const handleClick = (id) => {
     if (id !== undefined && id !== 3) {
-      history.push(`/works/${id}`);
+      history.push(`/works/${route}/${id}/`);
     }
 
     if (id === 3) {
@@ -38,7 +38,7 @@ const CardWork = ({
   return (
     <article
       aria-hidden='true'
-      className={`card-work ${classProps}`}
+      className='card-work'
       style={style}
       onMouseEnter={() => {
         setHover(!hover);
