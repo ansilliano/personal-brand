@@ -42,6 +42,16 @@
 }
 
 .experiencie-modal {
+  position: relative;
+  // width: 100%;
+  z-index: 20;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.works-modal {
   position: absolute;
   // width: 100%;
   z-index: 20;

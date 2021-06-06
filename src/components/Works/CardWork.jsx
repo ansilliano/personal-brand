@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import Frozen from './Frozen';
 
 const CardWork = ({
   Children,
@@ -7,8 +8,10 @@ const CardWork = ({
   color = '#fff',
   hoverColor,
   id,
+  classProps,
 }) => {
   const [hover, setHover] = useState(false);
+  // const [isOpen, setOpen] = useState(false);
 
   const style = {
     backgroundColor: hover ? hoverColor : color,
@@ -17,15 +20,17 @@ const CardWork = ({
 
   const history = useHistory();
   const handleClick = (id) => {
-    if (id !== undefined) {
+    if (id !== undefined && id !== 3) {
       history.push(`/works/${id}`);
     }
   };
 
+  const handleModal = () => {};
+
   return (
     <article
       aria-hidden='true'
-      className='card-work'
+      className={`card-work ${classProps}`}
       style={style}
       onMouseEnter={() => {
         setHover(!hover);
@@ -33,8 +38,10 @@ const CardWork = ({
       onMouseLeave={() => {
         setHover(!hover);
       }}
-      onClick={() => handleClick(id)}
+      onClick={(() => handleClick(id), handleModal())}
     >
+      {/* <Modal id='modal' isOpen={isOpen} removeModal={removeModal} /> */}
+      <Frozen />
       {Children}
       <p>{title}</p>
     </article>

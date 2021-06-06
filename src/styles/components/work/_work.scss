@@ -41,17 +41,12 @@
 .card-work {
   @include center-items;
 
+  border-radius: $em;
+  cursor: pointer;
   flex-direction: column;
-  height: $h-100;
   height: $em * 29.4;
+  transition: all 0.6s ease-in-out;
   width: $w-100;
-  width: $em * 58;
-
-  &:hover > svg {
-    path {
-      fill: #fff;
-    }
-  }
 
   p {
     @include card-work-title($size: $font-24 * 2);
@@ -59,12 +54,21 @@
     padding: $em * 0.5;
   }
 
-  &:hover > p {
-    color: #fff;
+  &:hover > svg {
+    transform: scale(1.2);
+    transition: transform 0.6s ease-in-out;
   }
 
-  &:hover {
-    cursor: pointer;
+  &:hover > svg {
+    path {
+      fill: #fff;
+    }
+  }
+
+  &:hover > p {
+    color: #fff;
+    transform: scale(1.2);
+    transition: transform 0.6s ease-in-out;
   }
 
   &:last-child:hover {
