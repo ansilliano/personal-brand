@@ -1,17 +1,13 @@
 import React from 'react';
-
-// component
-import CardWork from '../components/Works/CardWork';
-
 // doodle
 import doodle from '../assets/img/work-doodle.svg';
-
+import Contact from '../components/Contact';
+// component
+import CardWork from '../components/Works/CardWork';
 // icons
 import DailyUI from '../components/Works/icons/DailyUI';
 import Pika from '../components/Works/icons/Pika';
 import RocketFroz from '../components/Works/icons/RocketFroz';
-import Contact from '../components/Contact';
-
 // db
 import db from '../db.json';
 
@@ -51,16 +47,20 @@ const Works = () => (
     </section>
     <div className='cards-works'>
       <section className='grid-works'>
-        {db.projects.map(({ color, title, Children, hoverColor, id }) => (
-          <CardWork
-            key={id}
-            id={id}
-            color={color}
-            title={title}
-            Children={React.createElement(icons[Children], {})}
-            hoverColor={hoverColor}
-          />
-        ))}
+        {db.projects.map(
+          ({ color, title, Children, hoverColor, id, ModalFroz }) => (
+            <CardWork
+              key={id}
+              id={id}
+              color={color}
+              title={title}
+              Children={React.createElement(icons[Children], {})}
+              hoverColor={hoverColor}
+              ModalFroz={React.createElement(ModalFroz, {})}
+            />
+            // eslint-disable-next-line comma-dangle
+          )
+        )}
         <CardWork />
       </section>
     </div>

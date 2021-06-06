@@ -22,7 +22,8 @@
       "color": "#E3F4E5",
       "Children": "rocketFroz",
       "hoverColor": "#2BCB6B",
-      "project": "https://storage.googleapis.com/porfolio-angela/pika.jpg"
+      "project": "https://storage.googleapis.com/porfolio-angela/pika.jpg",
+      "ModalFroz":"Froz"
     }
   ],
   "experiments": [

@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { AppContext } from '../../context/AppContext';
+import Modal from '../Modal';
 import Frozen from './Frozen';
 
 const CardWork = ({
@@ -11,21 +13,27 @@ const CardWork = ({
   classProps,
 }) => {
   const [hover, setHover] = useState(false);
-  // const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false);
+  const [isVisible, setVisible] = useState(false);
 
   const style = {
     backgroundColor: hover ? hoverColor : color,
     border: !Children && '4px dashed #555',
   };
 
+  const { removeModal } = useContext(AppContext);
   const history = useHistory();
   const handleClick = (id) => {
     if (id !== undefined && id !== 3) {
       history.push(`/works/${id}`);
     }
-  };
 
-  const handleModal = () => {};
+    if (id === 3) {
+      setOpen(!isOpen);
+      console.log('click froz');
+      setVisible(!isVisible);
+    }
+  };
 
   return (
     <article
@@ -38,10 +46,10 @@ const CardWork = ({
       onMouseLeave={() => {
         setHover(!hover);
       }}
-      onClick={(() => handleClick(id), handleModal())}
+      onClick={() => handleClick(id)}
     >
-      {/* <Modal id='modal' isOpen={isOpen} removeModal={removeModal} /> */}
-      <Frozen />
+      <Modal id='modal' isOpen={isOpen} removeModal={removeModal} />
+      {id === 3 && <Frozen isVisible={isVisible} />}
       {Children}
       <p>{title}</p>
     </article>

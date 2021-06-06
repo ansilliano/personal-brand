@@ -52,8 +52,9 @@
 }
 
 .works-modal {
+  left: $em * 40;
   position: absolute;
-  // width: 100%;
+  top: $em * 100;
   z-index: 20;
 
   &:hover {

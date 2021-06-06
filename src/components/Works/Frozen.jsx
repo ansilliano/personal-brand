@@ -1,11 +1,13 @@
 import React from 'react';
-import iconModal from '../../../assets/img/experiencie/img-experience.png';
 
-const Aiesec = () => {
+const Frozen = ({ isVisible, handleModal }) => {
+  const styles = {
+    visibility: isVisible ? 'visible' : 'hidden',
+  };
   return (
-    <div className='experiencie__aiesec experiencie-modal future-modal'>
+    <div className='works-modal' style={styles}>
       <svg
-        width={650}
+        width={600}
         height={300}
         viewBox='0 0 774 347'
         fill='none'
@@ -17,24 +19,13 @@ const Aiesec = () => {
         />
       </svg>
       <div div className='container-modal-left'>
-        <img src={iconModal} alt='future-img' />
-        <h5 className='title-card'>Spain</h5>
         <span>
-          <p>
-            We create 2 prototypes of home Ecological Gardens. The purpose of
-            the project was to offer homeless an employment opportunity that
-            would help them re-enter the labor and social sphere in their
-            respective communities within the city of Medellín, Colombia.
-          </p>
-          <br />
-          <p>
-            Work team with young people belonging to other cultures. Knowledge
-            about Colombian culture and its social reality.
-          </p>
+          <h5 className='title-card'>Rocket Froz</h5>
+          <p>Section in progress</p>
         </span>
       </div>
     </div>
   );
 };
 
-export default Aiesec;
+export default Frozen;
