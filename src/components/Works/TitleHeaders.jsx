@@ -1,8 +1,12 @@
 import React from 'react';
 
-const TitleHeaders = ({ Children, subtitle, title, side }) => {
+const TitleHeaders = ({ Children, subtitle, title, side = '2-4' }) => {
+  const styles = {
+    gridColumn: side === 'right' && '-2/-4',
+  };
+
   return (
-    <div className='dailyUI__title'>
+    <div className='dailyUI__title' style={styles}>
       {Children}
       <span>
         <p>{subtitle}</p>

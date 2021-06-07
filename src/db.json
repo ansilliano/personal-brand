@@ -4,7 +4,7 @@
       "id": 1,
       "color": "#C9CCE5",
       "title": "Daily UI",
-      "route":"dailyUI",
+      "route": "dailyUI",
       "hoverColor": "#6B73BC",
       "Children": "dailyui"
     },
@@ -12,7 +12,7 @@
       "id": 2,
       "color": "#D8ECED",
       "title": "Pika",
-      "route":"pika",
+      "route": "pika",
       "Children": "pika",
       "hoverColor": "#5CC1C8"
     },
@@ -20,10 +20,10 @@
       "id": 3,
       "title": "Rocket Froz",
       "color": "#E3F4E5",
-      "route":"rocket",
+      "route": "rocket",
       "Children": "rocketFroz",
       "hoverColor": "#2BCB6B",
-      "ModalFroz":"Froz"
+      "ModalFroz": "Froz"
     }
   ],
   "experiments": [
@@ -70,5 +70,43 @@
       "hoverColor": "#6B73BC"
     }
   ],
-  "experiments-projects": []
+  "experiments-projects": [],
+  "dailyUI": [
+    {
+      "id": 1,
+      "image": "https://storage.googleapis.com/portafolio-bucket/persona-brand/001.png",
+      "title": "Sign Up",
+      "number": "001"
+    },
+    {
+      "id": 2,
+      "image": "https://storage.googleapis.com/portafolio-bucket/persona-brand/004.png",
+      "title": "Calculator",
+      "number": "003"
+    },
+    {
+      "id": 3,
+      "image": "https://storage.googleapis.com/portafolio-bucket/persona-brand/020.png",
+      "title": "Location Tracker",
+      "number": "020"
+    },
+    {
+      "id": 4,
+      "image": "https://storage.googleapis.com/portafolio-bucket/persona-brand/033.png",
+      "title": "Customize Product",
+      "number": "033"
+    },
+    {
+      "id": 5,
+      "image": "https://storage.googleapis.com/portafolio-bucket/persona-brand/034.png",
+      "title": "Location Tracker",
+      "number": "034"
+    },
+    {
+      "id": 6,
+      "image": "https://storage.googleapis.com/portafolio-bucket/persona-brand/040.png",
+      "title": "Recipe",
+      "number": "040"
+    }
+  ]
 }

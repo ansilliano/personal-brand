@@ -1,0 +1,15 @@
+.cardDaily {
+  width: $w-100;
+
+  div {
+    color: $color-dark-gray;
+    font-family: $font-poppins;
+    font-size: $font-14;
+    font-weight: $poppins-regular;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
