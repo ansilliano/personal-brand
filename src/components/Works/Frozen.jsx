@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Frozen = ({ isVisible, handleModal }) => {
+const Frozen = ({ isVisible }) => {
+  console.log('frozen');
   const styles = {
     visibility: isVisible ? 'visible' : 'hidden',
   };

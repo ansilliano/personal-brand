@@ -8,12 +8,11 @@ const useInitialState = () => {
   // const [open, setOpen] = useState(false);
 
   const handleModal = (e) => {
-    console.log(e.target.id);
-    const element = e.target.id;
+    const element = e.target;
     setState({
       ...state,
-      element,
       isOpen: true,
+      element,
     });
   };
 

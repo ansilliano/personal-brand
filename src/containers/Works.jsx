@@ -42,13 +42,13 @@ const Works = () => (
         </article>
       </div>
       <div className='doodle-img'>
-        <img src={doodle} alt='about-doodle ' className='' />
+        <img src={doodle} alt='about-doodle' />
       </div>
     </section>
     <div className='cards-works'>
       <section className='grid-works'>
         {db.projects.map(
-          ({ color, title, Children, hoverColor, id, ModalFroz, route }) => (
+          ({ color, title, Children, hoverColor, id, route }) => (
             <CardWork
               key={id}
               id={id}
@@ -56,7 +56,6 @@ const Works = () => (
               title={title}
               Children={React.createElement(icons[Children], {})}
               hoverColor={hoverColor}
-              ModalFroz={React.createElement(ModalFroz, {})}
               route={route}
             />
             // eslint-disable-next-line comma-dangle

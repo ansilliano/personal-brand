@@ -22,8 +22,7 @@
       "color": "#E3F4E5",
       "route": "rocket",
       "Children": "rocketFroz",
-      "hoverColor": "#2BCB6B",
-      "ModalFroz": "Froz"
+      "hoverColor": "#2BCB6B"
     }
   ],
   "experiments": [
@@ -71,42 +70,146 @@
     }
   ],
   "experiments-projects": [],
-  "dailyUI": [
-    {
-      "id": 1,
-      "image": "https://storage.googleapis.com/portafolio-bucket/persona-brand/001.png",
-      "title": "Sign Up",
-      "number": "001"
-    },
-    {
-      "id": 2,
-      "image": "https://storage.googleapis.com/portafolio-bucket/persona-brand/004.png",
-      "title": "Calculator",
-      "number": "003"
-    },
-    {
-      "id": 3,
-      "image": "https://storage.googleapis.com/portafolio-bucket/persona-brand/020.png",
-      "title": "Location Tracker",
-      "number": "020"
-    },
-    {
-      "id": 4,
-      "image": "https://storage.googleapis.com/portafolio-bucket/persona-brand/033.png",
-      "title": "Customize Product",
-      "number": "033"
-    },
-    {
-      "id": 5,
-      "image": "https://storage.googleapis.com/portafolio-bucket/persona-brand/034.png",
-      "title": "Location Tracker",
-      "number": "034"
-    },
-    {
-      "id": 6,
-      "image": "https://storage.googleapis.com/portafolio-bucket/persona-brand/040.png",
-      "title": "Recipe",
-      "number": "040"
-    }
-  ]
+  "dailyUI": {
+    "mobile": [
+      {
+        "uid": "33f5510b-11ff-46d4-95f2-e7ae28c154f2",
+        "filename": "001",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F001?generation=1623101136617775&alt=media",
+        "title": "Sign Up"
+      },
+      {
+        "uid": "27cc8e46-aeb6-4616-b702-8f2520ba62d9",
+        "filename": "004",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F004?generation=1623101145259929&alt=media",
+        "title": "Calculator"
+      },
+      {
+        "uid": "5f12783a-f4bd-4984-92f4-80af1f88ff5e",
+        "filename": "020",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F020?generation=1623101149126301&alt=media",
+        "title": "Location Tracker"
+      },
+      {
+        "uid": "f22a38a9-493d-4999-a496-da13f4708f70",
+        "filename": "021",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F021?generation=1623101149787545&alt=media",
+        "title": "Monitoring Dashboard"
+      },
+      {
+        "uid": "78ac07d0-be7b-470a-8e79-81f9d411d868",
+        "filename": "033",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F033?generation=1623101139396478&alt=media",
+        "title": "Customize Product"
+      },
+      {
+        "uid": "195207db-d806-409f-a318-ef2bd939e79d",
+        "filename": "034",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F034?generation=1623101147296333&alt=media",
+        "title": "Car Interface"
+      },
+      {
+        "uid": "81fd6189-03e2-4d73-9e4a-5a8dd20d720f",
+        "filename": "040",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F040?generation=1623101146702586&alt=media",
+        "title": "Recipe"
+      },
+      {
+        "uid": "043f2998-3706-4485-bdcd-f21b66e71419",
+        "filename": "066",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F066?generation=1623101143885613&alt=media",
+        "title": "Statistics"
+      },
+      {
+        "uid": "1b61dd2d-053a-4f05-b225-5fcb88fef467",
+        "filename": "067",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F067?generation=1623101150486274&alt=media",
+        "title": "Hotel Booking"
+      },
+      {
+        "uid": "fc91a6b5-9e8e-421a-bd90-8df263356e13",
+        "filename": "068",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F068?generation=1623101148545939&alt=media",
+        "title": "Flight Search"
+      },
+      {
+        "uid": "c735d114-105b-475d-9bd8-00ed6ef2cce8",
+        "filename": "069",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F069?generation=1623101143271582&alt=media",
+        "title": "Trending"
+      },
+      {
+        "uid": "8c5b945c-39d8-4fac-871a-85043c30d3a1",
+        "filename": "070",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F070?generation=1623101151310976&alt=media",
+        "title": "Event Listing"
+      },
+      {
+        "uid": "00f5d172-62b1-4b98-bd9d-59767a1b23a1",
+        "filename": "071",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F071?generation=1623101145900076&alt=media",
+        "title": "Schedule"
+      },
+      {
+        "uid": "3f9babcf-7c1c-48cf-bd91-3eb84916fc1e",
+        "filename": "074",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F074?generation=1623101140756800&alt=media",
+        "title": "Download App"
+      },
+      {
+        "uid": "780ebedc-1255-4a78-a337-9fa94b20e6b5",
+        "filename": "079",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F079?generation=1623101137324528&alt=media",
+        "title": "Itinerary"
+      },
+      {
+        "uid": "752532b9-8869-423e-b5ed-fc60281b6916",
+        "filename": "087",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F087?generation=1623101138070824&alt=media",
+        "title": "Tooltip"
+      },
+      {
+        "uid": "f58ec5fa-e52e-42f9-bf17-8ac97921e9e3",
+        "filename": "089",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F089?generation=1623101142300982&alt=media",
+        "title": "Terms Of Service"
+      },
+      {
+        "uid": "91e0ec62-f48f-4f7b-8791-fcf818269944",
+        "filename": "092",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F092?generation=1623101135640743&alt=media",
+        "title": "FAQ"
+      },
+      {
+        "uid": "234cb55e-133c-4695-8c5b-72ecdd48a938",
+        "filename": "093",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F093?generation=1623101138748001&alt=media",
+        "title": "Splash Screen"
+      },
+      {
+        "uid": "7e292243-840a-49f5-9d8d-21cb8ea1d44f",
+        "filename": "094",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F094?generation=1623101147939198&alt=media",
+        "title": "094"
+      },
+      {
+        "uid": "e738bdfe-4e1c-45ae-a493-0a9091017a2f",
+        "filename": "095",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F095?generation=1623101141665676&alt=media",
+        "title": "Product Tour"
+      },
+      {
+        "uid": "69362e8b-7cb4-4b8e-943d-29f40a2f3e71",
+        "filename": "096",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F096?generation=1623101144687370&alt=media",
+        "title": "In Stock"
+      },
+      {
+        "uid": "5cb5cf23-b05c-4e48-896a-659438684cc9",
+        "filename": "099",
+        "filepath": "https://storage.googleapis.com/download/storage/v1/b/portafolio-bucket/o/mobile%2F099?generation=1623101140072467&alt=media",
+        "title": "099"
+      }
+    ]
+  }
 }

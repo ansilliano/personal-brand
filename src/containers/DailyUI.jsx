@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Ai from '../components/icons/Ai';
 import Figma from '../components/icons/Figma';
 import Ps from '../components/icons/Ps';
 import Xd from '../components/icons/Xd';
+import Modal from '../components/Modal';
 import CardDaily from '../components/Works/CardDaily';
 import One from '../components/Works/numbers/One';
 import Two from '../components/Works/numbers/Two';
@@ -11,12 +12,19 @@ import TitleHeaders from '../components/Works/TitleHeaders';
 import { dailyUI } from '../db.json';
 
 const DailyUIPage = () => {
+  const [isOpen, setOpen] = useState(false);
+  const [isVisible, setVisible] = useState(false);
+  const removeModal = () => {
+    setOpen(!isOpen);
+    setVisible(!isVisible);
+  };
+
   return (
     <div className='work-detail'>
       <div className='dailyUI'>
         <div className='dailyUI__intro'>
           <img
-            src='https://storage.googleapis.com/portafolio-bucket/persona-brand/daily-ui-background.png'
+            src='https://storage.googleapis.com/portafolio-bucket/daily-ui-background.png'
             alt='daily-ui'
           />
           <div className='dailyUI__intro--info'>
@@ -64,12 +72,16 @@ const DailyUIPage = () => {
           />
           <div className='dailyUI__container'>
             <div className='dailyUI__grid'>
-              {dailyUI.map(({ image, number, title, id }) => (
+              <Modal id='modal' isOpen={isOpen} removeModal={removeModal} />
+              {dailyUI.mobile.map(({ uid, filename, filepath, title }) => (
                 <CardDaily
-                  key={id}
-                  image={image}
-                  number={number}
+                  setOpen={setOpen}
+                  isOpen={isOpen}
+                  key={uid}
+                  image={filepath}
+                  number={filename}
                   title={title}
+                  isVisible={isVisible}
                 />
               ))}
             </div>

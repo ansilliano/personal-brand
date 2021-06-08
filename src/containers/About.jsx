@@ -60,7 +60,7 @@ const About = () => {
           <article className='about__experiencie'>
             <Modal id='modal' isOpen={isOpen} removeModal={removeModal} />
             <Experiencie handleModal={handleModal}>
-              {element && React.createElement(components[element])}
+              {element && React.createElement(components[element.id])}
             </Experiencie>
           </article>
         </div>
