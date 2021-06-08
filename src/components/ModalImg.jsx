@@ -1,11 +1,15 @@
 /* eslint-disable operator-linebreak */
 import React from 'react';
-import { dailyUI } from '../db.json';
+import db from '../db.json';
 
-const ModalImg = ({ uid }) => {
+const ModalImg = ({ uid = null, tag = null }) => {
+  let data = null;
   let item = null;
+  if (tag !== null) {
+    data = db.dailyUI[tag];
+  }
   if (uid !== null) {
-    item = dailyUI.mobile.find((daily) => daily.uid === uid);
+    item = data.find((daily) => daily.uid === uid);
   }
 
   return (

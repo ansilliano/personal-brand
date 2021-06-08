@@ -15,14 +15,14 @@ import useModal from '../hooks/useModal';
 
 const DailyUIPage = () => {
   const [modalState, handleOpen] = useModal();
-  const { isOpen, uid } = modalState;
+  const { isOpen, uid, tag } = modalState;
 
   return (
     <div className='work-detail'>
       <div className='dailyUI'>
         <div className='dailyUI__intro'>
           <img
-            src='https://storage.googleapis.com/portafolio-bucket/daily-ui-background.png'
+            src='https://storage.googleapis.com/assets-portafolio/daily-ui-background_.png'
             alt='daily-ui'
           />
           <div className='dailyUI__intro--info'>
@@ -71,16 +71,17 @@ const DailyUIPage = () => {
           <div className='dailyUI__container'>
             <div className='dailyUI__grid'>
               <Modal id='modal' isOpen={isOpen} removeModal={handleOpen}>
-                <ModalImg isOpen={isOpen} uid={uid} />
+                <ModalImg isOpen={isOpen} uid={uid} tag={tag} />
               </Modal>
-              {dailyUI.mobile.map(({ uid, filename, filepath, title }) => (
+              {dailyUI.mobile.map(({ tag, uid, filename, filepath, title }) => (
                 <CardDaily
                   handleModal={handleOpen}
-                  key={uid}
+                  tag={tag}
                   uid={uid}
                   image={filepath}
                   number={filename}
                   title={title}
+                  key={uid}
                 />
               ))}
             </div>
@@ -91,6 +92,74 @@ const DailyUIPage = () => {
             subtitle='02_Design'
             side='right'
           />
+          <div className='dailyUI__container'>
+            <div className='dailyUI__grid'>
+              <Modal id='modal' isOpen={isOpen} removeModal={handleOpen}>
+                <ModalImg isOpen={isOpen} uid={uid} tag={tag} />
+              </Modal>
+              {dailyUI.desktop.map(
+                ({ tag, uid, filename, filepath, title }) => (
+                  <CardDaily
+                    handleModal={handleOpen}
+                    tag={tag}
+                    uid={uid}
+                    image={filepath}
+                    number={filename}
+                    title={title}
+                    key={uid}
+                  />
+                  // eslint-disable-next-line comma-dangle
+                )
+              )}
+            </div>
+          </div>
+          <TitleHeaders
+            Children={React.createElement(Two)}
+            title='Miscellaneous'
+            subtitle='02_Design'
+          />
+          <div className='dailyUI__container'>
+            <div className='dailyUI__grid'>
+              <Modal id='modal' isOpen={isOpen} removeModal={handleOpen}>
+                <ModalImg isOpen={isOpen} uid={uid} tag={tag} />
+              </Modal>
+              {dailyUI.others.map(({ tag, uid, filename, filepath, title }) => (
+                <CardDaily
+                  handleModal={handleOpen}
+                  tag={tag}
+                  uid={uid}
+                  image={filepath}
+                  number={filename}
+                  title={title}
+                  key={uid}
+                />
+              ))}
+            </div>
+          </div>
+          <TitleHeaders
+            Children={React.createElement(Two)}
+            title='Animation'
+            subtitle='02_Design'
+            side='right'
+          />
+          <div className='dailyUI__container'>
+            <div className='dailyUI__grid'>
+              <Modal id='modal' isOpen={isOpen} removeModal={handleOpen}>
+                <ModalImg isOpen={isOpen} uid={uid} tag={tag} />
+              </Modal>
+              {dailyUI.gif.map(({ tag, uid, filename, filepath, title }) => (
+                <CardDaily
+                  handleModal={handleOpen}
+                  tag={tag}
+                  uid={uid}
+                  image={filepath}
+                  number={filename}
+                  title={title}
+                  key={uid}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
