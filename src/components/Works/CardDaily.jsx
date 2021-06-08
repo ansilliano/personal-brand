@@ -1,22 +1,12 @@
-import React, { useState } from 'react';
-import ModalImg from '../ModalImg';
+import React from 'react';
 
-const CardDaily = ({ image, title, number, setOpen, isOpen, isVisible }) => {
-  const [element, setElement] = useState(null);
-  const handleModal = (e) => {
-    setOpen(!isOpen);
-    setElement(e.target);
-  };
-
+const CardDaily = ({ image, title, number, handleModal, uid }) => {
   return (
     <div className='cardDaily' role='button' tabIndex={0}>
-      <img src={image} alt={title} onClick={(e) => handleModal(e)} />
-      <div>
-        <p>
-          # {number} | {title}
-        </p>
-      </div>
-      <ModalImg element={element} isVisible={isVisible} />
+      <img src={image} alt={title} onClick={() => handleModal(uid)} />
+      <p>
+        # {number} | {title}
+      </p>
     </div>
   );
 };

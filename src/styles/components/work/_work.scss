@@ -76,3 +76,27 @@
     }
   }
 }
+
+.modal-image {
+  @include center-items;
+
+  align-items: flex-start;
+  color: $color-white;
+  flex-direction: column;
+  font-family: $font-poppins;
+  font-size: $font-16;
+  font-weight: $poppins-regular;
+  height: $hv-100;
+  margin: auto;
+  width: $w-100 - 50;
+  z-index: 50;
+
+  p {
+    z-index: 100;
+  }
+
+  img {
+    height: auto;
+    max-width: $w-100;
+  }
+}

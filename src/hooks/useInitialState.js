@@ -5,7 +5,6 @@ const useInitialState = () => {
     isOpen: false,
     element: null,
   });
-  // const [open, setOpen] = useState(false);
 
   const handleModal = (e) => {
     const element = e.target;

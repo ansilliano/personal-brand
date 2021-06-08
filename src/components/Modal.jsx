@@ -1,7 +1,7 @@
 import React from 'react';
 import { createPortal } from 'react-dom';
 
-const Modal = ({ isOpen, removeModal }) => {
+const Modal = ({ isOpen, removeModal, children }) => {
   const style = {
     display: isOpen ? 'block' : 'none',
   };
@@ -16,7 +16,9 @@ const Modal = ({ isOpen, removeModal }) => {
         console.log('cerrar');
         removeModal();
       }}
-    />,
+    >
+      {children}
+    </div>,
     // eslint-disable-next-line comma-dangle
     target
   );

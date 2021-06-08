@@ -1,23 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Ai from '../components/icons/Ai';
 import Figma from '../components/icons/Figma';
 import Ps from '../components/icons/Ps';
 import Xd from '../components/icons/Xd';
 import Modal from '../components/Modal';
+import ModalImg from '../components/ModalImg';
 import CardDaily from '../components/Works/CardDaily';
 import One from '../components/Works/numbers/One';
 import Two from '../components/Works/numbers/Two';
 import TitleHeaders from '../components/Works/TitleHeaders';
 // daily db
 import { dailyUI } from '../db.json';
+import useModal from '../hooks/useModal';
 
 const DailyUIPage = () => {
-  const [isOpen, setOpen] = useState(false);
-  const [isVisible, setVisible] = useState(false);
-  const removeModal = () => {
-    setOpen(!isOpen);
-    setVisible(!isVisible);
-  };
+  const [modalState, handleOpen] = useModal();
+  const { isOpen, uid } = modalState;
 
   return (
     <div className='work-detail'>
@@ -72,20 +70,27 @@ const DailyUIPage = () => {
           />
           <div className='dailyUI__container'>
             <div className='dailyUI__grid'>
-              <Modal id='modal' isOpen={isOpen} removeModal={removeModal} />
+              <Modal id='modal' isOpen={isOpen} removeModal={handleOpen}>
+                <ModalImg isOpen={isOpen} uid={uid} />
+              </Modal>
               {dailyUI.mobile.map(({ uid, filename, filepath, title }) => (
                 <CardDaily
-                  setOpen={setOpen}
-                  isOpen={isOpen}
+                  handleModal={handleOpen}
                   key={uid}
+                  uid={uid}
                   image={filepath}
                   number={filename}
                   title={title}
-                  isVisible={isVisible}
                 />
               ))}
             </div>
           </div>
+          <TitleHeaders
+            Children={React.createElement(Two)}
+            title='Desktop'
+            subtitle='02_Design'
+            side='right'
+          />
         </div>
       </div>
     </div>
