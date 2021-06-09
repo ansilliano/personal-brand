@@ -5,6 +5,7 @@ import Ps from '../components/icons/Ps';
 import Xd from '../components/icons/Xd';
 import Modal from '../components/Modal';
 import ModalImg from '../components/ModalImg';
+import ButtonLink from '../components/Works/ButtonLink';
 import CardDaily from '../components/Works/CardDaily';
 import One from '../components/Works/numbers/One';
 import Two from '../components/Works/numbers/Two';
@@ -22,6 +23,7 @@ const DailyUIPage = () => {
       <div className='dailyUI'>
         <div className='dailyUI__intro'>
           <img
+            loading='lazy'
             src='https://storage.googleapis.com/assets-portafolio/daily-ui-background_.png'
             alt='daily-ui'
           />
@@ -160,6 +162,10 @@ const DailyUIPage = () => {
               ))}
             </div>
           </div>
+          <ButtonLink
+            text='go to dribbble and see the 100 proposals'
+            link='https://dribbble.com/ansilliano'
+          />
         </div>
       </div>
     </div>

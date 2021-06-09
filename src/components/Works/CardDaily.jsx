@@ -3,7 +3,12 @@ import React from 'react';
 const CardDaily = ({ image, title, number, handleModal, uid, tag }) => {
   return (
     <div className='cardDaily' role='button' tabIndex={0}>
-      <img src={image} alt={title} onClick={() => handleModal(uid, tag)} />
+      <img
+        src={image}
+        alt={title}
+        onClick={() => handleModal(uid, tag)}
+        loading='lazy'
+      />
       <p>
         # {number} | {title}
       </p>
