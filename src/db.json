@@ -94,24 +94,10 @@
         "tag": "mobile"
       },
       {
-        "uid": "adcb101a-19f7-478a-9ed9-3cae0d797699",
-        "filename": "021",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/mobile/021",
-        "title": "Monitoring Dashboard",
-        "tag": "mobile"
-      },
-      {
         "uid": "85a3d6f1-bd59-45ee-b2ac-d509233a6fcc",
         "filename": "033",
         "filepath": "https://storage.googleapis.com/assets-portafolio/mobile/033",
         "title": "Customize Product",
-        "tag": "mobile"
-      },
-      {
-        "uid": "22b768a9-25be-47ec-b054-06bec5c0a759",
-        "filename": "034",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/mobile/034",
-        "title": "Car Interface",
         "tag": "mobile"
       },
       {
@@ -129,34 +115,6 @@
         "tag": "mobile"
       },
       {
-        "uid": "6c3783bb-7b8a-4708-8379-182eab40a318",
-        "filename": "066",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/mobile/066",
-        "title": "Statistics",
-        "tag": "mobile"
-      },
-      {
-        "uid": "96b6914b-21c1-46d6-9811-3f66461efb0a",
-        "filename": "067",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/mobile/067",
-        "title": "Hotel Booking",
-        "tag": "mobile"
-      },
-      {
-        "uid": "ea747a32-075b-4c7b-98a9-07ba143ccde3",
-        "filename": "068",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/mobile/068",
-        "title": "Flight Search",
-        "tag": "mobile"
-      },
-      {
-        "uid": "6fab6cd3-c977-4a70-8546-282a3c415632",
-        "filename": "069",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/mobile/069",
-        "title": "Trending",
-        "tag": "mobile"
-      },
-      {
         "uid": "f453d0dc-0cdb-4aa9-981c-157d6ad38845",
         "filename": "070",
         "filepath": "https://storage.googleapis.com/assets-portafolio/mobile/070",
@@ -164,65 +122,10 @@
         "tag": "mobile"
       },
       {
-        "uid": "e4c204ab-8d29-4937-abe4-8bf81d56def4",
-        "filename": "071",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/mobile/071",
-        "title": "Schedule",
-        "tag": "mobile"
-      },
-      {
-        "uid": "300b932a-3928-429a-ae14-4a79043eda9f",
-        "filename": "074",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/mobile/074",
-        "title": "Download App",
-        "tag": "mobile"
-      },
-      {
         "uid": "8b3bba87-1926-4795-926c-5bee58d9f465",
         "filename": "079",
         "filepath": "https://storage.googleapis.com/assets-portafolio/mobile/079",
         "title": "Itinerary",
-        "tag": "mobile"
-      },
-      {
-        "uid": "73d6418c-913d-4a7f-b5f1-60090096fd5b",
-        "filename": "087",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/mobile/087",
-        "title": "Tooltip",
-        "tag": "mobile"
-      },
-      {
-        "uid": "272822da-5c3e-4dda-b126-a31f7c5ee394",
-        "filename": "089",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/mobile/089",
-        "title": "Terms Of Service",
-        "tag": "mobile"
-      },
-      {
-        "uid": "849197aa-aed3-4443-9643-411392dfa776",
-        "filename": "092",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/mobile/092",
-        "title": "FAQ",
-        "tag": "mobile"
-      },
-      {
-        "uid": "26692dd3-f2b3-441e-b49d-8abb4b5c2d4d",
-        "filename": "093",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/mobile/093",
-        "title": "Splash Screen",
-        "tag": "mobile"
-      },
-      {
-        "uid": "0f47bb2a-95d6-4b4c-af9b-c086be3a1207",
-        "filename": "094",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/mobile/094",
-        "title": "094"
-      },
-      {
-        "uid": "b0e21e7b-3b79-4e7d-a044-bc5abab20485",
-        "filename": "095",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/mobile/095",
-        "title": "Product Tour",
         "tag": "mobile"
       },
       {
@@ -241,27 +144,6 @@
     ],
     "desktop": [
       {
-        "uid": "2f76e30e-f40f-4766-9dad-73dac1157511",
-        "filename": "002",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/002",
-        "title": "Checkout",
-        "tag": "desktop"
-      },
-      {
-        "uid": "295ee041-f6ba-46ba-a7bf-5a8278930a92",
-        "filename": "003",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/003",
-        "title": "Landing Page",
-        "tag": "desktop"
-      },
-      {
-        "uid": "df97a77a-1cff-4f53-b480-ccf2dbbb1f04",
-        "filename": "006",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/006",
-        "title": "User Profile",
-        "tag": "desktop"
-      },
-      {
         "uid": "1d7c551e-1f47-4a6e-b30e-7c2a56ec633f",
         "filename": "009",
         "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/009",
@@ -273,41 +155,6 @@
         "filename": "012",
         "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/012",
         "title": "Single Product",
-        "tag": "desktop"
-      },
-      {
-        "uid": "820c174f-30f3-4f98-8feb-2657bdc4c9dd",
-        "filename": "017",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/017",
-        "title": "Email Receipt",
-        "tag": "desktop"
-      },
-      {
-        "uid": "35798ff9-b0f2-4194-919b-5ba41a9f1b25",
-        "filename": "018",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/018",
-        "title": "Analytics Chart",
-        "tag": "desktop"
-      },
-      {
-        "uid": "5a47d47f-ca5d-4cc8-ad20-f4588e068a6e",
-        "filename": "025",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/025",
-        "title": "TV App",
-        "tag": "desktop"
-      },
-      {
-        "uid": "0ad8d24b-4e98-4c20-8885-e9dac2b41398",
-        "filename": "029",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/029",
-        "title": "Map",
-        "tag": "desktop"
-      },
-      {
-        "uid": "6ca1845b-0690-4268-b881-551dbb74e9bd",
-        "filename": "030",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/030",
-        "title": "Pricing",
         "tag": "desktop"
       },
       {
@@ -324,13 +171,7 @@
         "title": "Calendar",
         "tag": "desktop"
       },
-      {
-        "uid": "456d339a-6362-49e3-983c-e258bebc5063",
-        "filename": "042",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/042",
-        "title": "ToDo List",
-        "tag": "desktop"
-      },
+
       {
         "uid": "668c141d-8909-4f7b-a65c-19c9d7c9cc26",
         "filename": "045",
@@ -352,32 +193,12 @@
         "title": "Job Listing",
         "tag": "desktop"
       },
-      {
-        "uid": "84cfda6c-ff87-4408-acee-09d2e9c53fbe",
-        "filename": "051",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/051",
-        "title": "Press Page",
-        "tag": "desktop"
-      },
+
       {
         "uid": "e1b643d8-6ff7-4b1f-b267-700808f17784",
         "filename": "057",
         "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/057",
         "title": "Video Player",
-        "tag": "desktop"
-      },
-      {
-        "uid": "fb29c4ca-3b99-4b03-b91f-c8db8301cd87",
-        "filename": "058",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/058",
-        "title": "Shopping Cart",
-        "tag": "desktop"
-      },
-      {
-        "uid": "7d8f19b2-0241-4bc0-a573-122ffa776d2d",
-        "filename": "064",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/064",
-        "title": "Select User Type",
         "tag": "desktop"
       },
       {
@@ -388,59 +209,10 @@
         "tag": "desktop"
       },
       {
-        "uid": "0f106d3a-a925-4863-9f00-a13880c34a95",
-        "filename": "072",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/072",
-        "title": "Image Slider",
-        "tag": "desktop"
-      },
-      {
-        "uid": "a1eb085a-0e34-46db-b3e2-e1b7af9b29ab",
-        "filename": "075",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/075",
-        "title": "Pre Order",
-        "tag": "desktop"
-      },
-      {
-        "uid": "77a49c52-859a-45ab-a94c-ef7379d0cc66",
-        "filename": "078",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/078",
-        "title": "Pending Invitation",
-        "tag": "desktop"
-      },
-      {
-        "uid": "9b85fbe1-26fb-44fa-ba81-4ceee0587545",
-        "filename": "080",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/080",
-        "title": "Date Picker",
-        "tag": "desktop"
-      },
-      {
-        "uid": "a365cd48-2052-4cb6-9fc9-316471bdc07e",
-        "filename": "081",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/081",
-        "title": "Status Update",
-        "tag": "desktop"
-      },
-      {
         "uid": "77dfa5e6-9237-41ed-9ca5-ba3652248a9b",
         "filename": "082",
         "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/082",
         "title": "Form",
-        "tag": "desktop"
-      },
-      {
-        "uid": "224dade1-1f46-439d-8816-f38510d50913",
-        "filename": "088",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/088",
-        "title": "Avatar",
-        "tag": "desktop"
-      },
-      {
-        "uid": "116437ed-69c8-4fd1-81ef-da563bde1c7d",
-        "filename": "091",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/091",
-        "title": "Curated For You",
         "tag": "desktop"
       },
       {
@@ -451,13 +223,6 @@
         "tag": "desktop"
       },
       {
-        "uid": "135931fa-b21a-4ebc-92b6-80bb5a101e73",
-        "filename": "098",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/098",
-        "title": "Advertisement",
-        "tag": "desktop"
-      },
-      {
         "uid": "52c86f05-3383-4f7a-a9b5-3f422a61e4e1",
         "filename": "100",
         "filepath": "https://storage.googleapis.com/assets-portafolio/desktop/100",
@@ -465,19 +230,12 @@
         "tag": "desktop"
       }
     ],
-    "gif":[
+    "gif": [
       {
         "uid": "b3849a71-6ded-4a1d-a959-a1ace29d0d6e",
         "filename": "010",
         "filepath": "https://storage.googleapis.com/assets-portafolio/gif/010",
         "title": "Social Share",
-        "tag": "gif"
-      },
-      {
-        "uid": "77ca8c8b-6c98-4a20-a6af-0d2515a33894",
-        "filename": "013",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/gif/013",
-        "title": "Direct Messaging",
         "tag": "gif"
       },
       {
@@ -501,48 +259,7 @@
         "title": "Search",
         "tag": "gif"
       },
-      {
-        "uid": "dea9d471-aa38-44c6-8106-514c2d072b28",
-        "filename": "026",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/gif/026",
-        "title": "Subscribe",
-        "tag": "gif"
-      },
-      {
-        "uid": "2f38461d-ae6a-4536-a2b0-fd10d3fad34c",
-        "filename": "027",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/gif/027",
-        "title": "Dropdown",
-        "tag": "gif"
-      },
-      {
-        "uid": "673a4399-e612-48b5-8c62-ded91028adff",
-        "filename": "031",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/gif/031",
-        "title": "File Upload",
-        "tag": "gif"
-      },
-      {
-        "uid": "fcda6206-e2a9-44c6-b674-6c394a690757",
-        "filename": "044",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/gif/044",
-        "title": "Favorites",
-        "tag": "gif"
-      },
-      {
-        "uid": "3d4d8005-1f25-42bf-a41a-690b362425bd",
-        "filename": "049",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/gif/049",
-        "title": "Notifications",
-        "tag": "gif"
-      },
-      {
-        "uid": "b6d60370-7239-4d61-b575-dc4993682b33",
-        "filename": "053",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/gif/053",
-        "title": "Header Navigation",
-        "tag": "gif"
-      },
+
       {
         "uid": "bb259a74-645d-41c1-9e2c-8b05614bbb6f",
         "filename": "076",
@@ -556,16 +273,9 @@
         "filepath": "https://storage.googleapis.com/assets-portafolio/gif/083",
         "title": "Button",
         "tag": "gif"
-      },
-      {
-        "uid": "634513c0-9566-42f7-baf3-7672e5a22e9e",
-        "filename": "090",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/gif/090",
-        "title": "Create New",
-        "tag": "gif"
       }
     ],
-    "others":[
+    "others": [
       {
         "uid": "013ece1f-f3d8-47e7-896c-f49fdd74e508",
         "filename": "005",
@@ -573,20 +283,7 @@
         "title": "App Icon",
         "tag": "others"
       },
-      {
-        "uid": "f2c68b17-2db2-431a-8505-4dac2a56eedb",
-        "filename": "008",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/others/008",
-        "title": "Page 404",
-        "tag": "others"
-      },
-      {
-        "uid": "62e671d3-344d-4cf2-8f5d-ab098036c1d6",
-        "filename": "016",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/others/016",
-        "title": "Pop Up Overlay",
-        "tag": "others"
-      },
+
       {
         "uid": "2ed97e10-6942-4071-b257-e39c39b66d0c",
         "filename": "024",
@@ -630,24 +327,10 @@
         "tag": "others"
       },
       {
-        "uid": "da510e32-e5e3-4f4a-bc71-1cec37fd8d5f",
-        "filename": "052",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/others/052",
-        "title": "Daily UI Logo",
-        "tag": "others"
-      },
-      {
         "uid": "aff0c0d8-1a7f-4c09-ba29-0a5825168207",
         "filename": "055",
         "filepath": "https://storage.googleapis.com/assets-portafolio/others/055",
         "title": "Icon Set",
-        "tag": "others"
-      },
-      {
-        "uid": "c02d69d2-9a11-47b7-bc0d-280c219f428b",
-        "filename": "059",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/others/059",
-        "title": "Background Pattern",
         "tag": "others"
       },
       {
@@ -658,45 +341,10 @@
         "tag": "others"
       },
       {
-        "uid": "6ebd8a3c-5ee2-429e-ba16-7458785db869",
-        "filename": "063",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/others/063",
-        "title": "Best of 2015",
-        "tag": "others"
-      },
-      {
         "uid": "5c1b4231-19b8-4d3c-955c-1d3fcf529c6d",
         "filename": "073",
         "filepath": "https://storage.googleapis.com/assets-portafolio/others/073",
         "title": "Virtual Reality",
-        "tag": "others"
-      },
-      {
-        "uid": "fad939c4-4437-40ff-8690-c9115588e34e",
-        "filename": "077",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/others/077",
-        "title": "Thank You",
-        "tag": "others"
-      },
-      {
-        "uid": "87254f04-066d-4159-ac59-f17fea8151e8",
-        "filename": "084",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/others/084",
-        "title": "Badge",
-        "tag": "others"
-      },
-      {
-        "uid": "265bb62a-6a61-444f-a603-4bba923a9164",
-        "filename": "085",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/others/085",
-        "title": "Pagination",
-        "tag": "others"
-      },
-      {
-        "uid": "890f4861-d4ba-4c52-b740-32c3625cb719",
-        "filename": "086",
-        "filepath": "https://storage.googleapis.com/assets-portafolio/others/086",
-        "title": "Progress Bar",
         "tag": "others"
       }
     ]

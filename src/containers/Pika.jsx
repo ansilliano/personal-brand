@@ -201,7 +201,7 @@ const PikaPage = () => {
               </div>
             </div>
           </div>
-          <Shape top='3400px' deg='180deg' transform={true} />
+          <Shape top='3400px' transform={true} />
           <TitleHeaders
             side='right'
             Children={React.createElement(Two)}
@@ -321,12 +321,172 @@ const PikaPage = () => {
               />
             </div>
           </div>
+          <Shape top='6090px' />
           <TitleHeaders
             Children={React.createElement(Three)}
             title='Guidelines'
             subtitle='03_Design'
           />
-          <div className='pika__container pika-grid'>hola</div>
+          <div className='pika__container pika-grid'>
+            <div className='typography'>
+              <p className='typography__title'>Typography</p>
+              <div className='typography__details'>
+                <div>
+                  <p>AaBbCc123</p>
+                  <p>Montserrat</p>
+                </div>
+                <div>
+                  <p>
+                    abcdefghijklmnopqrstuwxyz ABCDEFGHIJKLMNOPQRSTUWXYZ
+                    £!@#$%^&*()_+-=[]{};’\,./:”|?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className='typography__info'>
+              <div>
+                <div className='thin'>
+                  <span>AaBbCc123</span>
+                  <span>Thin</span>
+                </div>
+                <div className='extralight'>
+                  <span>AaBbCc123</span>
+                  <span>ExtraLight</span>
+                </div>
+                <div className='light'>
+                  <span>AaBbCc123</span>
+                  <span>Light</span>
+                </div>
+                <div className='regular'>
+                  <span>AaBbCc123</span>
+                  <span>Regular</span>
+                </div>
+                <div className='medium'>
+                  <span>AaBbCc123</span>
+                  <span>Medium</span>
+                </div>
+              </div>
+              <div>
+                <div className='semibold'>
+                  <span>AaBbCc123</span>
+                  <span>SemiBold</span>
+                </div>
+                <div className='bold'>
+                  <span>AaBbCc123</span>
+                  <span>Bold</span>
+                </div>
+                <div className='extrabold'>
+                  <span>AaBbCc123</span>
+                  <span>ExtraBold</span>
+                </div>
+                <div className='black'>
+                  <span>AaBbCc123</span>
+                  <span>Black</span>
+                </div>
+              </div>
+            </div>
+            <p className='typography__text'>
+              The old posters and signs in the traditional Montserrat
+              neighborhood of Buenos Aires inspired Julieta Ulanovsky to design
+              this typeface and rescue the beauty of urban typography that
+              emerged in the first half of the twentieth century.
+            </p>
+            <p className='color'>Color guide</p>
+            <div className='color__info'>
+              <div>
+                <div className='primary'>
+                  <span />
+                  <span>Primary</span>
+                  <span>#902336</span>
+                </div>
+                <div className='secondary'>
+                  <span />
+                  <span>Secondary</span>
+                  <span>#24556F</span>
+                </div>
+              </div>
+              <div className='colors-grid'>
+                <div className='colors'>
+                  <span style={{ backgroundColor: '#b04458' }} />
+                  <p>#B04458</p>
+                </div>
+                <div className='colors'>
+                  <span style={{ backgroundColor: '#d17989' }} />
+                  <p>#D17989</p>
+                </div>
+                <div className='colors'>
+                  <span style={{ backgroundColor: '#e9b2bc' }} />
+                  <p>#E9B2BC</p>
+                </div>
+                <div className='colors'>
+                  <span style={{ backgroundColor: '#f3dfe3' }} />
+                  <p>#F3DFE3</p>
+                </div>
+                <div className='colors'>
+                  <span style={{ backgroundColor: '#407794' }} />
+                  <p>#407794</p>
+                </div>
+                <div className='colors'>
+                  <span style={{ backgroundColor: '#6999b3' }} />
+                  <p>#6999B3</p>
+                </div>
+                <div className='colors'>
+                  <span style={{ backgroundColor: '#9dc0d3' }} />
+                  <p>#9DC0D3</p>
+                </div>
+                <div className='colors'>
+                  <span style={{ backgroundColor: '#e1f2fb' }} />
+                  <p>#E1F2FB</p>
+                </div>
+                <div className='colors'>
+                  <span style={{ backgroundColor: '#868686' }} />
+                  <p>#868686</p>
+                </div>
+                <div className='colors'>
+                  <span style={{ backgroundColor: '#afafaf' }} />
+                  <p>#AFAFAF</p>
+                </div>
+                <div className='colors'>
+                  <span style={{ backgroundColor: '#d7d7d7' }} />
+                  <p>#D7D7D7</p>
+                </div>
+                <div className='colors'>
+                  <span style={{ backgroundColor: '#ebebeb' }} />
+                  <p>#EBEBEB</p>
+                </div>
+              </div>
+            </div>
+            <TitleHeaders
+              Children={React.createElement(Three)}
+              title='Prototype'
+              subtitle='03_Design'
+              side='right'
+            />
+            <div className='wireframe_central'>
+              <img
+                src='https://storage.googleapis.com/assets-portafolio/pika-assets/pika_prototype_home.png'
+                alt='prototype-home'
+              />
+            </div>
+            <div className='wireframe_central'>
+              <img
+                src='https://storage.googleapis.com/assets-portafolio/pika-assets/pika_prototype_4.png'
+                alt='prototype-4'
+              />
+            </div>
+            <div className='wireframe_central'>
+              <img
+                src='https://storage.googleapis.com/assets-portafolio/pika-assets/pika_prototype_3.png'
+                alt='prototype-3'
+              />
+            </div>
+            <div className='wireframe_central'>
+              <img
+                src='https://storage.googleapis.com/assets-portafolio/pika-assets/pika_prototype_2.png'
+                alt='prototype-2'
+              />
+            </div>
+          </div>
           <ButtonLink
             text='go to prototype'
             link='https://xd.adobe.com/view/f2a6ca61-22a5-4c8e-bc69-818785476879-a7f5/'
