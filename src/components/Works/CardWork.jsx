@@ -11,6 +11,7 @@ const CardWork = ({
   hoverColor,
   id,
   route,
+  path,
 }) => {
   const [hover, setHover] = useState(false);
   const [isOpen, setOpen] = useState(false);
@@ -25,7 +26,7 @@ const CardWork = ({
   const history = useHistory();
   const handleClick = (id) => {
     if (id !== undefined && id !== 3) {
-      history.push(`/works/${route}/${id}/`);
+      history.push(`/${path}/${route}/${id}/`);
     }
 
     if (id === 3) {

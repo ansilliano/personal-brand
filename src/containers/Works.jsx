@@ -50,6 +50,7 @@ const Works = () => (
         {db.projects.map(
           ({ color, title, Children, hoverColor, id, route }) => (
             <CardWork
+              path='works'
               key={id}
               id={id}
               color={color}

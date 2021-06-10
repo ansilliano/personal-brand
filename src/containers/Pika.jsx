@@ -201,7 +201,7 @@ const PikaPage = () => {
               </div>
             </div>
           </div>
-          <Shape top='3400px' transform={true} />
+          <Shape top='3400px' transform={+true} />
           <TitleHeaders
             side='right'
             Children={React.createElement(Two)}

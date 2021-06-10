@@ -56,6 +56,7 @@ const Experiments = () => (
       <section className='grid-works'>
         {db.experiments.map(({ id, color, title, hoverColor, Children }) => (
           <CardWork
+            path='experiments'
             key={id}
             id={id}
             color={color}
