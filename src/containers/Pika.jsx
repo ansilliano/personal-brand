@@ -5,7 +5,9 @@ import Ps from '../components/icons/Ps';
 import Xd from '../components/icons/Xd';
 import BoxMetodology from '../components/Works/BoxMetodology';
 import ButtonLink from '../components/Works/ButtonLink';
+import InfoPika from '../components/Works/InfoPika';
 import One from '../components/Works/numbers/One';
+import Three from '../components/Works/numbers/Three';
 import Two from '../components/Works/numbers/Two';
 import PikaLogo from '../components/Works/PikaLogo';
 import Shape from '../components/Works/Shape';
@@ -207,11 +209,124 @@ const PikaPage = () => {
             subtitle='02_Problem Statement'
           />
           <div className='pika__container pika-grid'>
-            <img
-              src='https://storage.googleapis.com/assets-portafolio/pika-assets/user-persona-image.png'
-              alt='user-persona'
+            <div className='user__persona'>
+              <img
+                className='user__persona--img'
+                src='https://storage.googleapis.com/assets-portafolio/pika-assets/user-persona-image.png'
+                alt='user-persona'
+              />
+              <div className='user__persona--profile'>
+                <p>Catalina Fajardo</p>
+                <small>
+                  &quot;I am entering a new stage in my life so I need a space
+                  for myself and my pets.&quot;
+                </small>
+              </div>
+            </div>
+            <div className='user__persona--about'>
+              <p>About</p>
+              <p>
+                Catalina is a designer and lives with her family on the
+                outskirts of Santiago, Chile. She usually takes 2 to 3 hours to
+                get to and from her work. She has been looking for an apartment
+                for a couple of months but she has found it very difficult to
+                find something that suits her needs, she has 2 dogs and 2 cats
+                and they always reject her for that.
+                <br />
+                <br />
+                <strong>
+                  &quot;I am entering a new stage in my life so I need a space
+                  for myself and my pets.&quot;
+                </strong>
+              </p>
+            </div>
+            <div className='user__persona--goals'>
+              <p>Goals</p>
+              <ul>
+                <li>○ Live alone.</li>
+                <li>○ Live close to her work.</li>
+                <li>○ Have parks nearby for her pets.</li>
+                <li>○ Get a comfortable place at a good price.</li>
+              </ul>
+            </div>
+            <div className='user__persona--painpoints'>
+              <p>Pain points</p>
+              <ul>
+                <li>○ First time renting an apartment.</li>
+                <li>○ Very high rents.</li>
+                <li>○ She doesn’t want to deal with real estate agents</li>
+              </ul>
+            </div>
+          </div>
+          <TitleHeaders
+            Children={React.createElement(Two)}
+            title='Project Goals'
+            subtitle='02_Problem Statement'
+          />
+          <div className='pika__container pika-grid'>
+            <InfoPika
+              img='https://storage.googleapis.com/assets-portafolio/pika-assets/intuitive.jpg'
+              title='Intuitive'
+              text='Create a platform that allows the user to be directed exactly where they need it.'
+              grid='1/5'
+            />
+            <InfoPika
+              img='https://storage.googleapis.com/assets-portafolio/pika-assets/consistent.jpg'
+              title='Consistent'
+              text='All content will have the same information and will go through a filter before it can be published.'
+              grid='5/9'
+            />
+            <InfoPika
+              img='https://storage.googleapis.com/assets-portafolio/pika-assets/specific.jpg'
+              title='Specific'
+              text='Filtering section where the search can be optimized according to the needs of the users. In addition, there will always be context information.'
+              grid='9/-1'
             />
           </div>
+          <TitleHeaders
+            side='right'
+            Children={React.createElement(Three)}
+            title='Wireframes'
+            subtitle='03_Design'
+          />
+          <div className='pika__container pika-grid'>
+            <div className='wireframe_home'>
+              <img
+                src='https://storage.googleapis.com/assets-portafolio/pika-assets/Home.png'
+                alt='pika-home'
+              />
+            </div>
+            <div className='wireframe_1'>
+              <img
+                src='https://storage.googleapis.com/assets-portafolio/pika-assets/Home_1.png'
+                alt='pika-home'
+              />
+            </div>
+            <div className='wireframe_central'>
+              <img
+                src='https://storage.googleapis.com/assets-portafolio/pika-assets/Home_central.png'
+                alt='pika-central'
+              />
+            </div>
+            <div className='wireframe_basic_end_left'>
+              <img
+                src='https://storage.googleapis.com/assets-portafolio/pika-assets/Home_end_left.png'
+                alt='pika-home'
+              />
+            </div>
+            <div className='wireframe_basic_end_right'>
+              <img
+                src='https://storage.googleapis.com/assets-portafolio/pika-assets/Home_end_right.png'
+                alt='pika-home'
+              />
+            </div>
+          </div>
+          <TitleHeaders
+            Children={React.createElement(Three)}
+            title='Guidelines'
+            subtitle='03_Design'
+          />
+          <div className='pika__container pika-grid'>hola</div>
           <ButtonLink
             text='go to prototype'
             link='https://xd.adobe.com/view/f2a6ca61-22a5-4c8e-bc69-818785476879-a7f5/'

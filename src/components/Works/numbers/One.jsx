@@ -3,7 +3,7 @@ import React from 'react';
 const One = ({ size = 220 }) => {
   return (
     <svg
-      width={218}
+      width={size}
       height={160}
       viewBox='0 0 218 160'
       fill='none'
