@@ -1,9 +1,12 @@
 import React from 'react';
 
-const Frozen = ({ isVisible }) => {
-  console.log('frozen');
+const Frozen = ({ isVisible, left, bottom }) => {
   const styles = {
     visibility: isVisible ? 'visible' : 'hidden',
+    left,
+    bottom,
+    width: 'auto',
+    height: 'auto',
   };
   return (
     <div className='works-modal' style={styles}>

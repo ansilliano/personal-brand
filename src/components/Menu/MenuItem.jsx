@@ -1,22 +1,43 @@
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 
-const MenuItem = ({ icon: Icon, color, id, path, route, hoverColor }) => {
-  console.log(color);
+const MenuItem = ({
+  icon: Icon,
+  color,
+  id,
+  route,
+  hoverColor,
+  handleModal,
+}) => {
   const { pathname } = useLocation();
   const current = pathname.split('/')[2];
   const style = {
     backgroundColor: current === route ? hoverColor : color,
   };
+
+  const history = useHistory();
+  const handleClick = (id) => {
+    if (id !== undefined && id !== 3) {
+      history.push(`/works/${route}/${id}/`);
+    }
+
+    if (id === 3) {
+      handleModal();
+    }
+  };
+
+  const classes = current === route && 'active-menu-item';
+
   return (
-    <NavLink
-      to={`${path}/${route}/${id}`}
-      className='menu-item'
+    <div
+      onClick={() => handleClick(id)}
+      role='button'
+      tabIndex={0}
+      className={`menu-item ${classes}`}
       style={style}
-      activeClassName='active-menu-item'
     >
       <Icon />
-    </NavLink>
+    </div>
   );
 };
 

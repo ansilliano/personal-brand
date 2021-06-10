@@ -4,14 +4,15 @@ const useInitialState = () => {
   const [state, setState] = useState({
     isOpen: false,
     element: null,
+    openFrozen: false,
   });
 
   const handleModal = (e) => {
-    const element = e.target;
     setState({
       ...state,
       isOpen: true,
-      element,
+      element: e !== undefined ? e.target : null,
+      openFrozen: true,
     });
   };
 
@@ -20,6 +21,7 @@ const useInitialState = () => {
       ...state,
       isOpen: false,
       element: null,
+      openFrozen: false,
     });
   };
 

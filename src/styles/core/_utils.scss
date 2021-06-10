@@ -52,10 +52,8 @@
 }
 
 .works-modal {
-  left: $em *40;
   position: absolute;
-  top: $em * 100;
-  z-index: 20;
+  z-index: 200;
 
   &:hover {
     cursor: pointer;
