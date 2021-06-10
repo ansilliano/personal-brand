@@ -81,6 +81,7 @@
   @include center-items;
 
   align-items: flex-start;
+  border-radius: 4px;
   color: $color-white;
   flex-direction: column;
   font-family: $font-poppins;
@@ -96,6 +97,7 @@
   }
 
   img {
+    border-radius: 4px;
     height: auto;
     max-width: $w-100;
   }
@@ -110,7 +112,7 @@
   cursor: pointer;
   font-family: $font-barrio;
   font-size: $font-20;
-  grid-column: 4/-3;
+  grid-column: 4/-4;
   height: $em * 2;
   margin: $em * 4 0;
   text-decoration: none;

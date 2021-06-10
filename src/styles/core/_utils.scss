@@ -38,13 +38,13 @@
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 200;
+  z-index: 100;
 }
 
 .experiencie-modal {
   position: relative;
   // width: 100%;
-  z-index: 20;
+  z-index: 200;
 
   &:hover {
     cursor: pointer;

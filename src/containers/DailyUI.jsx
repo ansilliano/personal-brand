@@ -18,10 +18,16 @@ const DailyUIPage = () => {
   const [modalState, handleOpen] = useModal();
   const { isOpen, uid, tag } = modalState;
 
+  const styles = {
+    backgroundColor: '#3e3e3e',
+    left: '200px',
+    width: '200%',
+  };
+
   return (
     <div className='work-detail'>
       <div className='dailyUI'>
-        <div className='dailyUI__intro'>
+        <div className='dailyUI__intro layout-grid'>
           <img
             loading='lazy'
             src='https://storage.googleapis.com/assets-portafolio/daily-ui-background_.png'
@@ -29,7 +35,7 @@ const DailyUIPage = () => {
           />
           <div className='dailyUI__intro--info'>
             <div className='project-name'>
-              <div />
+              <div style={styles} />
               <span>Daily</span>
               <span>UI</span>
             </div>
@@ -96,9 +102,6 @@ const DailyUIPage = () => {
           />
           <div className='dailyUI__container'>
             <div className='dailyUI__grid'>
-              <Modal id='modal' isOpen={isOpen} removeModal={handleOpen}>
-                <ModalImg isOpen={isOpen} uid={uid} tag={tag} />
-              </Modal>
               {dailyUI.desktop.map(
                 ({ tag, uid, filename, filepath, title }) => (
                   <CardDaily
@@ -122,9 +125,6 @@ const DailyUIPage = () => {
           />
           <div className='dailyUI__container'>
             <div className='dailyUI__grid'>
-              <Modal id='modal' isOpen={isOpen} removeModal={handleOpen}>
-                <ModalImg isOpen={isOpen} uid={uid} tag={tag} />
-              </Modal>
               {dailyUI.others.map(({ tag, uid, filename, filepath, title }) => (
                 <CardDaily
                   handleModal={handleOpen}
@@ -146,9 +146,6 @@ const DailyUIPage = () => {
           />
           <div className='dailyUI__container'>
             <div className='dailyUI__grid'>
-              <Modal id='modal' isOpen={isOpen} removeModal={handleOpen}>
-                <ModalImg isOpen={isOpen} uid={uid} tag={tag} />
-              </Modal>
               {dailyUI.gif.map(({ tag, uid, filename, filepath, title }) => (
                 <CardDaily
                   handleModal={handleOpen}

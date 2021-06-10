@@ -1,7 +1,7 @@
 import React from 'react';
 import { createPortal } from 'react-dom';
 
-const Modal = ({ isOpen, removeModal, children }) => {
+const Modal = ({ isOpen, removeModal, children = null }) => {
   const style = {
     display: isOpen ? 'block' : 'none',
   };
@@ -13,7 +13,6 @@ const Modal = ({ isOpen, removeModal, children }) => {
       style={style}
       className='modal'
       onClick={() => {
-        console.log('cerrar');
         removeModal();
       }}
     >

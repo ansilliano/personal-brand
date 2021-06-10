@@ -49,7 +49,7 @@ const Experiments = () => (
         </article>
       </div>
       <div className='doodle-img'>
-        <img src={doodle} alt='about-doodle ' className='' />
+        <img src={doodle} alt='about-doodle' />
       </div>
     </section>
     <div className='cards-works'>

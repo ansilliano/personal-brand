@@ -22,7 +22,6 @@
   position: absolute;
   right: $right;
   top: $top;
-  z-index: 20;
 }
 
 @mixin heading($size, $color: $color-white) {

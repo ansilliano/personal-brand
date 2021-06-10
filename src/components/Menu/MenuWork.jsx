@@ -22,12 +22,13 @@ const MenuWork = ({ items, icons, path }) => {
           nextEl: '.arrow-down',
         }}
       >
-        {items.map(({ color, Children, id, route }) => (
+        {items.map(({ color, Children, id, route, hoverColor }) => (
           <SwiperSlide>
             <MenuItem
               route={route}
               key={id}
               id={id}
+              hoverColor={hoverColor}
               color={color}
               icon={icons[Children]}
               path={path}
