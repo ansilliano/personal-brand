@@ -30,6 +30,7 @@
       "id": 1,
       "title": "Illustration",
       "color": "#FFFBD8",
+      "route": "illustration",
       "Children": "illustration",
       "hoverColor": "#DED052"
     },
@@ -37,6 +38,7 @@
       "id": 2,
       "title": "Branding",
       "color": "#FFF4F6",
+      "route": "branding",
       "Children": "branding",
       "hoverColor": "#DE5269"
     },
@@ -44,6 +46,7 @@
       "id": 3,
       "title": "Windsurf",
       "color": "#D8ECED",
+      "route": "windsurf",
       "Children": "windsurf",
       "hoverColor": "#5CC1C8"
     },
@@ -51,6 +54,7 @@
       "id": 4,
       "title": "Sketching",
       "color": "#FBE0C8",
+      "route": "sketching",
       "Children": "sketching",
       "hoverColor": "#DE9552"
     },
@@ -58,6 +62,7 @@
       "id": 5,
       "title": "Handcraft",
       "color": "#E3F4E5",
+      "route": "handcraft",
       "Children": "handcraft",
       "hoverColor": "#2BCB6B"
     },
@@ -65,6 +70,7 @@
       "id": 6,
       "title": "Desarrollarte",
       "color": "#C9CCE5",
+      "route": "desarrollarte",
       "Children": "desarrollarte",
       "hoverColor": "#6B73BC"
     }
@@ -139,7 +145,8 @@
         "uid": "89b9e27e-e8da-4021-97bb-90248ea379d1",
         "filename": "099",
         "filepath": "https://storage.googleapis.com/assets-portafolio/mobile/099",
-        "title": "099"
+        "title": "099",
+        "tag": "mobile"
       }
     ],
     "desktop": [

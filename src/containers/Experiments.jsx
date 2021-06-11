@@ -54,17 +54,21 @@ const Experiments = () => (
     </section>
     <div className='cards-works'>
       <section className='grid-works'>
-        {db.experiments.map(({ id, color, title, hoverColor, Children }) => (
-          <CardWork
-            path='experiments'
-            key={id}
-            id={id}
-            color={color}
-            title={title}
-            Children={React.createElement(icons[Children], {})}
-            hoverColor={hoverColor}
-          />
-        ))}
+        {db.experiments.map(
+          ({ id, color, title, hoverColor, Children, route }) => (
+            <CardWork
+              path='experiments'
+              key={id}
+              id={id}
+              color={color}
+              title={title}
+              route={route}
+              Children={React.createElement(icons[Children], {})}
+              hoverColor={hoverColor}
+            />
+            // eslint-disable-next-line comma-dangle
+          )
+        )}
         <CardWork />
       </section>
     </div>

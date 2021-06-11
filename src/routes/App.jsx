@@ -20,15 +20,10 @@ function App() {
             <Route exact path='/about' component={About} />
             <Route exact path='/works' component={Works} />
             <Route exact path='/works/:route/:id' component={DetailWork} />
-            <Route
-              exact
-              path='/experiments/:route/:id'
-              component={DetailExperiments}
-            />
             <Route exact path='/experiments' component={Experiments} />
             <Route
               exact
-              path='/experiments/:id'
+              path='/experiments/:route/:id'
               component={DetailExperiments}
             />
             <Route component={NotFound} />

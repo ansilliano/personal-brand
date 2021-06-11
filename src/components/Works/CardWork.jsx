@@ -25,14 +25,23 @@ const CardWork = ({
   const { removeModal } = useContext(AppContext);
   const history = useHistory();
   const handleClick = (id) => {
-    if (id !== undefined && id !== 3) {
-      history.push(`/${path}/${route}/${id}/`);
+    if (path === 'works') {
+      if (id !== undefined && id !== 3) {
+        history.push(`/${path}/${route}/${id}/`);
+      }
+
+      if (id === 3) {
+        setOpen(!isOpen);
+        console.log('click froz');
+        setVisible(!isVisible);
+      }
     }
 
-    if (id === 3) {
-      setOpen(!isOpen);
-      console.log('click froz');
-      setVisible(!isVisible);
+    if (path === 'experiments') {
+      console.log(route);
+      if (id !== undefined) {
+        history.push(`/${path}/${route}/${id}/`);
+      }
     }
   };
 

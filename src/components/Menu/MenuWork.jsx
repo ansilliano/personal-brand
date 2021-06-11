@@ -5,7 +5,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Arrow from './Arrow';
 import MenuItem from './MenuItem';
 
-const MenuWork = ({ items, icons, path, handleModal, setVisible, isOpen }) => {
+const MenuWork = ({
+  items,
+  icons,
+  path,
+  handleModal = null,
+  setVisible = null,
+  isOpen = null,
+}) => {
   SwiperCore.use(Navigation);
   return (
     <div className='menu-work'>
@@ -24,6 +31,7 @@ const MenuWork = ({ items, icons, path, handleModal, setVisible, isOpen }) => {
       >
         {items.map(({ color, Children, id, route, hoverColor }) => (
           <SwiperSlide>
+            {console.log(icons[Children])}
             <MenuItem
               handleModal={handleModal}
               setVisible={setVisible}

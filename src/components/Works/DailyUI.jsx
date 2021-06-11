@@ -1,18 +1,18 @@
 import React from 'react';
-import Ai from '../components/icons/Ai';
-import Figma from '../components/icons/Figma';
-import Ps from '../components/icons/Ps';
-import Xd from '../components/icons/Xd';
-import Modal from '../components/Modal';
-import ModalImg from '../components/ModalImg';
-import ButtonLink from '../components/Works/ButtonLink';
-import CardDaily from '../components/Works/CardDaily';
-import One from '../components/Works/numbers/One';
-import Two from '../components/Works/numbers/Two';
-import TitleHeaders from '../components/Works/TitleHeaders';
 // daily db
-import { dailyUI } from '../db.json';
-import useModal from '../hooks/useModal';
+import { dailyUI } from '../../db.json';
+import useModal from '../../hooks/useModal';
+import Ai from '../icons/Ai';
+import Figma from '../icons/Figma';
+import Ps from '../icons/Ps';
+import Xd from '../icons/Xd';
+import Modal from '../Modal';
+import ModalImg from '../ModalImg';
+import ButtonLink from './ButtonLink';
+import CardDaily from './CardDaily';
+import One from './numbers/One';
+import Two from './numbers/Two';
+import TitleHeaders from './TitleHeaders';
 
 const DailyUIPage = () => {
   const [modalState, handleOpen] = useModal();

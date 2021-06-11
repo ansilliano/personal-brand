@@ -20,6 +20,7 @@
   cursor: pointer;
   height: $em * 6;
   margin: $em * 1 0;
+  transition: all 0.5s ease-in-out;
   width: $em * 6;
   z-index: 10;
 

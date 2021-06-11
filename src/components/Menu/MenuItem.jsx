@@ -7,7 +7,8 @@ const MenuItem = ({
   id,
   route,
   hoverColor,
-  handleModal,
+  handleModal = null,
+  path,
 }) => {
   const { pathname } = useLocation();
   const current = pathname.split('/')[2];
@@ -17,17 +18,20 @@ const MenuItem = ({
 
   const history = useHistory();
   const handleClick = (id) => {
-    if (id !== undefined && id !== 3) {
-      history.push(`/works/${route}/${id}/`);
+    if (path === 'works') {
+      if (id !== undefined && id !== 3) {
+        history.push(`/${path}/${route}/${id}/`);
+      }
+      if (id === 3) {
+        handleModal();
+      }
     }
-
-    if (id === 3) {
-      handleModal();
+    if (path === 'experiments' && id !== undefined) {
+      history.push(`/${path}/${route}/${id}/`);
     }
   };
 
   const classes = current === route && 'active-menu-item';
-
   return (
     <div
       onClick={() => handleClick(id)}
