@@ -57,22 +57,6 @@
       "route": "sketching",
       "Children": "sketching",
       "hoverColor": "#DE9552"
-    },
-    {
-      "id": 5,
-      "title": "Handcraft",
-      "color": "#E3F4E5",
-      "route": "handcraft",
-      "Children": "handcraft",
-      "hoverColor": "#2BCB6B"
-    },
-    {
-      "id": 6,
-      "title": "Desarrollarte",
-      "color": "#C9CCE5",
-      "route": "desarrollarte",
-      "Children": "desarrollarte",
-      "hoverColor": "#6B73BC"
     }
   ],
   "experiments-projects": [],

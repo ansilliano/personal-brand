@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // styles
 import 'swiper/swiper.scss';
+import '../../node_modules/animate.css/animate.css';
 import DetailWork from '../components/Detail/DetailWork';
 import DetailExperiments from '../components/Experiments/DetailExperiments';
 import Layout from '../components/Layout';

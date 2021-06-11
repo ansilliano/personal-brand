@@ -56,7 +56,7 @@ const DailyUIPage = () => {
             </div>
           </div>
         </div>
-        <div className='layout-grid'>
+        <div className='layout-grid base-container'>
           <TitleHeaders
             side='right'
             Children={React.createElement(One)}
@@ -101,7 +101,7 @@ const DailyUIPage = () => {
             side='right'
           />
           <div className='dailyUI__container'>
-            <div className='dailyUI__grid'>
+            <div className='dailyUI__grid animate__animated'>
               {dailyUI.desktop.map(
                 ({ tag, uid, filename, filepath, title }) => (
                   <CardDaily

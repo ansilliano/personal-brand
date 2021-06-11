@@ -33,5 +33,28 @@
   margin: 0 auto;
   margin-top: $em * 14.8;
   max-width: $em * 120;
+  // max-width: $em * 180;
+  // max-width: $w-100 - 20;
+  width: $w-100;
+}
+
+.base-container-big {
+  display: grid;
+  gap: $em * 2.4;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0 auto;
+  margin-top: $em * 14.8;
+  // max-width: $em * 180;
+  max-width: $w-100 - 20;
+  width: $w-100;
+}
+
+.layout-big {
+  display: grid;
+  gap: $em * 2.4;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0 auto;
+  max-width: $w-100 - 20;
+  // max-width: $em * 180;
   width: $w-100;
 }

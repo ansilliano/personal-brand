@@ -321,7 +321,7 @@ const PikaPage = () => {
               />
             </div>
           </div>
-          <Shape top='6090px' />
+          <Shape top='6890px' />
           <TitleHeaders
             Children={React.createElement(Three)}
             title='Guidelines'

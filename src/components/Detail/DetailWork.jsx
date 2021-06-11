@@ -36,7 +36,7 @@ const DetailWork = () => {
   const { Children } = projects.find((item) => item.id === Number(id));
 
   return (
-    <div className='base-container'>
+    <div className='base-container-big'>
       <Modal id='modal' isOpen={isOpen} removeModal={removeModal}>
         <Frozen isVisible={openFrozen} left='110px' bottom='85px' />
       </Modal>

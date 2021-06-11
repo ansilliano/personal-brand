@@ -1,14 +1,12 @@
 import React from 'react';
 import doodle from '../assets/img/experiments-doodle.svg';
 import Contact from '../components/Contact';
-import Branding from '../components/Experiments/icons/Branding';
-import Desarrollarte from '../components/Experiments/icons/Desarrollarte';
-import Handcraft from '../components/Experiments/icons/Handcraft';
 // icons components
-import Illustration from '../components/Experiments/icons/Illustration';
-import Sketching from '../components/Experiments/icons/Sketching';
-import Windsurf from '../components/Experiments/icons/Windsurf';
+import Sketching from '../components/Experiments/icons/Illustration';
 import CardWork from '../components/Works/CardWork';
+import Illustration from '../components/Works/icons/DailyUI';
+import Branding from '../components/Works/icons/Pika';
+import Windsurf from '../components/Works/icons/RocketFroz';
 // db
 import db from '../db.json';
 
@@ -18,8 +16,6 @@ const icons = {
   branding: Branding,
   windsurf: Windsurf,
   sketching: Sketching,
-  handcraft: Handcraft,
-  desarrollarte: Desarrollarte,
 };
 
 const Experiments = () => (

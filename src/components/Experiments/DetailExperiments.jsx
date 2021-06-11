@@ -4,26 +4,21 @@ import { useParams } from 'react-router-dom';
 import db from '../../db.json';
 import Contact from '../Contact';
 import MenuWork from '../Menu/MenuWork';
+import Illustration from '../Works/icons/DailyUI';
+import Branding from '../Works/icons/Pika';
+import Windsurf from '../Works/icons/RocketFroz';
 import BrandingPage from './BrandingPage';
-import DesarrollartePage from './DesarrollartePage';
-import HandcraftPage from './HandcraftPage';
-import Branding from './icons/Branding';
-import Desarrollarte from './icons/Desarrollarte';
-import Handcraft from './icons/Handcraft';
-import Illustration from './icons/Illustration';
 import Sketching from './icons/Sketching';
-import Windsurf from './icons/Windsurf';
 import IllustrationPage from './IllustrationPage';
 import SketchingPage from './SketchingPage';
 import WindsurfPage from './WindsurfPage';
+// db
 
 const pageComponent = {
   illustration: IllustrationPage,
   branding: BrandingPage,
   windsurf: WindsurfPage,
   sketching: SketchingPage,
-  handcraft: HandcraftPage,
-  desarrollarte: DesarrollartePage,
 };
 
 const icons = {
@@ -31,8 +26,6 @@ const icons = {
   branding: Branding,
   windsurf: Windsurf,
   sketching: Sketching,
-  handcraft: Handcraft,
-  desarrollarte: Desarrollarte,
 };
 
 const DetailExperiments = () => {
