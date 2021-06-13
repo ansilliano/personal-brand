@@ -36,22 +36,22 @@ const DetailWork = () => {
   const { Children } = projects.find((item) => item.id === Number(id));
 
   return (
-    <div className='base-container-big'>
+    <>
       <Modal id='modal' isOpen={isOpen} removeModal={removeModal}>
         <Frozen isVisible={openFrozen} left='110px' bottom='85px' />
       </Modal>
-      <Contact />
-      <MenuWork
-        items={projects}
-        icons={icons}
-        path={path}
-        isOpen={isOpen}
-        handleModal={handleModal}
-      />
-      <section className='work-detail'>
-        {React.createElement(pageComponent[Children])}
-      </section>
-    </div>
+      <div className='base-container' style={{ position: 'relative' }}>
+        <Contact />
+        <MenuWork
+          items={projects}
+          icons={icons}
+          path={path}
+          isOpen={isOpen}
+          handleModal={handleModal}
+        />
+      </div>
+      <section>{React.createElement(pageComponent[Children])}</section>
+    </>
   );
 };
 

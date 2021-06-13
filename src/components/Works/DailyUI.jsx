@@ -27,7 +27,7 @@ const DailyUIPage = () => {
   return (
     <div className='work-detail'>
       <div className='dailyUI'>
-        <div className='dailyUI__intro layout-grid'>
+        <div className='dailyUI__intro base-container-big'>
           <img
             loading='lazy'
             src='https://storage.googleapis.com/assets-portafolio/daily-ui-background_.png'
