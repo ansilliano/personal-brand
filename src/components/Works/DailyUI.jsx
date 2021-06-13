@@ -56,7 +56,7 @@ const DailyUIPage = () => {
             </div>
           </div>
         </div>
-        <div className='layout-grid base-container'>
+        <div className='layout-grid layout-max-width'>
           <TitleHeaders
             side='right'
             Children={React.createElement(One)}

@@ -58,7 +58,7 @@ const PikaPage = () => {
             </div>
           </div>
         </div>
-        <div className='layout-grid'>
+        <div className='layout-grid layout-max-width'>
           <TitleHeaders
             side='right'
             Children={React.createElement(One)}
@@ -79,7 +79,7 @@ const PikaPage = () => {
               in Chile.
             </div>
           </div>
-          <Shape />
+          <Shape top='1220px' />
           <TitleHeaders
             Children={React.createElement(One)}
             title='Challenge'

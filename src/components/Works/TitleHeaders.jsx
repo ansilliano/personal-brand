@@ -2,7 +2,7 @@ import React from 'react';
 
 const TitleHeaders = ({ Children, subtitle, title, side = '2-4' }) => {
   const styles = {
-    gridColumn: side === 'right' && '-2/-4',
+    gridColumn: side === 'right' && '2/-1',
   };
 
   return (
