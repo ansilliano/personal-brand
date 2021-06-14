@@ -14,54 +14,87 @@ import Shape from './Shape';
 import TitleHeaders from './TitleHeaders';
 
 const PikaPage = () => {
-  const styles = {
-    backgroundColor: '#b04458',
-    left: '270px',
-    width: '250%',
-  };
-
+  const implementation = [
+    {
+      subtitle: 'Testing',
+      text: [
+        { id: 1, text: 'Usability testing.' },
+        { id: 2, text: 'Audit process.' },
+      ],
+    },
+  ];
+  const inspiration = [
+    {
+      itemId: 1,
+      subtitle: 'Discovery',
+      text: [
+        { id: 1, text: 'Requirements understanding.' },
+        { id: 2, text: 'Idea creation.' },
+      ],
+      grid: '1/2',
+    },
+    {
+      itemId: 2,
+      subtitle: 'Research',
+      text: [
+        { id: 1, text: 'User persona.' },
+        { id: 2, text: 'User flow.' },
+      ],
+      grid: '2/-1',
+    },
+  ];
+  const ideation = [
+    {
+      subtitle: 'Design',
+      text: [
+        { id: 1, text: 'Design guidelines.' },
+        { id: 2, text: 'Sketch wireframing.' },
+        { id: 3, text: 'Grayscale wireframing.' },
+        { id: 4, text: 'Prototyping.' },
+      ],
+      grid: '2/-1',
+    },
+  ];
   const style = {
     gridTemplateRows: '300px',
   };
   return (
     <div className='work-detail'>
       <div className='dailyUI'>
-        <div className='dailyUI__intro base-container-big'>
-          <img
-            loading='lazy'
-            src='https://storage.googleapis.com/assets-portafolio/pika_background.png'
-            alt='pika'
-          />
-          <div className='pika__intro--info'>
-            <div className='project-name'>
-              <PikaLogo />
-              <div style={styles} />
-            </div>
-          </div>
-          <div className='dailyUI__description'>
-            <div className='project-task'>
-              <h4>Task</h4>
-              <p>Design a website to rent apartments.</p>
-            </div>
-            <div className='project-tools'>
-              <h4>Role</h4>
-              <p>UI Designer.</p>
-            </div>
-            <div className='project-tools'>
-              <h4>Tools</h4>
-              <div>
-                <Figma size={20} />
-                <Ai size={20} />
-                <Ps size={20} />
-                <Xd size={20} />
+        <div className='main_container'>
+          <div className='pika__intro base-container-big'>
+            <div className='base-container-without-margin work-detail'>
+              <div className='pika__intro--info'>
+                <PikaLogo />
+              </div>
+              <div className='pika_line'>
+                <div />
+              </div>
+              <div className='dailyUI__description'>
+                <div className='project-task'>
+                  <h4>Task</h4>
+                  <p>Design a website to rent apartments.</p>
+                </div>
+                <div className='project-tools'>
+                  <h4>Role</h4>
+                  <p>UI Designer.</p>
+                </div>
+                <div className='project-tools'>
+                  <h4>Tools</h4>
+                  <div>
+                    <Figma size={20} />
+                    <Ai size={20} />
+                    <Ps size={20} />
+                    <Xd size={20} />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className='layout-grid layout-max-width'>
           <TitleHeaders
-            side='right'
-            Children={React.createElement(One)}
+            Children={React.createElement(One, {})}
             title='About Pika'
             subtitle='01_Introduction'
           />
@@ -79,9 +112,10 @@ const PikaPage = () => {
               in Chile.
             </div>
           </div>
-          <Shape top='1220px' />
+          <Shape top='1040px' />
           <TitleHeaders
-            Children={React.createElement(One)}
+            side='left'
+            Children={React.createElement(One, { side: 'left' })}
             title='Challenge'
             subtitle='01_Introduction'
           />
@@ -105,44 +139,14 @@ const PikaPage = () => {
           <div className='pika__container pika-grid' style={style}>
             <BoxMetodology
               title='inspiration'
-              list={[
-                {
-                  itemId: 1,
-                  subtitle: 'Discovery',
-                  text: [
-                    { id: 1, text: 'Requirements understanding.' },
-                    { id: 2, text: 'Idea creation.' },
-                  ],
-                  grid: '1/2',
-                },
-                {
-                  itemId: 2,
-                  subtitle: 'Research',
-                  text: [
-                    { id: 1, text: 'User persona.' },
-                    { id: 2, text: 'User flow.' },
-                  ],
-                  grid: '2/-1',
-                },
-              ]}
+              list={inspiration}
               grid='1/7'
               height='100%'
               heightBox='65%'
             />
             <BoxMetodology
               title='ideation'
-              list={[
-                {
-                  subtitle: 'Design',
-                  text: [
-                    { id: 1, text: 'Design guidelines.' },
-                    { id: 2, text: 'Sketch wireframing.' },
-                    { id: 3, text: 'Grayscale wireframing.' },
-                    { id: 4, text: 'Prototyping.' },
-                  ],
-                  grid: '2/-1',
-                },
-              ]}
+              list={ideation}
               grid='4/10'
               height='100%'
               heightBox='100%'
@@ -151,15 +155,7 @@ const PikaPage = () => {
             />
             <BoxMetodology
               title='implementation'
-              list={[
-                {
-                  subtitle: 'Testing',
-                  text: [
-                    { id: 1, text: 'Usability testing.' },
-                    { id: 2, text: 'Audit process.' },
-                  ],
-                },
-              ]}
+              list={implementation}
               grid='10/-1'
               height='100%'
               heightBox='65%'
@@ -167,7 +163,8 @@ const PikaPage = () => {
             />
           </div>
           <TitleHeaders
-            Children={React.createElement(Two)}
+            side='left'
+            Children={React.createElement(Two, { side: 'left' })}
             title='Context'
             subtitle='02_Problem Statement'
           />
@@ -259,7 +256,8 @@ const PikaPage = () => {
             </div>
           </div>
           <TitleHeaders
-            Children={React.createElement(Two)}
+            side='left'
+            Children={React.createElement(Two, { side: 'left' })}
             title='Project Goals'
             subtitle='02_Problem Statement'
           />
@@ -321,9 +319,10 @@ const PikaPage = () => {
               />
             </div>
           </div>
-          <Shape top='6890px' />
+          <Shape top='6950px' />
           <TitleHeaders
-            Children={React.createElement(Three)}
+            side='left'
+            Children={React.createElement(Three, { side: 'left' })}
             title='Guidelines'
             subtitle='03_Design'
           />

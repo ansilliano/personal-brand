@@ -2,20 +2,14 @@
 .dailyUI__intro {
   background-image: url('https://storage.googleapis.com/assets-portafolio/daily-ui-background_.png');
   background-position: center;
-  // position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   height: $hv-100;
-
-  // img {
-  //   grid-column: 1/-1;
-  // }
 }
 
 .dailyUI__intro--info {
   color: $color-dark-gray;
   grid-column: 3/5;
-  // position: absolute;
 
   h4 {
     font-weight: $poppins-medium;
@@ -27,17 +21,6 @@
   background-color: $color-black;
   grid-column: 5/8;
   height: 1px;
-}
-
-.pika__intro--info {
-  color: $color-dark-gray;
-  grid-column: 3/-1;
-  position: absolute;
-  top: 52px;
-
-  h4 {
-    font-weight: $poppins-medium;
-  }
 }
 
 .work_explain {
@@ -66,7 +49,6 @@
   div {
     bottom: 20px;
     height: 1px;
-    // position: absolute;
   }
 }
 
@@ -103,7 +85,6 @@
   display: inline-block;
   grid-column: 2/-1;
   height: $em * 20;
-  // text-align: right;
   margin: $em * 4 0;
   position: relative;
   width: $w-100;

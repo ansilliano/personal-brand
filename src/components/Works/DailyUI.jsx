@@ -18,22 +18,11 @@ const DailyUIPage = () => {
   const [modalState, handleOpen] = useModal();
   const { isOpen, uid, tag } = modalState;
 
-  // const styles = {
-  //   backgroundColor: '#3e3e3e',
-  //   left: '200px',
-  //   // width: '200%',
-  // };
-
   return (
     <div className='work-detail'>
       <div className='dailyUI'>
         <div className='main_container'>
           <div className='dailyUI__intro base-container-big'>
-            {/* <img
-            loading='lazy'
-            src='https://storage.googleapis.com/assets-portafolio/daily-ui-background_.png'
-            alt='daily-ui'
-          /> */}
             <div className='base-container-without-margin work-detail'>
               <div className='dailyUI__intro--info'>
                 <div className='project-name'>
