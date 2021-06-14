@@ -36,6 +36,16 @@
   width: $w-100;
 }
 
+.experiments-container-without-margin {
+  display: grid;
+  gap: $em * 2.4;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px 10px 1fr;
+  margin: $em * 4 auto;
+  max-width: $em * 120;
+  width: $w-100;
+}
+
 .base-container {
   display: grid;
   gap: $em * 2.4;

@@ -12,7 +12,6 @@ import Sketching from './icons/Sketching';
 import IllustrationPage from './IllustrationPage';
 import SketchingPage from './SketchingPage';
 import WindsurfPage from './WindsurfPage';
-// db
 
 const pageComponent = {
   illustration: IllustrationPage,
@@ -37,13 +36,13 @@ const DetailExperiments = () => {
   const { Children } = experiments.find((item) => item.id === Number(id));
 
   return (
-    <div className='base-container'>
-      <Contact />
-      <MenuWork items={experiments} icons={icons} path={path} />
-      <section className='work-detail'>
-        {React.createElement(pageComponent[Children])}
-      </section>
-    </div>
+    <>
+      <div className='base-container'>
+        <Contact />
+        <MenuWork items={experiments} icons={icons} path={path} />
+      </div>
+      <section>{React.createElement(pageComponent[Children])}</section>
+    </>
   );
 };
 

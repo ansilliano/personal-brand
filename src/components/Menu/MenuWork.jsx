@@ -17,7 +17,7 @@ const MenuWork = ({
   return (
     <div className='menu-work'>
       <div className='arrow-up'>
-        <Arrow deg='90' />
+        <Arrow deg='90' color='#fff' />
       </div>
       <Swiper
         direction='vertical'
@@ -48,7 +48,7 @@ const MenuWork = ({
         ))}
       </Swiper>
       <div className='arrow-down'>
-        <Arrow deg='180deg' />
+        <Arrow deg='180deg' color='#fff' />
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Arrow = ({ size = '30px', deg }) => {
+const Arrow = ({ size = '30px', deg, color = '#280206' }) => {
   const style = {
     transform: `rotate(${deg})`,
   };

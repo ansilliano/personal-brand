@@ -1,68 +1,50 @@
 import React from 'react';
-import useModal from '../../hooks/useModal';
-import Modal from '../Modal';
-import ModalImg from '../ModalImg';
+import Ai from '../icons/Ai';
+import Figma from '../icons/Figma';
+import Ps from '../icons/Ps';
+import Xd from '../icons/Xd';
 import One from '../Works/numbers/One';
 import TitleHeaders from '../Works/TitleHeaders';
 
 const IllustrationPage = () => {
-  const [modalState, handleOpen] = useModal();
-  const { isOpen, uid, tag } = modalState;
-
-  const styles = {
-    backgroundColor: '#3e3e3e',
-    left: '200px',
-    width: '200%',
-  };
-
   return (
     <div className='work-detail'>
-      <div className='dailyUI'>
-        <div className='dailyUI__intro layout-grid'>
-          <img
-            loading='lazy'
-            src='https://storage.googleapis.com/assets-portafolio/illustration/illustration_hero.png'
-            alt='illustration-hero'
-          />
-          <div className='dailyUI__intro--info'>
-            <div className='project-name'>
-              <div style={styles} />
-              <span>Daily</span>
-              <span>UI</span>
-            </div>
-          </div>
-          <div className='dailyUI__description'>
-            <div className='project-task'>
-              <h4>Task</h4>
-              <p>Design 100 UI ideas in 100 days.</p>
-            </div>
-            <div className='project-tools'>
-              <h4>Tools</h4>
+      <div className='experiments'>
+        <div className='main_container'>
+          <div className='illustration__intro base-container-big'>
+            <div className='experiments-container-without-margin work-detail'>
+              <div className='illustration__intro--info'>
+                <div className='experiments-name-project'>
+                  <span>Illustrations</span>
+                </div>
+              </div>
+              <div className='line__white' />
+              <div className='experiments__description'>
+                <div className='experiments-project-task'>
+                  <h4>Task</h4>
+                  <p>
+                    Represent in a graphic way some works in different areas.
+                  </p>
+                </div>
+                <div className='project-tools'>
+                  <h4>Tools</h4>
+                  <div>
+                    <Figma size={20} color='#fff' />
+                    <Ai size={20} color='#fff' />
+                    <Ps size={20} color='#fff' />
+                    <Xd size={20} color='#fff' />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div className='layout-grid'>
+        <div className='layout-grid layout-max-width'>
           <TitleHeaders
-            side='right'
-            Children={React.createElement(One)}
+            Children={React.createElement(One, {})}
             title='About Daily UI'
             subtitle='01_Introduction'
           />
-          <div className='dailyUI__text'>
-            <p>
-              For <strong>100 days</strong>, I was designing 100 different user
-              interface elements for mobile, tablet and web. This project was
-              built to provide a fun engaging way to improve my skills as a
-              designer, earn rewards, and get feedback from others.
-            </p>
-          </div>
-          <div className='dailyUI__container'>
-            <div className='dailyUI__grid'>
-              <Modal id='modal' isOpen={isOpen} removeModal={handleOpen}>
-                <ModalImg isOpen={isOpen} uid={uid} tag={tag} />
-              </Modal>
-            </div>
-          </div>
         </div>
       </div>
     </div>
