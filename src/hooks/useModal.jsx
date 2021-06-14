@@ -7,7 +7,7 @@ const useModal = () => {
     tag: null,
   });
 
-  const handleOpen = (uid, tag) => {
+  const handleOpen = (uid, tag = null) => {
     setModal({
       ...modalState,
       isOpen: !modalState.isOpen,

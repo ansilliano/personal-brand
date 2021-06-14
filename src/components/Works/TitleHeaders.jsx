@@ -5,12 +5,16 @@ const TitleHeaders = ({ Children, subtitle, title, side }) => {
     width: side === 'left' && '100%',
   };
 
+  const pStyle = {
+    right: side !== 'left' && 0,
+  };
+
   return (
     <div className='dailyUI__title'>
       {Children}
       <span style={styles}>
-        <p>{subtitle}</p>
-        <p>{title}</p>
+        <p style={pStyle}>{subtitle}</p>
+        <p style={pStyle}>{title}</p>
       </span>
     </div>
   );

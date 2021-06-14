@@ -90,12 +90,13 @@
   width: $w-100;
   z-index: 2;
 
-  & svg {
-    float: right;
-  }
-
   span {
     float: right;
+    width: $w-100;
+
+    // p {
+    //   right: 0;
+    // }
 
     p:first-of-type {
       bottom: 20px;
@@ -114,6 +115,10 @@
       font-weight: $poppins-bold;
       position: absolute;
     }
+  }
+
+  & svg {
+    float: right;
   }
 }
 

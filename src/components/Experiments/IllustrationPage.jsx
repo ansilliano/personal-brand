@@ -1,12 +1,21 @@
 import React from 'react';
+import { illustrations } from '../../db.json';
+import useModal from '../../hooks/useModal';
 import Ai from '../icons/Ai';
 import Figma from '../icons/Figma';
 import Ps from '../icons/Ps';
 import Xd from '../icons/Xd';
+import Modal from '../Modal';
+import ModalImg from '../ModalImg';
 import One from '../Works/numbers/One';
+import Two from '../Works/numbers/Two';
 import TitleHeaders from '../Works/TitleHeaders';
+import CardIllustrations from './CardIllustrations';
 
 const IllustrationPage = () => {
+  const [modalState, handleOpen] = useModal();
+  const { isOpen, uid, tag } = modalState;
+
   return (
     <div className='work-detail'>
       <div className='experiments'>
@@ -42,9 +51,39 @@ const IllustrationPage = () => {
         <div className='layout-grid layout-max-width'>
           <TitleHeaders
             Children={React.createElement(One, {})}
-            title='About Daily UI'
+            title='About My Illustrations'
             subtitle='01_Introduction'
           />
+          <div className='dailyUI__text'>
+            <p>
+              In this section I want to show you a compilation of some{' '}
+              <strong>graphic works</strong> that I did in my college days and
+              some personal projects as an experimental form of graphic
+              expression.
+            </p>
+          </div>
+          <TitleHeaders
+            side='left'
+            Children={React.createElement(Two, { side: 'left' })}
+            title='Graduation Project'
+            subtitle='02_Design'
+          />
+          <div className='dailyUI__container'>
+            <div className='dailyUI__grid'>
+              <Modal id='modal' isOpen={isOpen} removeModal={handleOpen}>
+                <ModalImg isOpen={isOpen} uid={uid} tag={tag} />
+              </Modal>
+              {illustrations.map(({ uid, title, image }) => (
+                <CardIllustrations
+                  handleModal={handleOpen}
+                  uid={uid}
+                  image={image}
+                  title={title}
+                  key={uid}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
