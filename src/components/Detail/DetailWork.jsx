@@ -40,7 +40,7 @@ const DetailWork = () => {
       <Modal id='modal' isOpen={isOpen} removeModal={removeModal}>
         <Frozen isVisible={openFrozen} left='110px' bottom='85px' />
       </Modal>
-      <div className='base-container' style={{ position: 'relative' }}>
+      <div className='base-container'>
         <Contact />
         <MenuWork
           items={projects}

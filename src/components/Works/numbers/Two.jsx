@@ -1,9 +1,13 @@
 import React from 'react';
 
-const Two = ({ size = 220 }) => {
+const Two = ({ size = 240, side }) => {
+  const style = {
+    cssFloat: side === 'left' ? 'left' : 'right',
+  };
   return (
     <svg
-      width={273}
+      style={style}
+      width={size}
       height={160}
       viewBox='0 0 273 160'
       fill='none'

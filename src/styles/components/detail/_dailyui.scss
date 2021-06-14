@@ -1,21 +1,32 @@
 
 .dailyUI__intro {
-  position: relative;
+  background-image: url('https://storage.googleapis.com/assets-portafolio/daily-ui-background_.png');
+  background-position: center;
+  // position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: $hv-100;
 
-  img {
-    grid-column: 1/-1;
-  }
+  // img {
+  //   grid-column: 1/-1;
+  // }
 }
 
 .dailyUI__intro--info {
   color: $color-dark-gray;
-  grid-column: 3/-1;
-  position: absolute;
-  top: 10px;
+  grid-column: 3/5;
+  // position: absolute;
 
   h4 {
     font-weight: $poppins-medium;
   }
+}
+
+.line_black {
+  align-self: flex-end;
+  background-color: $color-black;
+  grid-column: 5/8;
+  height: 1px;
 }
 
 .pika__intro--info {
@@ -55,7 +66,7 @@
   div {
     bottom: 20px;
     height: 1px;
-    position: absolute;
+    // position: absolute;
   }
 }
 
@@ -86,20 +97,25 @@
 .dailyUI__description {
   color: $color-dark-gray;
   grid-column: 3/-1;
-  position: absolute;
-  top: 200px;
 }
 
 .dailyUI__title {
   display: inline-block;
   grid-column: 2/-1;
+  height: $em * 20;
   // text-align: right;
   margin: $em * 4 0;
   position: relative;
   width: $w-100;
   z-index: 2;
 
+  & svg {
+    float: right;
+  }
+
   span {
+    float: right;
+
     p:first-of-type {
       bottom: 20px;
       color: $color-letter-title;
@@ -137,7 +153,6 @@
 .dailyUI__container {
   grid-column: 3/-2;
   height: auto;
-  margin-bottom: $em *6;
   width: $w-100;
 }
 
@@ -145,6 +160,10 @@
   display: grid;
   gap: $em * 6.4 $em * 2.4;
   grid-template-columns: repeat(2, 1fr);
-  height: auto;
   width: $w-100;
+}
+
+.intro__container {
+  max-width: $w-100;
+  padding: 0 $em * 4;
 }

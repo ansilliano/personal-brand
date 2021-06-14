@@ -18,48 +18,51 @@ const DailyUIPage = () => {
   const [modalState, handleOpen] = useModal();
   const { isOpen, uid, tag } = modalState;
 
-  const styles = {
-    backgroundColor: '#3e3e3e',
-    left: '200px',
-    width: '200%',
-  };
+  // const styles = {
+  //   backgroundColor: '#3e3e3e',
+  //   left: '200px',
+  //   // width: '200%',
+  // };
 
   return (
     <div className='work-detail'>
       <div className='dailyUI'>
-        <div className='dailyUI__intro base-container-big'>
-          <img
+        <div className='main_container'>
+          <div className='dailyUI__intro base-container-big'>
+            {/* <img
             loading='lazy'
             src='https://storage.googleapis.com/assets-portafolio/daily-ui-background_.png'
             alt='daily-ui'
-          />
-          <div className='dailyUI__intro--info'>
-            <div className='project-name'>
-              <div style={styles} />
-              <span>Daily</span>
-              <span>UI</span>
-            </div>
-          </div>
-          <div className='dailyUI__description'>
-            <div className='project-task'>
-              <h4>Task</h4>
-              <p>Design 100 UI ideas in 100 days.</p>
-            </div>
-            <div className='project-tools'>
-              <h4>Tools</h4>
-              <div>
-                <Figma size={20} />
-                <Ai size={20} />
-                <Ps size={20} />
-                <Xd size={20} />
+          /> */}
+            <div className='base-container-without-margin work-detail'>
+              <div className='dailyUI__intro--info'>
+                <div className='project-name'>
+                  <span>Daily</span>
+                  <span>UI</span>
+                </div>
+              </div>
+              <div className='line_black' />
+              <div className='dailyUI__description'>
+                <div className='project-task'>
+                  <h4>Task</h4>
+                  <p>Design 100 UI ideas in 100 days.</p>
+                </div>
+                <div className='project-tools'>
+                  <h4>Tools</h4>
+                  <div>
+                    <Figma size={20} />
+                    <Ai size={20} />
+                    <Ps size={20} />
+                    <Xd size={20} />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className='layout-grid layout-max-width'>
           <TitleHeaders
-            side='right'
-            Children={React.createElement(One)}
+            Children={React.createElement(One, {})}
             title='About Daily UI'
             subtitle='01_Introduction'
           />
@@ -72,7 +75,8 @@ const DailyUIPage = () => {
             </p>
           </div>
           <TitleHeaders
-            Children={React.createElement(Two)}
+            side='left'
+            Children={React.createElement(Two, { side: 'left' })}
             title='Mobile'
             subtitle='02_Design'
           />
@@ -95,10 +99,9 @@ const DailyUIPage = () => {
             </div>
           </div>
           <TitleHeaders
-            Children={React.createElement(Two)}
+            Children={React.createElement(Two, {})}
             title='Desktop'
             subtitle='02_Design'
-            side='right'
           />
           <div className='dailyUI__container'>
             <div className='dailyUI__grid animate__animated'>
@@ -119,9 +122,10 @@ const DailyUIPage = () => {
             </div>
           </div>
           <TitleHeaders
-            Children={React.createElement(Two)}
+            Children={React.createElement(Two, { side: 'left' })}
             title='Miscellaneous'
             subtitle='02_Design'
+            side='left'
           />
           <div className='dailyUI__container'>
             <div className='dailyUI__grid'>
@@ -139,10 +143,9 @@ const DailyUIPage = () => {
             </div>
           </div>
           <TitleHeaders
-            Children={React.createElement(Two)}
+            Children={React.createElement(Two, {})}
             title='Animation'
             subtitle='02_Design'
-            side='right'
           />
           <div className='dailyUI__container'>
             <div className='dailyUI__grid'>

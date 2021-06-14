@@ -26,6 +26,16 @@
   width: $w-100;
 }
 
+.base-container-without-margin {
+  display: grid;
+  gap: $em * 2.4;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 150px 1fr;
+  margin: $em * 4 auto;
+  max-width: $em * 120;
+  width: $w-100;
+}
+
 .base-container {
   display: grid;
   gap: $em * 2.4;
@@ -41,7 +51,6 @@
   gap: $em * 2.4;
   grid-template-columns: repeat(12, 1fr);
   margin-top: $em * 14.8 a;
-  padding: 0 $em *4;
   width: $w-100;
 }
 

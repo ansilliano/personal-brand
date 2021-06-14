@@ -1,14 +1,14 @@
 import React from 'react';
 
-const TitleHeaders = ({ Children, subtitle, title, side = '2-4' }) => {
+const TitleHeaders = ({ Children, subtitle, title, side }) => {
   const styles = {
-    gridColumn: side === 'right' && '2/-1',
+    width: side === 'left' && '100%',
   };
 
   return (
-    <div className='dailyUI__title' style={styles}>
+    <div className='dailyUI__title'>
       {Children}
-      <span>
+      <span style={styles}>
         <p>{subtitle}</p>
         <p>{title}</p>
       </span>
