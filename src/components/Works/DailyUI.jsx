@@ -16,7 +16,7 @@ import TitleHeaders from './TitleHeaders';
 
 const DailyUIPage = () => {
   const [modalState, handleOpen] = useModal();
-  const { isOpen, uid, tag } = modalState;
+  const { isOpen, uid, tag, keyTag } = modalState;
 
   return (
     <div className='work-detail'>
@@ -72,7 +72,7 @@ const DailyUIPage = () => {
           <div className='dailyUI__container'>
             <div className='dailyUI__grid'>
               <Modal id='modal' isOpen={isOpen} removeModal={handleOpen}>
-                <ModalImg isOpen={isOpen} uid={uid} tag={tag} />
+                <ModalImg isOpen={isOpen} uid={uid} tag={tag} keyTag={keyTag} />
               </Modal>
               {dailyUI.mobile.map(({ tag, uid, filename, filepath, title }) => (
                 <CardDaily

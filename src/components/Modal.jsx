@@ -13,7 +13,7 @@ const Modal = ({ isOpen, removeModal, children = null }) => {
       style={style}
       className='modal'
       onClick={() => {
-        removeModal();
+        removeModal({ uid: null });
       }}
     >
       {children}

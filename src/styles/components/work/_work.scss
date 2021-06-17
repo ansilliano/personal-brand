@@ -89,17 +89,27 @@
   font-weight: $poppins-regular;
   height: $hv-100;
   margin: auto;
-  width: $w-100 - 50;
+  width: $w-100;
   z-index: 50;
 
-  p {
-    z-index: 100;
-  }
+  div {
+    @include center-items;
 
-  img {
-    border-radius: 4px;
-    height: auto;
-    max-width: $w-100;
+    flex-direction: column;
+    margin: auto;
+    width: auto;
+
+    img {
+      border-radius: 4px;
+      max-height: $hv-100 - 20;
+      max-width: $w-100;
+      width: auto;
+    }
+
+    p {
+      align-self: flex-start;
+      z-index: 100;
+    }
   }
 }
 

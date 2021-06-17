@@ -31,7 +31,6 @@ const MenuWork = ({
       >
         {items.map(({ color, Children, id, route, hoverColor }) => (
           <SwiperSlide>
-            {console.log(icons[Children])}
             <MenuItem
               handleModal={handleModal}
               setVisible={setVisible}

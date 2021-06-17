@@ -1,26 +1,35 @@
 /* eslint-disable operator-linebreak */
 import React from 'react';
 import db from '../db.json';
+import ImageLoad from './ImageLoad';
 
-const ModalImg = ({ uid = null, tag = null }) => {
+const ModalImg = ({ uid = null, tag = null, keyTag = null }) => {
   let data = null;
   let item = null;
-  if (tag !== null) {
-    data = db.dailyUI[tag];
+
+  if (keyTag === 'illus') {
+    data = db.illustrations[tag];
+    item = data.find((item) => item.uid === uid);
   }
-  if (uid !== null) {
+
+  if (keyTag === 'daily') {
+    data = db.dailyUI[tag];
     item = data.find((daily) => daily.uid === uid);
   }
 
   return (
     <div className='modal-image'>
       {uid && (
-        <>
-          <img src={item.filepath} alt={item.title} />
+        <div>
+          <ImageLoad
+            alt={item.title}
+            src={item.filepath}
+            placeholder={item.filepath}
+          />
           <p>
             # {item.filename} | {item.title}
           </p>
-        </>
+        </div>
       )}
     </div>
   );

@@ -14,10 +14,13 @@ import CardIllustrations from './CardIllustrations';
 
 const IllustrationPage = () => {
   const [modalState, handleOpen] = useModal();
-  const { isOpen, uid, tag } = modalState;
+  const { isOpen, uid, tag, keyTag } = modalState;
 
   return (
     <div className='work-detail'>
+      <Modal id='modal' isOpen={isOpen} removeModal={handleOpen}>
+        <ModalImg isOpen={isOpen} uid={uid} tag={tag} keyTag={keyTag} />
+      </Modal>
       <div className='experiments'>
         <div className='main_container'>
           <div className='illustration__intro base-container-big'>
@@ -69,19 +72,45 @@ const IllustrationPage = () => {
             subtitle='02_Design'
           />
           <div className='dailyUI__container'>
-            <div className='dailyUI__grid'>
-              <Modal id='modal' isOpen={isOpen} removeModal={handleOpen}>
-                <ModalImg isOpen={isOpen} uid={uid} tag={tag} />
-              </Modal>
-              {illustrations.map(({ uid, title, image }) => (
-                <CardIllustrations
-                  handleModal={handleOpen}
-                  uid={uid}
-                  image={image}
-                  title={title}
-                  key={uid}
-                />
-              ))}
+            <div className='illustrations__grid'>
+              {illustrations.tesis.map(
+                ({ uid, title, filepath, gridColumn, tag }) => (
+                  <CardIllustrations
+                    gridColumn={gridColumn}
+                    handleModal={handleOpen}
+                    uid={uid}
+                    tag={tag}
+                    image={filepath}
+                    title={title}
+                    key={uid}
+                  />
+                  // eslint-disable-next-line comma-dangle
+                )
+              )}
+            </div>
+          </div>
+          <TitleHeaders
+            Children={React.createElement(Two, {})}
+            title='Miscellaneous'
+            subtitle='02_Design'
+          />
+          <div className='dailyUI__container grid__container--margin'>
+            <div className='illustrations__grid--miscellaneous'>
+              {illustrations.miscellaneous.map(
+                ({ uid, title, filepath, gridColumn, fitObject, tag }) => (
+                  <CardIllustrations
+                    fitObject={fitObject}
+                    gridColumn={gridColumn}
+                    handleModal={handleOpen}
+                    uid={uid}
+                    tag={tag}
+                    image={filepath}
+                    title={title}
+                    key={uid}
+                  />
+                  // eslint-disable-next-line comma-dangle
+                )
+              )}
             </div>
           </div>
         </div>

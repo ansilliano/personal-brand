@@ -339,56 +339,144 @@
       }
     ]
   },
-  "illustrations": [
-    {
-      "uid": 1,
-      "title":"Sports Bridge",
-      "image":"https://storage.googleapis.com/assets-portafolio/illustration/tesis/esquema_a.png"
-    },
-    {
-      "uid": 2,
-      "title":"Commercial Bridge",
-      "image":"https://storage.googleapis.com/assets-portafolio/illustration/tesis/esquema_a_1.jpg"
-    },
-    {
-      "uid": 3,
-      "title":"Cultural Chunk",
-      "image":"https://storage.googleapis.com/assets-portafolio/illustration/tesis/esquema_b.png"
-    },
-    {
-      "uid": 4,
-      "title":"Academic Chunk",
-      "image":"https://storage.googleapis.com/assets-portafolio/illustration/tesis/esquema_b_1.jpg"
-    },
-    {
-      "uid": 5,
-      "title":"Sports Chunk",
-      "image":"https://storage.googleapis.com/assets-portafolio/illustration/tesis/esquema_c.png"
-    },
-    {
-      "uid": 6,
-      "title":"Academic Bridge",
-      "image":"https://storage.googleapis.com/assets-portafolio/illustration/tesis/esquema_c_1.jpg"
-    },
-    {
-      "uid": 7,
-      "title":"Cultural Bridge",
-      "image":"https://storage.googleapis.com/assets-portafolio/illustration/tesis/esquema_e.png"
-    },
-    {
-      "uid": 8,
-      "title":"Commercial Chunk",
-      "image":"https://storage.googleapis.com/assets-portafolio/illustration/tesis/esquema_e_1.jpg"
-    },
-    {
-      "uid": 9,
-      "title":"Practical chunk",
-      "image":"https://storage.googleapis.com/assets-portafolio/illustration/tesis/esquema_f.png"
-    },
-    {
-      "uid": 10,
-      "title":"Practical Bridge",
-      "image":"https://storage.googleapis.com/assets-portafolio/illustration/tesis/esquema_f_1.jpg"
-    }
-  ]
+  "illustrations": {
+    "tesis": [
+      {
+        "uid": "43e971a3-8e5c-4340-abac-2698db6297d5",
+        "title": "Sports Bridge",
+        "filepath": "https://storage.googleapis.com/assets-portafolio/illustration/tesis/esquema_c_1.jpg",
+        "gridColumn": "1/4",
+        "tag":"tesis"
+      },
+      {
+        "uid": "d13e3252-7803-4895-8a3e-6d8ae2f54f9c",
+        "title": "Commercial Bridge",
+        "filepath": "https://storage.googleapis.com/assets-portafolio/illustration/tesis/esquema_b_1.jpg",
+        "gridColumn": "4/-1",
+        "tag":"tesis"
+      },
+      {
+        "uid": "d6682f37-9640-4998-8a31-98f3a4597607",
+        "title": "Cultural Chunk",
+        "filepath": "https://storage.googleapis.com/assets-portafolio/illustration/tesis/esquema_f.png",
+        "gridColumn": "1/3",
+        "tag":"tesis"
+      },
+      {
+        "uid": "7a9733a2-be44-4029-b446-be823328b0b2",
+        "title": "Academic Chunk",
+        "filepath": "https://storage.googleapis.com/assets-portafolio/illustration/tesis/esquema_e.png",
+        "gridColumn": "3/5",
+        "tag":"tesis"
+      },
+      {
+        "uid": "4e24f653-94e0-46e3-aef9-b9af4a459d01",
+        "title": "Sports Chunk",
+        "filepath": "https://storage.googleapis.com/assets-portafolio/illustration/tesis/esquema_c.png",
+        "gridColumn": "5/-1",
+        "tag":"tesis"
+      },
+      {
+        "uid": "2cb491c3-aa4f-4b1f-91c6-983d50cb3aa5",
+        "title": "Academic Bridge",
+        "filepath": "https://storage.googleapis.com/assets-portafolio/illustration/tesis/esquema_e_1.jpg",
+        "gridColumn": "1/4",
+        "tag":"tesis"
+      },
+      {
+        "uid": "c235b985-4f73-4de7-86e7-59b9a0adcbf7",
+        "title": "Cultural Bridge",
+        "filepath": "https://storage.googleapis.com/assets-portafolio/illustration/tesis/esquema_f_1.jpg",
+        "gridColumn": "4/-1",
+        "tag":"tesis"
+      },
+      {
+        "uid": "77a89161-b909-4f7a-bff7-292f119e458d",
+        "title": "Commercial Chunk",
+        "filepath": "https://storage.googleapis.com/assets-portafolio/illustration/tesis/esquema_b.png",
+        "gridColumn": "1/4",
+        "tag":"tesis"
+      },
+      {
+        "uid": "4be96864-a4a3-488e-bb42-dd20c0bd3440",
+        "title": "Practical chunk",
+        "filepath": "https://storage.googleapis.com/assets-portafolio/illustration/tesis/esquema_a.png",
+        "gridColumn": "4/-1",
+        "tag":"tesis"
+      },
+      {
+        "uid": "4ef4eb6b-9908-4473-b5f5-2d2e942ad73d",
+        "title": "Practical Bridge",
+        "filepath": "https://storage.googleapis.com/assets-portafolio/illustration/tesis/esquema_a_1.jpg",
+        "gridColumn": "1/-1",
+        "tag":"tesis"
+      }
+    ],
+    "miscellaneous": [
+      {
+        "uid": "f90b261c-6515-485e-a2aa-2266a96df9f5",
+        "title": "Plan and Eleveation",
+        "filepath": "https://storage.googleapis.com/assets-portafolio/illustration/miscellaneous/04_sistema_corte.jpg",
+        "gridColumn": "1/6",
+        "fitObject":"fill",
+        "tag":"miscellaneous"
+      },
+      {
+        "uid": "10bc15ff-adf1-4fda-844f-cccaff4e1e79",
+        "title": "Venezuela",
+        "filepath": "https://storage.googleapis.com/assets-portafolio/illustration/miscellaneous/07_vzla.jpg",
+        "gridColumn": "6/-1",
+        "fitObject":"fill",
+        "tag":"miscellaneous"
+      },
+      {
+        "uid": "7449046d-ae47-4516-a80d-53b819c02143",
+        "title": "Criticism Poster",
+        "filepath": "https://storage.googleapis.com/assets-portafolio/illustration/miscellaneous/06_urss.jpg",
+        "gridColumn": "1/6",
+        "fitObject":"cover",
+        "tag":"miscellaneous"
+      },
+      {
+        "uid": "54016361-e14f-4a58-9bf3-c7f8fb19869e",
+        "title": "Chicuelo #01",
+        "filepath": "https://storage.googleapis.com/assets-portafolio/illustration/miscellaneous/05_jharold.jpg",
+        "gridColumn": "6/-1",
+        "fitObject":"cover",
+        "tag":"miscellaneous"
+      },
+      {
+        "uid": "97008251-cec7-4562-a6d7-7cce29c06c97",
+        "title": "Low Poly - Self Portrait",
+        "filepath": "https://storage.googleapis.com/assets-portafolio/illustration/miscellaneous/02_retrato.png",
+        "gridColumn": "1/4",
+        "fitObject":"cover",
+        "tag":"miscellaneous"
+      },
+      {
+        "uid": "96311873-0fc7-4550-ac8e-ce16af5a0479",
+        "title": "Melodioso",
+        "filepath": "https://storage.googleapis.com/assets-portafolio/illustration/miscellaneous/03_jordis.jpg",
+        "gridColumn": "4/8",
+        "fitObject":"contain",
+        "tag":"miscellaneous"
+      },
+      {
+        "uid": "838dd825-8fcf-410f-a49f-104a4f7b2462",
+        "title": "Crazy Teacher",
+        "filepath": "https://storage.googleapis.com/assets-portafolio/illustration/miscellaneous/01_face.png",
+        "gridColumn": "8/-1",
+        "fitObject":"contain",
+        "tag":"miscellaneous"
+      },
+      {
+        "uid": "466282ca-e1fb-473a-a185-f503e581ee61",
+        "title": "La Palomera - Baruta",
+        "filepath": "https://storage.googleapis.com/assets-portafolio/illustration/miscellaneous/08_topografia.jpg",
+        "gridColumn": "1/-1",
+        "fitObject":"fill",
+        "tag":"miscellaneous"
+      }
+    ]
+  }
 }

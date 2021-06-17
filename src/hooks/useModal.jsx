@@ -5,14 +5,16 @@ const useModal = () => {
     isOpen: false,
     uid: null,
     tag: null,
+    keyTag: null,
   });
 
-  const handleOpen = (uid, tag = null) => {
+  const handleOpen = ({ uid, tag = null, keyTag = null }) => {
     setModal({
       ...modalState,
       isOpen: !modalState.isOpen,
       uid: uid || null,
       tag: tag || null,
+      keyTag: keyTag || null,
     });
   };
 
