@@ -6,7 +6,7 @@ const ImageLoad = React.memo(
     placeholder = 'https://dummyimage.com/2000x1000/f5f5f5/f5f5f5.jpg',
     alt = '',
     fitObject,
-    classSyle = '',
+    classStyle = '',
   }) => {
     const [loading, setLoading] = useState(true);
     const [currentSrc, updateSrc] = useState(placeholder);
@@ -24,7 +24,7 @@ const ImageLoad = React.memo(
 
     return (
       <img
-        className={classSyle}
+        className={classStyle}
         src={currentSrc}
         style={{
           opacity: loading ? 0.5 : 1,

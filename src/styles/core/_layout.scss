@@ -37,12 +37,13 @@
 }
 
 .experiments-container-without-margin {
+  column-gap: $em * 2.4;
   display: grid;
-  gap: $em * 2.4;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 100px 10px 1fr;
   margin: $em * 4 auto;
   max-width: $em * 120;
+  row-gap: $em;
   width: $w-100;
 }
 

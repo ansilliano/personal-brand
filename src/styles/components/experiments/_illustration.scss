@@ -71,3 +71,50 @@
     width: 100%;
   }
 }
+
+.sketching__intro {
+  background-image: url('https://storage.googleapis.com/assets-portafolio/sketching/02_astronauta.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: $hv-100 + 40;
+}
+
+.sketching__intro--info {
+  color: $color-black;
+  grid-column: 3/5;
+
+  h4 {
+    font-weight: $poppins-medium;
+  }
+}
+
+.line__black {
+  align-self: flex-start;
+  background-color: $color-black;
+  grid-column: 3/8;
+  height: 1px;
+}
+
+.cardWindsurf {
+  border-radius: 4px;
+  cursor: pointer;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
+  width: $w-100;
+
+  p {
+    color: $color-dark-gray;
+    font-family: $font-poppins;
+    font-size: $font-14;
+    font-weight: $poppins-regular;
+  }
+
+  img {
+    border-radius: 4px;
+    height: 100%;
+    max-width: 100%;
+    // object-fit: fill;
+    object-fit: cover;
+    width: 100%;
+  }
+}

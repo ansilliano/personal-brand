@@ -3,6 +3,7 @@ import Ai from '../icons/Ai';
 import Figma from '../icons/Figma';
 import Ps from '../icons/Ps';
 import Xd from '../icons/Xd';
+import ImageLoad from '../ImageLoad';
 import BoxMetodology from './BoxMetodology';
 import ButtonLink from './ButtonLink';
 import InfoPika from './InfoPika';
@@ -99,8 +100,9 @@ const PikaPage = () => {
             subtitle='01_Introduction'
           />
           <div className='pika__text'>
-            <img
+            <ImageLoad
               src='https://storage.googleapis.com/assets-portafolio/pika-assets/macbook-mockup.png'
+              placeholder='https://storage.googleapis.com/assets-portafolio/pika-assets/macbook-mockup.png'
               alt='macbook-pika'
             />
             <div>
@@ -135,7 +137,6 @@ const PikaPage = () => {
             title='Methodology'
             subtitle='01_Introduction'
           />
-
           <div className='pika__container pika-grid' style={style}>
             <BoxMetodology
               title='inspiration'
@@ -169,9 +170,10 @@ const PikaPage = () => {
             subtitle='02_Problem Statement'
           />
           <div className='pika__container pika-grid'>
-            <img
-              className='context__container--img'
+            <ImageLoad
+              classStyle='context__container--img'
               src='https://storage.googleapis.com/assets-portafolio/pika-assets/context-illustration.svg'
+              placeholder='https://storage.googleapis.com/assets-portafolio/pika-assets/context-illustration.svg'
               alt='context-illustration'
             />
             <div className='context__container'>
@@ -207,9 +209,10 @@ const PikaPage = () => {
           />
           <div className='pika__container pika-grid'>
             <div className='user__persona'>
-              <img
-                className='user__persona--img'
+              <ImageLoad
+                classStyle='user__persona--img'
                 src='https://storage.googleapis.com/assets-portafolio/pika-assets/user-persona-image.png'
+                placeholder='https://storage.googleapis.com/assets-portafolio/pika-assets/user-persona-image.png'
                 alt='user-persona'
               />
               <div className='user__persona--profile'>
@@ -289,32 +292,37 @@ const PikaPage = () => {
           />
           <div className='pika__container pika-grid'>
             <div className='wireframe_home'>
-              <img
+              <ImageLoad
                 src='https://storage.googleapis.com/assets-portafolio/pika-assets/Home.png'
+                placeholder='https://storage.googleapis.com/assets-portafolio/pika-assets/Home.png'
                 alt='pika-home'
               />
             </div>
             <div className='wireframe_1'>
-              <img
+              <ImageLoad
                 src='https://storage.googleapis.com/assets-portafolio/pika-assets/Home_1.png'
+                placeholder='https://storage.googleapis.com/assets-portafolio/pika-assets/Home_1.png'
                 alt='pika-home'
               />
             </div>
             <div className='wireframe_central'>
-              <img
+              <ImageLoad
                 src='https://storage.googleapis.com/assets-portafolio/pika-assets/Home_central.png'
+                placeholder='https://storage.googleapis.com/assets-portafolio/pika-assets/Home_central.png'
                 alt='pika-central'
               />
             </div>
             <div className='wireframe_basic_end_left'>
-              <img
+              <ImageLoad
                 src='https://storage.googleapis.com/assets-portafolio/pika-assets/Home_end_left.png'
+                placeholder='https://storage.googleapis.com/assets-portafolio/pika-assets/Home_end_left.png'
                 alt='pika-home'
               />
             </div>
             <div className='wireframe_basic_end_right'>
-              <img
+              <ImageLoad
                 src='https://storage.googleapis.com/assets-portafolio/pika-assets/Home_end_right.png'
+                placeholder='https://storage.googleapis.com/assets-portafolio/pika-assets/Home_end_right.png'
                 alt='pika-home'
               />
             </div>
@@ -462,26 +470,30 @@ const PikaPage = () => {
               side='right'
             />
             <div className='wireframe_central'>
-              <img
+              <ImageLoad
                 src='https://storage.googleapis.com/assets-portafolio/pika-assets/pika_prototype_home.png'
+                placeholder='https://storage.googleapis.com/assets-portafolio/pika-assets/pika_prototype_home.png'
                 alt='prototype-home'
               />
             </div>
             <div className='wireframe_central'>
-              <img
+              <ImageLoad
                 src='https://storage.googleapis.com/assets-portafolio/pika-assets/pika_prototype_4.png'
+                placeholder='https://storage.googleapis.com/assets-portafolio/pika-assets/pika_prototype_4.png'
                 alt='prototype-4'
               />
             </div>
             <div className='wireframe_central'>
-              <img
+              <ImageLoad
                 src='https://storage.googleapis.com/assets-portafolio/pika-assets/pika_prototype_3.png'
+                placeholder='https://storage.googleapis.com/assets-portafolio/pika-assets/pika_prototype_3.png'
                 alt='prototype-3'
               />
             </div>
             <div className='wireframe_central'>
-              <img
+              <ImageLoad
                 src='https://storage.googleapis.com/assets-portafolio/pika-assets/pika_prototype_2.png'
+                placeholder='https://storage.googleapis.com/assets-portafolio/pika-assets/pika_prototype_2.png'
                 alt='prototype-2'
               />
             </div>

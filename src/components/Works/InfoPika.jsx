@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageLoad from '../ImageLoad';
 
 const InfoPika = ({ img, title, text, grid }) => {
   const style = {
@@ -7,7 +8,7 @@ const InfoPika = ({ img, title, text, grid }) => {
   return (
     <div className='infoPika' style={style}>
       <p>{title}</p>
-      <img src={img} alt={title} />
+      <ImageLoad src={img} placeholder={img} alt={title} />
       <p>{text}</p>
     </div>
   );
