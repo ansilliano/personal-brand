@@ -32,6 +32,26 @@ const BrandingPage = () => {
       color: '#E04B00',
     },
   ];
+  const colorsKemus = [
+    {
+      color: '#0E1C26',
+    },
+    {
+      color: '#12547B',
+    },
+    {
+      color: '#CBE4F7',
+      colorText: '#363636',
+    },
+    {
+      color: '#F9F9F9',
+      colorText: '#363636',
+    },
+    {
+      color: '#FDD13D',
+      colorText: '#363636',
+    },
+  ];
 
   return (
     <div className='work-detail'>
@@ -110,133 +130,271 @@ const BrandingPage = () => {
           </div>
           <div className='branding__tipo branding__container'>
             <div className='tipography_one--jost'>
-              <div className='typography'>
-                <p className='typography__title'>Jost</p>
-                <div className='typography__details'>
+              <div className='typography--source'>
+                <p className='typography--source__title'>Jost</p>
+                <div className='typography--source__details'>
                   <div>
-                    <p>AaBbCc123</p>
+                    <p>AaBbCcDdEe123</p>
+                  </div>
+                  <div>
+                    <p>
+                      abcdefghijklmnopqrstuwxyz ABCDEFGHIJKLMNOPQRSTUWXYZ
+                      £!@#$%^&*()_+-=[]{};’\,./:”|?
+                    </p>
                   </div>
                 </div>
-                <div>
+                <div className='typography--source__info'>
+                  <div>
+                    <div className='thin'>
+                      <span>Thin</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                    <div className='extralight'>
+                      <span>ExtraLight</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                    <div className='light'>
+                      <span>Light</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                    <div className='medium'>
+                      <span>Medium</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div className='semibold'>
+                      <span>SemiBold</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                    <div className='bold'>
+                      <span>Bold</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                    <div className='extrabold'>
+                      <span>ExtraBold</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                    <div className='black'>
+                      <span>Black</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                  </div>
+                </div>
+                {/* <div className='abc-container'>
                   <p>
-                    abcdefghijklmnopqrstuwxyz ABCDEFGHIJKLMNOPQRSTUWXYZ
-                    £!@#$%^&*()_+-=[]{};’\,./:”|?
+                    ABCČĆDĐEFGHIJKLMNOPQRSŠTUVWXYZŽabcčćdđefghijklmnopqrsštuvwxyzžĂÂÊÔăâêô1234567890‘?’“!”%#@/&\+÷×®©$€£¥¢:;,.
                   </p>
-                </div>
-              </div>
-              <div className='typography__info--jost'>
-                <div>
-                  <div className='thin'>
-                    <span>AaBbCc123</span>
-                    <span>Thin</span>
-                  </div>
-                  <div className='extralight'>
-                    <span>AaBbCc123</span>
-                    <span>ExtraLight</span>
-                  </div>
-                  <div className='light'>
-                    <span>AaBbCc123</span>
-                    <span>Light</span>
-                  </div>
-                  <div className='regular'>
-                    <span>AaBbCc123</span>
-                    <span>Regular</span>
-                  </div>
-                  <div className='medium'>
-                    <span>AaBbCc123</span>
-                    <span>Medium</span>
-                  </div>
-                </div>
-                <div>
-                  <div className='semibold'>
-                    <span>AaBbCc123</span>
-                    <span>SemiBold</span>
-                  </div>
-                  <div className='bold'>
-                    <span>AaBbCc123</span>
-                    <span>Bold</span>
-                  </div>
-                  <div className='extrabold'>
-                    <span>AaBbCc123</span>
-                    <span>ExtraBold</span>
-                  </div>
-                  <div className='black'>
-                    <span>AaBbCc123</span>
-                    <span>Black</span>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <p>
-                  abcdefghijklmnopqrstuwxyz ABCDEFGHIJKLMNOPQRSTUWXYZ
-                  £!@#$%^&*()_+-=[]{};’\,./:”|?
-                </p>
+                </div> */}
               </div>
             </div>
             <div className='center-line' />
             <div className='tipography_two--source'>
-              <div className='typography'>
-                <p className='typography__title'>Source Serif Pro</p>
-                <div className='typography__details'>
+              <div className='typography--source'>
+                <p className='typography--source__title'>Source Serif Pro</p>
+                <div className='typography--source__details'>
                   <div>
-                    <p>AaBbCc123</p>
+                    <p>AaBbCcDdEe123</p>
+                  </div>
+                  <div>
+                    <p>
+                      abcdefghijklmnopqrstuwxyz ABCDEFGHIJKLMNOPQRSTUWXYZ
+                      £!@#$%^&*()_+-=[]{};’\,./:”|?
+                    </p>
                   </div>
                 </div>
-                <div>
+                <div className='typography--source__info'>
+                  <div>
+                    <div className='thin'>
+                      <span>Thin</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                    <div className='extralight'>
+                      <span>ExtraLight</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                    <div className='light'>
+                      <span>Light</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                    <div className='medium'>
+                      <span>Medium</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div className='semibold'>
+                      <span>SemiBold</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                    <div className='bold'>
+                      <span>Bold</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                    <div className='extrabold'>
+                      <span>ExtraBold</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                    <div className='black'>
+                      <span>Black</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                  </div>
+                </div>
+                {/* <div className='abc-container'>
                   <p>
-                    abcdefghijklmnopqrstuwxyz ABCDEFGHIJKLMNOPQRSTUWXYZ
-                    £!@#$%^&*()_+-=[]{};’\,./:”|?
+                    ABCČĆDĐEFGHIJKLMNOPQRSŠTUVWXYZŽabcčćdđefghijklmnopqrsštuvwxyzžĂÂÊÔăâêô1234567890‘?’“!”%#@/&\+÷×®©$€£¥¢:;,.
                   </p>
-                </div>
+                </div> */}
               </div>
-              <div className='typography__info--source'>
-                <div>
-                  <div className='thin'>
-                    <span>AaBbCc123</span>
-                    <span>Thin</span>
+            </div>
+          </div>
+          <div className='branding__container--line'>
+            <p>Aplicaciones de Marca</p>
+          </div>
+          <div className='branding__container brading__convergente'>
+            <div style={{ gridColumn: '1/4' }}>
+              <img
+                src='https://storage.googleapis.com/assets-portafolio/branding/CVGT1.png'
+                alt='Convergente-1'
+              />
+            </div>
+            <div style={{ gridColumn: '4/-1' }}>
+              <img
+                src='https://storage.googleapis.com/assets-portafolio/branding/CVGT3.png'
+                alt='Convergente-2'
+              />
+            </div>
+            <div style={{ gridColumn: '1/-1' }}>
+              <img
+                src='https://storage.googleapis.com/assets-portafolio/branding/CVGT2.png'
+                alt='Convergente-3'
+              />
+            </div>
+          </div>
+          <TitleHeaders
+            Children={React.createElement(Two, {})}
+            title='Kemus'
+            subtitle='02_Design'
+          />
+          <div className='dailyUI__container'>
+            <div className='divergente__logo'>
+              <img src={DivergenteLogo} alt='divergente--logo' />
+            </div>
+          </div>
+          <div className='branding__container--line'>
+            <p>Variacioness</p>
+          </div>
+          <div className='branding__container brading__convergente'>
+            <div style={{ gridColumn: '1/4' }}>
+              <img
+                src='https://storage.googleapis.com/assets-portafolio/branding/CVGT1.png'
+                alt='Convergente-1'
+              />
+            </div>
+            <div style={{ gridColumn: '4/-1' }}>
+              <img
+                src='https://storage.googleapis.com/assets-portafolio/branding/CVGT3.png'
+                alt='Convergente-2'
+              />
+            </div>
+            <div style={{ gridColumn: '1/-1' }}>
+              <img
+                src='https://storage.googleapis.com/assets-portafolio/branding/CVGT2.png'
+                alt='Convergente-3'
+              />
+            </div>
+          </div>
+          <div className='branding__container--line'>
+            <p>Colores</p>
+          </div>
+          <div className='branding__colores--kemus branding__container'>
+            {colorsKemus.map(({ color, colorText }) => (
+              <Colors color={color} height='200px' colorText={colorText} />
+            ))}
+          </div>
+          <div className='branding__container--line'>
+            <p>Tipografía</p>
+          </div>
+          <div className='branding__typography--kemus'>
+            <div className='tipography_one--jost'>
+              <div className='typography--source'>
+                <p className='typography--source__title'>Work Sans</p>
+                <div className='typography--source__details'>
+                  <div>
+                    <p>AaBbCcDdEe123</p>
                   </div>
-                  <div className='extralight'>
-                    <span>AaBbCc123</span>
-                    <span>ExtraLight</span>
-                  </div>
-                  <div className='light'>
-                    <span>AaBbCc123</span>
-                    <span>Light</span>
-                  </div>
-                  <div className='regular'>
-                    <span>AaBbCc123</span>
-                    <span>Regular</span>
-                  </div>
-                  <div className='medium'>
-                    <span>AaBbCc123</span>
-                    <span>Medium</span>
+                  <div>
+                    <p>
+                      abcdefghijklmnopqrstuwxyz ABCDEFGHIJKLMNOPQRSTUWXYZ
+                      £!@#$%^&*()_+-=[]{};’\,./:”|?
+                    </p>
                   </div>
                 </div>
-                <div>
-                  <div className='semibold'>
-                    <span>AaBbCc123</span>
-                    <span>SemiBold</span>
+                <div className='typography--source__info'>
+                  <div>
+                    <div className='thin'>
+                      <span>Thin</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                    <div className='extralight'>
+                      <span>ExtraLight</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                    <div className='light'>
+                      <span>Light</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                    <div className='medium'>
+                      <span>Medium</span>
+                      <span>AaBbCc123</span>
+                    </div>
                   </div>
-                  <div className='bold'>
-                    <span>AaBbCc123</span>
-                    <span>Bold</span>
-                  </div>
-                  <div className='extrabold'>
-                    <span>AaBbCc123</span>
-                    <span>ExtraBold</span>
-                  </div>
-                  <div className='black'>
-                    <span>AaBbCc123</span>
-                    <span>Black</span>
+                  <div>
+                    <div className='semibold'>
+                      <span>SemiBold</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                    <div className='bold'>
+                      <span>Bold</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                    <div className='extrabold'>
+                      <span>ExtraBold</span>
+                      <span>AaBbCc123</span>
+                    </div>
+                    <div className='black'>
+                      <span>Black</span>
+                      <span>AaBbCc123</span>
+                    </div>
                   </div>
                 </div>
+                {/* <div className='abc-container'>
+                  <p>
+                    ABCČĆDĐEFGHIJKLMNOPQRSŠTUVWXYZŽabcčćdđefghijklmnopqrsštuvwxyzžĂÂÊÔăâêô1234567890‘?’“!”%#@/&\+÷×®©$€£¥¢:;,.
+                  </p>
+                </div> */}
               </div>
-              <div>
-                <p>
-                  abcdefghijklmnopqrstuwxyz ABCDEFGHIJKLMNOPQRSTUWXYZ
-                  £!@#$%^&*()_+-=[]{};’\,./:”|?
-                </p>
-              </div>
+            </div>
+          </div>
+          <div className='branding__container--line'>
+            <p>Aplicaciones de Marca</p>
+          </div>
+          <div
+            className='branding__container brading__convergente'
+            style={{ marginBottom: '50px' }}
+          >
+            <div style={{ gridColumn: '1/-1' }}>
+              <img
+                src='https://storage.googleapis.com/assets-portafolio/branding/kemus_marca_1.png'
+                alt='Kemus-1'
+              />
+            </div>
+            <div style={{ gridColumn: '1/-1' }}>
+              <img
+                src='https://storage.googleapis.com/assets-portafolio/branding/kemus_marca_2.png'
+                alt='Kemus-2'
+              />
             </div>
           </div>
         </div>

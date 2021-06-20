@@ -63,6 +63,13 @@
   width: $w-100;
 }
 
+.branding__colores--kemus {
+  display: grid;
+  gap: $em * 2;
+  grid-template-columns: repeat(5, 1fr);
+  width: $w-100;
+}
+
 .color__box {
   @include center-items;
 
@@ -83,28 +90,27 @@
 }
 
 .tipography_one--jost {
-  border: 1px solid red;
   font-family: $font-jost;
   grid-column: 1/13;
+  height: $h-100;
 }
 
 .center-line {
-  border: 1px solid red;
+  @include center-items;
+
+  border: 1px solid #405d63;
   grid-column: 13/13;
+  height: 100%;
+  width: 2px;
 }
 
 .tipography_two--source {
-  border: 1px solid red;
+  @include center-items;
+
   font-family: $font-source;
   grid-column: 14/-1;
-}
-
-.typography__info--jost {
-  font-family: $font-jost;
-}
-
-.typography__info--source {
-  font-family: $font-source;
+  height: $h-100;
+  width: $w-100;
 }
 
 .typography__info--jost .typography__info--source {
@@ -118,4 +124,116 @@
   span {
     margin: 0 $em * 0.4;
   }
+}
+
+// .abc-container {
+//   border: 1px solid red;
+//   font-family: $font-jost;
+//   font-weight: 200;
+//   // height: $em * 10;
+// }
+
+// .typography--source {
+//   @include center-items;
+
+//   align-items: stretch;
+//   color: $color-black;
+//   flex-direction: column;
+//   grid-column: 1/-1;
+//   height: $h-100;
+//   justify-content: space-between;
+
+//   &__title {
+//     font-size: $font-24 * 1.25;
+//     font-weight: $poppins-semibold;
+//   }
+
+//   p {
+//     font-family: $font-source;
+//     height: 50px;
+//     width: $w-100;
+//   }
+
+//   &__details {
+//     @include center-items;
+
+//     align-items: flex-start;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     margin-bottom: $em;
+
+//     div:first-of-type {
+//       font-size: $font-20;
+//       font-weight: 300;
+//       justify-self: flex-end;
+
+//       p {
+//         font-size: $font-24;
+//         font-weight: 300;
+//       }
+//     }
+
+//     div:last-of-type {
+//       font-weight: 300;
+//       height: $em * 12;
+//       letter-spacing: $em * 0.1;
+
+//       p {
+//         font-size: $font-20;
+//         line-height: $em * 1.5;
+//       }
+//     }
+//   }
+
+//   &__info {
+//     @include center-items;
+
+//     font-family: $font-source;
+//     font-size: $font-20;
+//     grid-column: 3/-4;
+//     justify-content: space-between;
+//     margin-top: $em * 2;
+
+//     span {
+//       margin: 0 $em * 0.4;
+//     }
+//   }
+
+//   &__text {
+//     color: $color-text;
+//     font-family: $font-source;
+//     font-size: $font-20;
+//     grid-column: 3/-3;
+//     line-height: $em * 1.75;
+//     margin-top: $em;
+//   }
+// }
+
+.tipography_one--jost {
+  @include typography($font-jost);
+}
+
+.tipography_two--source {
+  @include typography($font-source);
+}
+
+.brading__convergente {
+  display: grid;
+  gap: $em * 6;
+  grid-template-columns: repeat(6, 1fr);
+
+  div {
+    height: $h-100;
+    width: $w-100;
+  }
+
+  img {
+    filter: drop-shadow(0 0 30px rgba(79, 87, 99, 0.25));
+    height: $h-100;
+    max-width: $w-100;
+  }
+}
+
+.branding__typography--kemus {
+  grid-column: 3/7;
 }
