@@ -50,3 +50,9 @@
   font-family: $font-barrio;
   font-size: $size;
 }
+
+@mixin experiments-description($color: $color-black) {
+  color: $color;
+  grid-column: 3/8;
+  margin-top: $em * 5;
+}

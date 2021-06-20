@@ -1,5 +1,7 @@
 @import './illustration';
 @import './sketching';
+@import './branding';
+@import './windsurf';
 
 .experiments-name-project {
   font-family: $font-poppins;
@@ -44,8 +46,10 @@
   }
 }
 
+.experiments__description--illustrations {
+  @include experiments-description($color-white);
+}
+
 .experiments__description {
-  color: $color-black;
-  grid-column: 3/6;
-  margin-top: $em * 5;
+  @include experiments-description();
 }

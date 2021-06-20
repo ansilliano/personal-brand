@@ -23,7 +23,7 @@ const WindsurfPage = () => {
       </Modal>
       <div className='experiments'>
         <div className='main_container'>
-          <div className='sketching__intro base-container-big'>
+          <div className='windsurf__intro base-container-big'>
             <div className='experiments-container-without-margin work-detail'>
               <div className='sketching__intro--info'>
                 <div className='experiments-name-project'>
@@ -32,6 +32,10 @@ const WindsurfPage = () => {
               </div>
               <div className='line__black' />
               <div className='experiments__description'>
+                <div className='experiments-project-task'>
+                  <h4>Task</h4>
+                  <p>Plan and teach basic courses.</p>
+                </div>
                 <div className='project-tools'>
                   <h4>Tools</h4>
                   <div>

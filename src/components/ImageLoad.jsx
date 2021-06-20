@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const ImageLoad = React.memo(
   ({
     src,
-    placeholder = 'https://dummyimage.com/2000x1000/f5f5f5/f5f5f5.jpg',
+    placeholder = 'https://dummyimage.com/2000x2000/f5f5f5/f5f5f5.jpg',
     alt = '',
     fitObject,
     classStyle = '',

@@ -1,0 +1,121 @@
+.branding__intro {
+  background-image: url('https://storage.googleapis.com/assets-portafolio/branding_home.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: $hv-100 + 50;
+}
+
+.divergente__logo {
+  @include center-items;
+
+  border-radius: 15px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+  height: $em * 25;
+  margin: $em auto $em * 6 auto;
+  width: $em * 25;
+
+  img {
+    height: $em * 25;
+    max-width: $w-100;
+    padding: $em * 2;
+    width: $em * 25;
+  }
+}
+
+.branding__container--line {
+  @include center-items;
+
+  align-self: flex-end;
+  border-bottom: 1px solid $color-black;
+  border-top: 1px solid $color-black;
+  grid-column: 2/-1;
+  height: $em * 6;
+  margin-bottom: $em * 2;
+  width: $w-100;
+
+  p {
+    color: $color-black;
+    font-family: $font-poppins;
+    font-size: $font-16;
+  }
+}
+
+.marca-container {
+  margin-bottom: $em * 4;
+  margin-top: $em * 4;
+}
+
+.branding__container {
+  @include center-items;
+
+  grid-column: 2/-1;
+  height: auto;
+  margin-bottom: $em * 3;
+  margin-top: $em * 3;
+  width: $w-100;
+}
+
+.branding__colores {
+  display: grid;
+  gap: $em * 2;
+  grid-template-columns: repeat(6, 1fr);
+  width: $w-100;
+}
+
+.color__box {
+  @include center-items;
+
+  height: $em * 15;
+  width: $w-100;
+
+  p {
+    color: $color-white;
+    font-family: $font-poppins;
+    font-size: $font-16;
+  }
+}
+
+.branding__tipo {
+  display: grid;
+  grid-template-columns: repeat(25, 1fr);
+  width: $w-100;
+}
+
+.tipography_one--jost {
+  border: 1px solid red;
+  font-family: $font-jost;
+  grid-column: 1/13;
+}
+
+.center-line {
+  border: 1px solid red;
+  grid-column: 13/13;
+}
+
+.tipography_two--source {
+  border: 1px solid red;
+  font-family: $font-source;
+  grid-column: 14/-1;
+}
+
+.typography__info--jost {
+  font-family: $font-jost;
+}
+
+.typography__info--source {
+  font-family: $font-source;
+}
+
+.typography__info--jost .typography__info--source {
+  @include center-items;
+
+  font-size: $font-20;
+  grid-column: 3/-4;
+  justify-content: space-between;
+  margin-top: $em * 2;
+
+  span {
+    margin: 0 $em * 0.4;
+  }
+}

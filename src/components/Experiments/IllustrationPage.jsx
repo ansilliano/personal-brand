@@ -31,7 +31,7 @@ const IllustrationPage = () => {
                 </div>
               </div>
               <div className='line__white' />
-              <div className='experiments__description'>
+              <div className='experiments__description--illustrations'>
                 <div className='experiments-project-task'>
                   <h4>Task</h4>
                   <p>
